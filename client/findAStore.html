@@ -43,17 +43,6 @@
             background-color: green;
         }
 
-        .filterDiv {
-            float: left;
-            background-color: #2196F3;
-            color: #ffffff;
-            width: 100px;
-            line-height: 100px;
-            text-align: center;
-            margin: 2px;
-            display: none;
-        }
-
         .show {
             display: block;
         }
@@ -62,14 +51,159 @@
             margin-top: 20px;
             overflow: hidden;
         }
+
+        html {
+            font-size: 100%;
+            box-sizing: border-box;
+        }
+
+        * {
+            box-sizing: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        *::after,
+        *::before {
+            box-sizing: border-box;
+            margin: 0 30px;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.5;
+            min-width: 350px;
+            height: auto;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column {
+            float: left;
+        }
+
+        .row {
+            margin-bottom: 30px;
+        }
+
+        li {
+            text-decoration: none;
+        }
+
+        .header {
+            display: flex;
+            height: 100px;
+            box-shadow: 0 8px 8px -10px #aaaaaa;
+            border-bottom: darkgray;
+            justify-content: space-between;
+        }
+
+        .menu_left {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu_logo {
+            justify-content: center;
+            align-items: center;
+            padding-left: 130px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .menu_links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 700px;
+        }
+
+        .menu_list {
+            list-style-type: none;
+            margin: 0 12px;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu_right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 10px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .store {
+            font-size: 15px;
+            margin: 0 30px;
+            display: flex;
+        }
+
+        .sign {
+            margin: 0 15px;
+            font-size: 15px;
+            border: 1px solid black;
+            padding: 4px 15px;
+            border-radius: 20px;
+            align-content: center;
+        }
+
+        .join {
+            font-size: 15px;
+            border: 1px solid black;
+            padding: 4px 15px;
+            border-radius: 20px;
+            align-content: center;
+            background: black;
+        }
+
+        .join a {
+            color: white;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 
 <body>
 
     <!-- start header -->
-    <div class="" style="background-color:pink;width: 100%; height: 200px;">
+    <div class="header" style="border-bottom: 1px solid black;">
+        <div class="menu_left">
+            <div class="menu_logo">
+                <a href="/" class="logo">
+                    <img src="images/main/logo.png" width="65px">
+                </a>
+            </div>
+            <div class="menu_links">
+                <li class="menu_list"><a href="#menu">Menu</a></li>
+                <li class="menu_list"><a href="#rewards">Rewards</a></li>
+                <li class="menu_list"><a href="#gift_cards">Gift Cards</a></li>
+            </div>
+        </div>
 
+        <div class="menu_right">
+            <li class="store"><i class="fas fa-map-marker-alt"></i><a href="#store">Find a store</a></li>
+            <li class="sign"><a href="#sign_in">Sign in</a></li>
+            <li class="join"><a href="#join">Join now</a></li>
+        </div>
+        <div style="width: 12% "></div>
     </div>
     <!-- end header -->
 
@@ -80,22 +214,30 @@
         <div class="column" style="width: 40%; height: 78vh;">
 
             <!-- start search -->
-            <div class="row">
+            <div class="row" id="search">
                 <div class="column" style="width: 87%; height: 50px; padding: 0; border: 0;">
-                    <input type="text" placeholder="Search..">
+                    <input type="text" placeholder="Search.." style="padding-left: 20px;">
                 </div>
                 <div class="column" style="width: 13%; height: 50px;">
-                    <button class="btnFilter" onclick="filterSelection('')">Filter</button>
+                    <button class="btnFilter" onclick="showFilter()">Filter</button>
+                </div>
+            </div>
+            <!-- close -->
+            <div class="row" id="close" style="display: none;">
+                <div class="column" style="width: 87%; height: 50px; padding: 0; border: 0;">
+                </div>
+                <div class="column" style="width: 13%; height: 50px;">
+                    <button class="btnFilter" onclick="hideFilter()">Filter</button>
                 </div>
             </div>
             <!-- end search -->
 
             <!-- start locations -->
             <div class="column"
-                style="background-color: red; width: 100%; height: 100%; overflow: scroll; overflow-x: hidden;">
+                style="background-color: white; width: 100%; height: 100%; overflow: scroll; overflow-x: hidden;">
 
-                <div class="container">
-                    <div class="filterDiv">BMW</div>
+                <div id="filter" style="display: none;">
+                    <div class="filterDiv">Filter</div>
                     <div class="filterDiv">Volvo</div>
                     <div class="filterDiv">Mustang</div>
                     <div class="filterDiv">Mustang</div>
@@ -103,76 +245,30 @@
                     <div class="filterDiv">Mustang</div>
                 </div>
 
-                <div id="myDIV">
-                    <div class="tag">
-                        <p>Press Club</p>
-                        <div>
-                            <p>59A Lý Thái Tổ, Quận Hoàn Kiếm, Hà Nội</p>
-                            <p>6.2 miles away · Open until 9:30 PM</p>
-                            <p>
-                                order unavailable
-                            </p>
-                        </div>
+                <div id="allCard">
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <h4><b>The Garden</b></h4>
+                        <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                        <p>1 mile away · Open until 10:00 PM</p>
+                        <p>Mobile order unavailable</p>
                     </div>
-                    <div class="tag">
-                        <p>Press Club</p>
-                        <div>
-                            <p>59A Lý Thái Tổ, Quận Hoàn Kiếm, Hà Nội</p>
-                            <p>6.2 miles away · Open until 9:30 PM</p>
-                            <p>
-                                order unavailable
-                            </p>
-                        </div>
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <h4><b>The Garden</b></h4>
+                        <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                        <p>1 mile away · Open until 10:00 PM</p>
+                        <p>Mobile order unavailable</p>
                     </div>
-                    <div class="tag">
-                        <p>Press Club</p>
-                        <div>
-                            <p>59A Lý Thái Tổ, Quận Hoàn Kiếm, Hà Nội</p>
-                            <p>6.2 miles away · Open until 9:30 PM</p>
-                            <p>
-                                order unavailable
-                            </p>
-                        </div>
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <h4><b>The Garden</b></h4>
+                        <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                        <p>1 mile away · Open until 10:00 PM</p>
+                        <p>Mobile order unavailable</p>
                     </div>
-                    <div class="tag">
-                        <p>Press Club</p>
-                        <div>
-                            <p>59A Lý Thái Tổ, Quận Hoàn Kiếm, Hà Nội</p>
-                            <p>6.2 miles away · Open until 9:30 PM</p>
-                            <p>
-                                order unavailable
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tag">
-                        <p>Press Club</p>
-                        <div>
-                            <p>59A Lý Thái Tổ, Quận Hoàn Kiếm, Hà Nội</p>
-                            <p>6.2 miles away · Open until 9:30 PM</p>
-                            <p>
-                                order unavailable
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tag">
-                        <p>Press Club</p>
-                        <div>
-                            <p>59A Lý Thái Tổ, Quận Hoàn Kiếm, Hà Nội</p>
-                            <p>6.2 miles away · Open until 9:30 PM</p>
-                            <p>
-                                order unavailable
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tag">
-                        <p>Press Club</p>
-                        <div>
-                            <p>59A Lý Thái Tổ, Quận Hoàn Kiếm, Hà Nội</p>
-                            <p>6.2 miles away · Open until 9:30 PM</p>
-                            <p>
-                                order unavailable
-                            </p>
-                        </div>
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <h4><b>The Garden</b></h4>
+                        <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                        <p>1 mile away · Open until 10:00 PM</p>
+                        <p>Mobile order unavailable</p>
                     </div>
                 </div>
 
@@ -198,47 +294,18 @@
     </div>
     <!-- end body -->
     <script>
-        // filter
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
-            // hide display
-            var x = document.getElementById("myDIV");
-            // if (x.style.display === "none") {
-                // x.style.display = "block";
-            // } 
-            // else {
-                x.style.display = "none";
-            // }
-        }
-
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {
-                    element.className += " " + arr2[i];
-                }
-            }
-        }
-
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
-        }
+        function showFilter(){
+            document.getElementById("filter").style.display="block";
+            document.getElementById("allCard").style.display="none";
+            document.getElementById("search").style.display="none";
+            document.getElementById("close").style.display="block";
+        };
+        function hideFilter(){
+            document.getElementById("filter").style.display="none";
+            document.getElementById("allCard").style.display="block";
+            document.getElementById("search").style.display="block";
+            document.getElementById("close").style.display="none";
+        };
     </script>
 </body>
 
