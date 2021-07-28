@@ -12,13 +12,11 @@
         *::after,
         *::before {
             box-sizing: border-box;
-            /* margin: 0 30px; */
         }
         
         body {
             font-family: 'Montserrat', sans-serif;
             line-height: 1.5;
-            min-width: 350px;
             height: auto;
             position: relative;
             justify-content: center;
@@ -75,9 +73,9 @@
             list-style-type: none;
             margin: 0 12px;
             text-transform: uppercase;
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 600;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
         
         .menu_right {
@@ -86,14 +84,14 @@
             align-items: center;
             text-decoration: none;
             font-weight: bold;
-            font-size: 10px;
             font-family: 'Lato', sans-serif;
         }
         
         .store {
-            font-size: 15px;
+            font-size: 13px;
             margin: 0 30px;
             display: flex;
+            letter-spacing: 1px;
         }
         
         .store>i {
@@ -102,20 +100,22 @@
         
         .sign {
             margin: 0 15px;
-            font-size: 15px;
+            font-size: 13px;
             border: 1px solid black;
             padding: 4px 15px;
             border-radius: 20px;
             align-content: center;
+            letter-spacing: 0.5px;
         }
         
         .join {
-            font-size: 15px;
+            font-size: 13px;
             border: 1px solid black;
             padding: 4px 15px;
             border-radius: 20px;
             align-content: center;
             background: black;
+            letter-spacing: 0.5px;
         }
         
         .join a {
@@ -210,6 +210,7 @@
             background: rgb(38, 71, 63);
         }
         /* end post 2 */
+        /* start post 3 */
         
         #pic3 img {
             width: 100%;
@@ -242,6 +243,8 @@
         #pic3_content a:hover {
             background: #e3e1d5;
         }
+        /* end post 3 */
+        /* start post 4 */
         
         #pic4 img {
             width: 100%;
@@ -274,6 +277,8 @@
         #pic4_content a:hover {
             background: #e3e1d5;
         }
+        /* end post 4 */
+        /* start post 5 */
         
         #pic5 img {
             width: 100%;
@@ -330,6 +335,8 @@
         #link6:hover {
             background: #c8dbd5;
         }
+        /* end post 5 */
+        /* start post 6 */
         
         #pic7 img {
             width: 100%;
@@ -360,6 +367,8 @@
         #pic7_content a:hover {
             background: #e3e1d5;
         }
+        /* end post 6 */
+        /* start underpost 6 */
         
         .under_content {
             margin-top: 40px;
@@ -367,10 +376,13 @@
             vertical-align: middle;
             font-size: 12px;
         }
+        /*  */
         
         .under_content span {
             text-decoration: underline;
         }
+        /* end underpost 6 */
+        /* end body */
         
         #footer h4 {
             font-size: 16px;
