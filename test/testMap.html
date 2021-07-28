@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            font-size: 100%;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            font-size: 2rem;
+            padding: 0 3rem;
+        }
+
+        #map {
+            height: 78vh;
+        }
+
+        .gm-style-iw-d {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <div id="map"></div>
+</body>
+
+<script>
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {
+                lat: 21.02754299706226,
+                lng: 105.83576163106622
+            },
+            zoom: 14,
+            mapId: '1e159caa874fbcf0',
+            // lua chon kieu map
+            mapTypeControl: false,
+            // full man hinh map
+            fullsceenControl: false,
+            // thang nguoi view map 
+            streetViewControl: false
+        });
+
+        // Name
+        // Latitude, Longitude
+        const markers = [
+            [
+                "Home",
+                21.008135051302663,
+                105.86831692501312,
+            ],
+            [
+                'Friend',
+                21.004727052220986,
+                105.84876479651014,
+            ],
+        ];
+
+        for (let i = 0; i < markers.length; i++) {
+            const currMarker = markers[i];
+
+            const marker = new google.maps.Marker({
+                position: {
+                    lat: currMarker[1],
+                    lng: currMarker[2]
+                },
+                map,
+                title: currMarker[0],
+                animation: google.maps.Animation.DROP,
+            });
+
+            const infowindow = new google.maps.InfoWindow({
+                content: currMarker[0],
+            });
+
+            marker.addListener('click', () => {
+                infowindow.open(map, marker);
+            });
+        }
+
+        // toi
+        // 21.008135051302663, 105.86831692501312
+        // ban toi
+        // 21.004727052220986, 105.84876479651014
+    }
+</script>
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCrEkgJ5j4dEi0ZkYRpXLLS2OEvY3sRGQ&map_ids=1e159caa874fbcf0&callback=initMap">
+</script>
+
+</html>
