@@ -102,7 +102,7 @@
             margin: 0 15px;
             font-size: 13px;
             border: 1px solid black;
-            padding: 4px 15px;
+            padding: 6px 13px;
             border-radius: 20px;
             align-content: center;
             letter-spacing: 0.5px;
@@ -111,7 +111,7 @@
         .join {
             font-size: 13px;
             border: 1px solid black;
-            padding: 4px 15px;
+            padding: 6px 13px;
             border-radius: 20px;
             align-content: center;
             background: black;
