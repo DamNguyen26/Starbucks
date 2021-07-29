@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <title>Document</title>
     <style>
         html {
@@ -44,6 +46,24 @@
 
 <body>
     <h1>Hello</h1>
+    <div class="menu">
+        <ul>
+            <li><a class="location" data-location="21.008135051302663, 105.86831692501312">Home</a></li>
+
+            <li><a class="location" data-location="51.454265,-0.97813">reading</a>
+
+            </li>
+            <li><a class="location" data-location="51.262251,-0.467252">surrey</a>
+
+            </li>
+            <li><a class="location" data-location="51.555774,-1.779718">swindon</a>
+
+            </li>
+            <li><a class="location" data-location="51.864211,-2.238033">gloucestershire</a>
+
+            </li>
+        </ul>
+    </div>
     <div id="map"></div>
 </body>
 
@@ -96,15 +116,58 @@
                 content: currMarker[0],
             });
 
-            marker.addListener('click', () => {
-                infowindow.open(map, marker);
-            });
+            // marker.addListener('click', () => {
+            //     infowindow.open(map, marker);
+            // });
         }
 
         // toi
         // 21.008135051302663, 105.86831692501312
         // ban toi
         // 21.004727052220986, 105.84876479651014
+
+        // icon marker
+        var blueIco = {
+            url: "http://maps.google.com/mapfiles/ms/icons/blue.png"
+        };
+
+        // declare location and marker default
+        var latLng = new google.maps.LatLng();
+
+        marker = new google.maps.Marker({
+            map: map,
+            position: latLng,
+            animation: google.maps.Animation.DROP,
+            icon: blueIco,
+            normalIcon: blueIco
+        });
+
+        google.maps.event.addListener(marker, "mouseout", function (event) {
+            this.setIcon(this.normalIcon);
+            infowindow.close();
+        });
+        // get location 
+        $('.location').on('click', function () {
+            var latlonStr = $(this).data('location')
+            var coords = latlonStr.split(",");
+            latLng = new google.maps.LatLng(coords[0], coords[1]);
+            pan(latLng);
+            if (marker && marker.setMap) {
+                marker.setMap(null);
+            }
+            marker = new google.maps.Marker({
+                map: map,
+                position: latLng,
+                animation: google.maps.Animation.DROP,
+                icon: blueIco,
+                normalIcon: blueIco
+            });
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    function pan(latlon) {
+        map.panTo(latlon)
     }
 </script>
 
