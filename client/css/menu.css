@@ -219,7 +219,7 @@
         margin-bottom: 50px;
     }
     
-    .drinks {
+    .sub-title {
         font-size: 19px;
         display: block;
         font-weight: 700;
@@ -233,6 +233,8 @@
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(4, 1fr);
+        gap: 30px 10px;
+        margin-bottom: 60px;
     }
     
     .pic-drinks img {
@@ -240,7 +242,7 @@
         height: 100px;
         border-radius: 50%;
     }
-    /* setting position in grid */
+    /* setting position in grid [menu grid] */
     
     .hot-cof-text {
         display: flex;
@@ -248,17 +250,20 @@
         justify-content: flex-start;
         align-items: center;
         grid-column: 2 / 4;
-        padding: 0 20px;
     }
     
     .hot-tea-pic {
-        grid-column: 6 / 7;
+        grid-column: 5 / 6;
         grid-row: 1 / 2;
     }
     
     .hot-tea-text {
-        grid-column: 7 / 8;
+        grid-column: 6 / 9;
         grid-row: 1 / 2;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
     }
     
     .hot-drink-pic {
@@ -267,18 +272,26 @@
     }
     
     .hot-drink-text {
-        grid-column: 2 / 3;
+        grid-column: 2 / 4;
         grid-row: 2 / 3;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
     }
     
     .frappuccino-pic {
-        grid-column: 6 / 7;
+        grid-column: 5 / 6;
         grid-row: 2 / 3;
     }
     
     .frappuccino-text {
-        grid-column: 7 / 9;
+        grid-column: 6 / 9;
         grid-row: 2 / 3;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
     }
     
     .cold-cof-pic {
@@ -287,18 +300,26 @@
     }
     
     .cold-cof-text {
-        grid-column: 2 / 3;
+        grid-column: 2 / 4;
         grid-row: 3 / 4;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
     }
     
     .iced-tea-pic {
-        grid-column: 6 / 7;
+        grid-column: 5 / 6;
         grid-row: 3 / 4;
     }
     
     .iced-tea-text {
-        grid-column: 7 / 8;
+        grid-column: 6 / 8;
         grid-row: 3 / 4;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
     }
     
     .cold-drink-pic {
@@ -307,6 +328,146 @@
     }
     
     .cold-drink-text {
-        grid-column: 2 / 3;
+        grid-column: 2 / 4;
         grid-row: 4 / 5;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
     }
+    /* end menu grid */
+    /* start food  */
+    
+    .pic-food {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px 10px;
+        margin-bottom: 60px;
+    }
+    
+    .pic-food img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    /* start postion grid [food] */
+    
+    .hot-bf-text {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .bakery-pic {
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
+    
+    .bakery-text {
+        grid-column: 6/8;
+        grid-row: 1/2;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .lunch-pic {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .lunch-text {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .snack-pic {
+        grid-column: 5/6;
+        grid-row: 2/3;
+    }
+    
+    .snack-text {
+        grid-column: 6/8;
+        grid-row: 2/3;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .yogurt-pic {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .yogurt-text {
+        grid-column: 2/4;
+        grid-row: 3/4;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    /* end food grid */
+    /* start at home coffee */
+    
+    .pic-ahc {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1;
+        gap: 30px 10px;
+        margin-bottom: 60px;
+    }
+    
+    .pic-ahc img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    /* postion grid ahc */
+    
+    .bean-text {
+        grid-column: 2/4;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .instant-pic {
+        grid-column: 5/6;
+    }
+    
+    .instant-text {
+        grid-column: 6/8;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    /* end ahc */
+    /* start merchandise */
+    
+    .pic-mer {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px 10px;
+        margin-bottom: 60px;
+    }
+    
+    .pic-mer img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    /* position grid merchandise */
