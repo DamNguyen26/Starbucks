@@ -217,14 +217,6 @@
                     <button class="btnFilter" onclick="showFilter()">Filter</button>
                 </div>
             </div>
-            <!-- close -->
-            <div class="row" id="close" style="display: none;">
-                <div class="column" style="width: 87%; height: 50px; padding: 0; border: 0;">
-                </div>
-                <div class="column" style="width: 13%; height: 50px;">
-                    <button class="btnFilter" onclick="hideFilter()">X</button>
-                </div>
-            </div>
             <!-- end search -->
 
             <!-- start locations -->
@@ -232,6 +224,15 @@
                 style="background-color: white; width: 100%; height: 100%; overflow: scroll; overflow-x: hidden;">
                 <!-- start filter -->
                 <div id="filter" style="display: none; height: auto;">
+                    <!-- start close filter -->
+                    <div class="row" id="close" style="display: none;">
+                        <div class="column" style="width: 87%; height: 50px; padding: 0; border: 0;">
+                        </div>
+                        <div class="column" style="width: 13%; height: 50px;">
+                            <button class="btnFilter" onclick="hideFilter()">X</button>
+                        </div>
+                    </div>
+                    <!-- end close filter -->
                     <div class="filterDiv" style="padding: 20px 20px; letter-spacing: 1px;">
                         <h1>Filter</h1>
                     </div>
@@ -253,58 +254,58 @@
                     </div>
                     <div class="filterDiv"
                         style="padding: 20px 20px; letter-spacing: 2px; background-color: rgb(218, 218, 218); text-transform: uppercase; margin-bottom: 10px;">
-                        <h3>order & pick up options</h3>
+                        <h3 style="color: grey;">order & pick up options</h3>
                     </div>
                     <div class="filterDiv">
-                        <li>
+                        <li style="padding: 5px 40px;">
                             <a href="#">
-                                <p>Mobile Order and Pay</p>
+                                <p style="color: rgb(163, 163, 163);">Mobile Order and Pay</p>
                             </a>
                         </li>
-                        <li>
+                        <li style="padding: 5px 40px;">
                             <a href="#">
-                                <p>In store</p>
+                                <p style="color: rgb(163, 163, 163);">In store</p>
                             </a>
                         </li>
-                        <li>
+                        <li style="padding: 5px 40px;">
                             <a href="#">
-                                <p>Drive-Thru</p>
+                                <p style="color: rgb(163, 163, 163);">Drive-Thru</p>
                             </a>
                         </li>
-                        <li>
+                        <li style="padding: 5px 40px;">
                             <a href="#">
-                                <p>Curbside</p>
+                                <p style="color: rgb(163, 163, 163);">Curbside</p>
                             </a>
                         </li>
-                        <li>
+                        <li style="padding: 5px 40px;">
                             <a href="#">
-                                <p>Outdoor</p>
+                                <p style="color: rgb(163, 163, 163);">Outdoor</p>
                             </a>
                         </li>
                     </div>
                     <div class="filterDiv"
                         style="padding: 20px 20px; letter-spacing: 2px; background-color: rgb(218, 218, 218); text-transform: uppercase; margin-bottom: 10px;">
-                        <h3>amenities</h3>
+                        <h3 style="color: grey;">amenities</h3>
                     </div>
                     <div class="filterDiv">
-                        <li>
+                        <li style="padding: 5px 40px;">
                             <a href="#">
-                                <p>Starbucks Reserve-Clover Brewed</p>
+                                <p style="color: rgb(163, 163, 163);">Starbucks Reserve-Clover Brewed</p>
                             </a>
                         </li>
-                        <li>
+                        <li style="padding: 5px 40px;">
                             <a href="#">
-                                <p>Starbucks Wi-Fi</p>
+                                <p style="color: rgb(163, 163, 163);">Starbucks Wi-Fi</p>
                             </a>
                         </li>
-                        <li>
+                        <li style="padding: 5px 40px;">
                             <a href="#">
-                                <p>Redeem Rewards</p>
+                                <p style="color: rgb(163, 163, 163);">Redeem Rewards</p>
                             </a>
                         </li>
-                        <li>
+                        <li style="padding: 5px 40px;">
                             <a href="#">
-                                <p>Nitro Cold Brew</p>
+                                <p style="color: rgb(163, 163, 163);">Nitro Cold Brew</p>
                             </a>
                         </li>
                     </div>
@@ -313,7 +314,7 @@
 
 
                 <div id="allCard">
-
+                    <!-- 1 -->
                     <div class="card" style="width: 100%; padding: 2px 16px;">
                         <a class="location" data-location="21.008135051302663, 105.86831692501312">
                             <h4><b>The Garden</b></h4>
@@ -322,6 +323,7 @@
                             <p>Mobile order unavailable</p>
                         </a>
                     </div>
+                    <!-- 2 -->
                     <div class="card" style="width: 100%; padding: 2px 16px;">
                         <a class="location" data-location="21.004727052220986, 105.84876479651014">
                             <h4><b>The Garden</b></h4>
@@ -330,26 +332,191 @@
                             <p>Mobile order unavailable</p>
                         </a>
                     </div>
+                    <!-- 3 -->
                     <div class="card" style="width: 100%; padding: 2px 16px;">
-                        <h4><b>The Garden</b></h4>
-                        <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
-                        <p>1 mile away · Open until 10:00 PM</p>
-                        <p>Mobile order unavailable</p>
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
                     </div>
+                    <!-- 4 -->
                     <div class="card" style="width: 100%; padding: 2px 16px;">
-                        <h4><b>The Garden</b></h4>
-                        <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
-                        <p>1 mile away · Open until 10:00 PM</p>
-                        <p>Mobile order unavailable</p>
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 5 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 6 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 7 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.008135051302663, 105.86831692501312">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 8 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 9 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 10 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 11 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 12 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 13 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.008135051302663, 105.86831692501312">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 14 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 15 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 16 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 17 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 18 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 19 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.008135051302663, 105.86831692501312">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 20 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 21 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <!-- 22 -->
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
                     </div>
                 </div>
-
-                <!-- start overlay filter -->
-                <div class="overlay">
-
-                </div>
-                <!-- end overlay filter -->
-
+                <!-- button bottom -->
+                <button
+                    style="position: fixed; bottom: 20px; right: 30px; font-size: 18px; border: none; outline: none; background-color: green; color: white; cursor: pointer; padding: 15px; border-radius: 4px;">order
+                    here</button>
             </div>
             <!-- end locations -->
         </div>
@@ -386,12 +553,17 @@
                 },
                 zoom: 14,
                 mapId: '1e159caa874fbcf0',
+                //zoom map
+                zoomControl: true,
                 // lua chon kieu map
                 mapTypeControl: false,
-                // full man hinh map
-                fullsceenControl: false,
                 // thang nguoi view map 
-                streetViewControl: false
+                streetViewControl: false,
+                // xoay map
+                rotateControl: false,
+                // full man hinh map
+                fullscreenControl: false,
+                // disableDefaultUI: true
             });
 
             // Name
@@ -410,6 +582,11 @@
             ];
 
             for (let i = 0; i < markers.length; i++) {
+                // marker default
+                const iconBase = {
+                    url: "http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png",
+                    size: new google.maps.Size(8, 8)
+                };
                 const currMarker = markers[i];
 
                 const marker = new google.maps.Marker({
@@ -420,6 +597,8 @@
                     map,
                     title: currMarker[0],
                     animation: google.maps.Animation.DROP,
+                    icon: iconBase,
+                    normalIcon: iconBase
                 });
 
                 const infowindow = new google.maps.InfoWindow({
@@ -437,9 +616,7 @@
             // 21.004727052220986, 105.84876479651014
 
             // icon marker
-            var blueIco = {
-                url: "http://maps.google.com/mapfiles/ms/icons/blue.png"
-            };
+            var iconBase = "http://maps.google.com/mapfiles/ms/icons/green.png";
 
             // declare location and marker default
             var latLng = new google.maps.LatLng();
@@ -448,8 +625,8 @@
                 map: map,
                 position: latLng,
                 animation: google.maps.Animation.DROP,
-                icon: blueIco,
-                normalIcon: blueIco
+                icon: iconBase,
+                normalIcon: iconBase
             });
 
             google.maps.event.addListener(marker, "mouseout", function (event) {
@@ -469,8 +646,8 @@
                     map: map,
                     position: latLng,
                     animation: google.maps.Animation.DROP,
-                    icon: blueIco,
-                    normalIcon: blueIco
+                    icon: iconBase,
+                    normalIcon: iconBase
                 });
             });
         }
