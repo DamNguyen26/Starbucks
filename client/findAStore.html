@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <title>Document</title>
     <style>
         html,
@@ -16,11 +18,11 @@
             padding: 0;
             overflow: hidden;
         }
-        
+
         .column {
             float: left;
         }
-        
+
         .column input[type=text] {
             font-size: 17px;
             padding: 0;
@@ -28,7 +30,7 @@
             width: 100%;
             height: 100%;
         }
-        
+
         .btnFilter {
             padding: 0;
             border: 1px solid green;
@@ -38,37 +40,37 @@
             cursor: pointer;
             background-color: white;
         }
-        
+
         .btnFilter:hover {
             background-color: green;
         }
-        
+
         .show {
             display: block;
         }
-        
+
         .container {
             margin-top: 20px;
             overflow: hidden;
         }
-        
+
         html {
             font-size: 100%;
             box-sizing: border-box;
         }
-        
+
         * {
             box-sizing: inherit;
             margin: 0;
             padding: 0;
         }
-        
+
         *::after,
         *::before {
             box-sizing: border-box;
             margin: 0 30px;
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             line-height: 1.5;
@@ -78,19 +80,12 @@
             justify-content: center;
             align-items: center;
         }
-        
-        .column {
-            float: left;
-        }
-        
-        .row {
-            margin-bottom: 30px;
-        }
-        
+
+
         li {
             text-decoration: none;
         }
-        
+
         .header {
             display: flex;
             height: 100px;
@@ -98,12 +93,12 @@
             border-bottom: darkgray;
             justify-content: space-between;
         }
-        
+
         .menu_left {
             display: flex;
             justify-content: space-between;
         }
-        
+
         .menu_logo {
             justify-content: center;
             align-items: center;
@@ -111,14 +106,14 @@
             margin-top: 20px;
             margin-right: 20px;
         }
-        
+
         .menu_links {
             display: flex;
             align-items: center;
             justify-content: center;
             padding-right: 700px;
         }
-        
+
         .menu_list {
             list-style-type: none;
             margin: 0 12px;
@@ -127,16 +122,16 @@
             font-weight: 600;
             letter-spacing: 2px;
         }
-        
+
         li {
             list-style-type: none;
         }
-        
+
         a {
             text-decoration: none;
             color: black;
         }
-        
+
         .menu_right {
             display: flex;
             justify-content: center;
@@ -146,13 +141,13 @@
             font-size: 10px;
             font-family: 'Lato', sans-serif;
         }
-        
+
         .store {
             font-size: 15px;
             margin: 0 30px;
             display: flex;
         }
-        
+
         .sign {
             margin: 0 15px;
             font-size: 15px;
@@ -161,7 +156,7 @@
             border-radius: 20px;
             align-content: center;
         }
-        
+
         .join {
             font-size: 15px;
             border: 1px solid black;
@@ -170,11 +165,11 @@
             align-content: center;
             background: black;
         }
-        
+
         .join a {
             color: white;
         }
-        
+
         .card:hover {
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
@@ -227,19 +222,21 @@
                 <div class="column" style="width: 87%; height: 50px; padding: 0; border: 0;">
                 </div>
                 <div class="column" style="width: 13%; height: 50px;">
-                    <button class="btnFilter" onclick="hideFilter()">Filter</button>
+                    <button class="btnFilter" onclick="hideFilter()">X</button>
                 </div>
             </div>
             <!-- end search -->
 
             <!-- start locations -->
-            <div class="column" style="background-color: white; width: 100%; height: 100%; overflow: scroll; overflow-x: hidden;">
-
-                <div id="filter" style="display: none;">
+            <div class="column"
+                style="background-color: white; width: 100%; height: 100%; overflow: scroll; overflow-x: hidden;">
+                <!-- start filter -->
+                <div id="filter" style="display: none; height: auto;">
                     <div class="filterDiv" style="padding: 20px 20px; letter-spacing: 1px;">
                         <h1>Filter</h1>
                     </div>
-                    <div class="filterDiv" style="padding: 20px 20px; letter-spacing: 2px; background-color: rgb(218, 218, 218); text-transform: uppercase; margin-bottom: 10px;">
+                    <div class="filterDiv"
+                        style="padding: 20px 20px; letter-spacing: 2px; background-color: rgb(218, 218, 218); text-transform: uppercase; margin-bottom: 10px;">
                         <h3 style="color: grey;">store hours</h3>
                     </div>
                     <div class="filterDiv">
@@ -254,7 +251,8 @@
                             </a>
                         </li>
                     </div>
-                    <div class="filterDiv">
+                    <div class="filterDiv"
+                        style="padding: 20px 20px; letter-spacing: 2px; background-color: rgb(218, 218, 218); text-transform: uppercase; margin-bottom: 10px;">
                         <h3>order & pick up options</h3>
                     </div>
                     <div class="filterDiv">
@@ -284,7 +282,8 @@
                             </a>
                         </li>
                     </div>
-                    <div class="filterDiv">
+                    <div class="filterDiv"
+                        style="padding: 20px 20px; letter-spacing: 2px; background-color: rgb(218, 218, 218); text-transform: uppercase; margin-bottom: 10px;">
                         <h3>amenities</h3>
                     </div>
                     <div class="filterDiv">
@@ -310,13 +309,26 @@
                         </li>
                     </div>
                 </div>
+                <!-- end filter -->
 
-                <!-- <div id="allCard">
+
+                <div id="allCard">
+
                     <div class="card" style="width: 100%; padding: 2px 16px;">
-                        <h4><b>The Garden</b></h4>
-                        <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
-                        <p>1 mile away · Open until 10:00 PM</p>
-                        <p>Mobile order unavailable</p>
+                        <a class="location" data-location="21.008135051302663, 105.86831692501312">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
+                    </div>
+                    <div class="card" style="width: 100%; padding: 2px 16px;">
+                        <a class="location" data-location="21.004727052220986, 105.84876479651014">
+                            <h4><b>The Garden</b></h4>
+                            <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
+                            <p>1 mile away · Open until 10:00 PM</p>
+                            <p>Mobile order unavailable</p>
+                        </a>
                     </div>
                     <div class="card" style="width: 100%; padding: 2px 16px;">
                         <h4><b>The Garden</b></h4>
@@ -330,13 +342,7 @@
                         <p>1 mile away · Open until 10:00 PM</p>
                         <p>Mobile order unavailable</p>
                     </div>
-                    <div class="card" style="width: 100%; padding: 2px 16px;">
-                        <h4><b>The Garden</b></h4>
-                        <p>Tầng 1, TTTM The Garden, khu đô thị The Manor, Mễ Trì, Mỹ Đình, Hà Nội</p>
-                        <p>1 mile away · Open until 10:00 PM</p>
-                        <p>Mobile order unavailable</p>
-                    </div>
-                </div> -->
+                </div>
 
                 <!-- start overlay filter -->
                 <div class="overlay">
@@ -350,9 +356,8 @@
         <!-- end tag -->
 
         <!-- start map -->
-        <div class="column" id="map" style="width: 60%; height: 82vh; overflow: hidden;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.97785448771!2d105.80194413492788!3d21.02273601629448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1627274734501!5m2!1svi!2s"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="column" style="width: 60%; height: 82vh; overflow: hidden;">
+            <div id="map"></div>
         </div>
         <!-- end map -->
 
@@ -372,6 +377,112 @@
             document.getElementById("search").style.display = "block";
             document.getElementById("close").style.display = "none";
         };
+        // map
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 21.02754299706226,
+                    lng: 105.83576163106622
+                },
+                zoom: 14,
+                mapId: '1e159caa874fbcf0',
+                // lua chon kieu map
+                mapTypeControl: false,
+                // full man hinh map
+                fullsceenControl: false,
+                // thang nguoi view map 
+                streetViewControl: false
+            });
+
+            // Name
+            // Latitude, Longitude
+            const markers = [
+                [
+                    "Home",
+                    21.008135051302663,
+                    105.86831692501312,
+                ],
+                [
+                    'Friend',
+                    21.004727052220986,
+                    105.84876479651014,
+                ],
+            ];
+
+            for (let i = 0; i < markers.length; i++) {
+                const currMarker = markers[i];
+
+                const marker = new google.maps.Marker({
+                    position: {
+                        lat: currMarker[1],
+                        lng: currMarker[2]
+                    },
+                    map,
+                    title: currMarker[0],
+                    animation: google.maps.Animation.DROP,
+                });
+
+                const infowindow = new google.maps.InfoWindow({
+                    content: currMarker[0],
+                });
+
+                // marker.addListener('click', () => {
+                //     infowindow.open(map, marker);
+                // });
+            }
+
+            // toi
+            // 21.008135051302663, 105.86831692501312
+            // ban toi
+            // 21.004727052220986, 105.84876479651014
+
+            // icon marker
+            var blueIco = {
+                url: "http://maps.google.com/mapfiles/ms/icons/blue.png"
+            };
+
+            // declare location and marker default
+            var latLng = new google.maps.LatLng();
+
+            marker = new google.maps.Marker({
+                map: map,
+                position: latLng,
+                animation: google.maps.Animation.DROP,
+                icon: blueIco,
+                normalIcon: blueIco
+            });
+
+            google.maps.event.addListener(marker, "mouseout", function (event) {
+                this.setIcon(this.normalIcon);
+                infowindow.close();
+            });
+            // get location 
+            $('.location').on('click', function () {
+                var latlonStr = $(this).data('location')
+                var coords = latlonStr.split(",");
+                latLng = new google.maps.LatLng(coords[0], coords[1]);
+                pan(latLng);
+                if (marker && marker.setMap) {
+                    marker.setMap(null);
+                }
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: latLng,
+                    animation: google.maps.Animation.DROP,
+                    icon: blueIco,
+                    normalIcon: blueIco
+                });
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+        function pan(latlon) {
+            map.panTo(latlon)
+        }
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCrEkgJ5j4dEi0ZkYRpXLLS2OEvY3sRGQ&map_ids=1e159caa874fbcf0&callback=initMap">
     </script>
 </body>
 
