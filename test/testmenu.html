@@ -42,10 +42,14 @@
                         <p>Menu</p>
                     </a>
                     <a class="rewards" href="#">
-                        <b><p>rewards</p></b>
+                        <b>
+                            <p>rewards</p>
+                        </b>
                     </a>
                     <a class="gift-cards" href="#">
-                        <b><p>gift cards</p></b>
+                        <b>
+                            <p>gift cards</p>
+                        </b>
                     </a>
                 </div>
 
@@ -72,8 +76,8 @@
                 <div class="col-main" style="border-bottom: 1px solid rgba(196, 196, 196, 0.466);">
                     <div class="menu-list">
                         <ul>Drinks
-                            <li>Hot Coffees</li>
-                            <li> Hot Teas</li>
+                            <li><a href="#food" onclick="changeFood()">Hot Coffees</a></li>
+                            <li><a href="#drink" onclick="changeDrink()">Hot Teas</a></li>
                             <li>Hot Drinks</li>
                             <li>Frappuccino® Blended Beverages</li>
                             <li> Cold Coffees</li>
@@ -99,7 +103,7 @@
                         </ul>
                     </div>
                     <!-- CHANGE PART BLOCK / NONE -->
-                    <div class="menu-pic" style=" width: 60% ; height: 100vh;">
+                    <div class="menu-pic" id="food" style=" width: 60% ; height: 100vh; display: block;">
                         <div class="title">Menu</div>
                         <div class="sub-title">Drinks</div>
                         <div class="pic-drinks">
@@ -152,59 +156,49 @@
                     </div>
                     <!-- END CHANGE PART 1 ALL PRODUCTS -->
 
-                </div>
-                <!-- START CHANGE PART HOT COFFEES -->
-                <div class="menu-pic" style=" width: 60% ; height: 100vh;">
-                    <div class="title">Menu</div>
-                    <div class="sub-title">Drinks</div>
-                    <div class="pic-drinks">
-                        <div class="hot-cof-pic"><img src="images/menu/Drinks/hot-cof.jpg"></div>
-                        <div class="hot-cof-text">Hot Coffees</div>
-                        <div class="hot-tea-pic"><img src="images/menu/Drinks/hot-tea.jpg"></div>
-                        <div class="hot-tea-text">Hot Teas</div>
-                        <div class="hot-drink-pic"><img src="images/menu/Drinks/hot-drink.jpg"></div>
-                        <div class="hot-drink-text">Hot Drinks</div>
-                        <div class="frappuccino-pic"><img src="images/menu/Drinks/frappuccino.jpg"></div>
-                        <div class="frappuccino-text">Frappuccino® Blended Beverages</div>
-                        <div class="cold-cof-pic"><img src="images/menu/Drinks/cold-cof.jpg"></div>
-                        <div class="cold-cof-text">Cold Coffees</div>
-                        <div class="iced-tea-pic"><img src="images/menu/Drinks/ice-tea.jpg"></div>
-                        <div class="iced-tea-text">Iced Teas</div>
-                        <div class="cold-drink-pic"><img src="images/menu/Drinks/cold-drink.jpg"></div>
-                        <div class="cold-drink-text">Cold Drinks</div>
+
+                    <!-- START CHANGE PART HOT COFFEES -->
+                    <div class="menu-pic" id="drink" style=" width: 60% ; height: 100vh; display: none;">
+                        <div class="title">Menu</div>
+                        <div class="sub-title">Drinks</div>
+                        <div class="pic-drinks">
+                            <div class="hot-cof-pic"><img src="images/menu/Drinks/hot-cof.jpg"></div>
+                            <div class="hot-cof-text">Hot Coffees</div>
+                            <div class="hot-tea-pic"><img src="images/menu/Drinks/hot-tea.jpg"></div>
+                            <div class="hot-tea-text">Hot Teas</div>
+                            <div class="hot-drink-pic"><img src="images/menu/Drinks/hot-drink.jpg"></div>
+                            <div class="hot-drink-text">Hot Drinks</div>
+                            <div class="frappuccino-pic"><img src="images/menu/Drinks/frappuccino.jpg"></div>
+                            <div class="frappuccino-text">Frappuccino® Blended Beverages</div>
+                            <div class="cold-cof-pic"><img src="images/menu/Drinks/cold-cof.jpg"></div>
+                            <div class="cold-cof-text">Cold Coffees</div>
+                            <div class="iced-tea-pic"><img src="images/menu/Drinks/ice-tea.jpg"></div>
+                            <div class="iced-tea-text">Iced Teas</div>
+                            <div class="cold-drink-pic"><img src="images/menu/Drinks/cold-drink.jpg"></div>
+                            <div class="cold-drink-text">Cold Drinks</div>
+                        </div>
+                        <div class="sub-title">Food </div>
+                        <div class="pic-food">
+                            <div class="hot-bf-pic"><img src="images/menu/Food/hot-bf.jpg"></div>
+                            <div class="hot-bf-text">Hot Breakfast</div>
+                            <div class="bakery-pic"><img src="images/menu/Food/bakery.jpg"></div>
+                            <div class="bakery-text">Bakery</div>
+                            <div class="lunch-pic"><img src="images/menu/Food/lunch.jpg"></div>
+                            <div class="lunch-text">Lunch</div>
+                            <div class="snack-pic"><img src="images/menu/Food/snack.jpg"></div>
+                            <div class="snack-text">Snacks & Sweets</div>
+                            <div class="yogurt-pic"><img src="images/menu/Food/yogurt.jpg"></div>
+                            <div class="yogurt-text">Oatmeal & Yogurt</div>
+                        </div>
+                        <div class="sub-title">At Home Coffee</div>
+                        <div class="pic-ahc">
+                            <div class="bean-pic"><img src="images/menu/Coffee/bean.jpg"></div>
+                            <div class="bean-text">Whole Bean</div>
+                            <div class="instant-pic"><img src="images/menu/Coffee/instant.jpg"></div>
+                            <div class="instant-text">VIA® Instant</div>
+                        </div>
+                        <!-- END CHANGE PART HOT COFFEES -->
                     </div>
-                    <div class="sub-title">Food </div>
-                    <div class="pic-food">
-                        <div class="hot-bf-pic"><img src="images/menu/Food/hot-bf.jpg"></div>
-                        <div class="hot-bf-text">Hot Breakfast</div>
-                        <div class="bakery-pic"><img src="images/menu/Food/bakery.jpg"></div>
-                        <div class="bakery-text">Bakery</div>
-                        <div class="lunch-pic"><img src="images/menu/Food/lunch.jpg"></div>
-                        <div class="lunch-text">Lunch</div>
-                        <div class="snack-pic"><img src="images/menu/Food/snack.jpg"></div>
-                        <div class="snack-text">Snacks & Sweets</div>
-                        <div class="yogurt-pic"><img src="images/menu/Food/yogurt.jpg"></div>
-                        <div class="yogurt-text">Oatmeal & Yogurt</div>
-                    </div>
-                    <div class="sub-title">At Home Coffee</div>
-                    <div class="pic-ahc">
-                        <div class="bean-pic"><img src="images/menu/Coffee/bean.jpg"></div>
-                        <div class="bean-text">Whole Bean</div>
-                        <div class="instant-pic"><img src="images/menu/Coffee/instant.jpg"></div>
-                        <div class="instant-text">VIA® Instant</div>
-                    </div>
-                    <div class="sub-title">Merchandise</div>
-                    <div class="pic-mer">
-                        <div class="cold-cup-pic"><img src="images/menu/Merchandise/cold-cup.jpg"></div>
-                        <div class="cold-cup-text">Cold Cups</div>
-                        <div class="tumbler-pic"><img src="images/menu/Merchandise/tumbler.jpg"></div>
-                        <div class="tumbler-text">Tumblers</div>
-                        <div class="bottle-pic"><img src="images/menu/Merchandise/bottle.jpg"></div>
-                        <div class="bottle-text">Water Bottles</div>
-                        <div class="other-pic"><img src="images/menu/Merchandise/other.jpg"></div>
-                        <div class="other-text">Other</div>
-                    </div>
-                    <!-- END CHANGE PART HOT COFFEES -->
                 </div>
                 <!-- start footer -->
                 <div class="footer">
@@ -212,7 +206,9 @@
                     <div class="column-1" style="height: 550px;"></div>
                     <div class="footer-main">
                         <div class="about-us">
-                            <b><p>About Us</p></b>
+                            <b>
+                                <p>About Us</p>
+                            </b>
                             <li>Our Heritage</li>
                             <li>Our Coffee </li>
                             <li>Stories and News</li>
@@ -221,7 +217,9 @@
                             <li> Customer Service</li>
                         </div>
                         <div class="careers">
-                            <b><p>Careers </p></b>
+                            <b>
+                                <p>Careers </p>
+                            </b>
                             <li>Culture and Values</li>
                             <li> Inclusion, Diversity, and Equity</li>
                             <li>College Achievement Plan</li>
@@ -229,7 +227,9 @@
                             <li>International Careers</li>
                         </div>
                         <div class="social">
-                            <b><p>Social Impact </p></b>
+                            <b>
+                                <p>Social Impact </p>
+                            </b>
                             <li> Ethical Sourcing </li>
                             <li> Leading in Sustainability </li>
                             <li> Strengthening Communities </li>
@@ -237,14 +237,18 @@
                             <li> Global Social Impact Report</li>
                         </div>
                         <div class="business">
-                            <b><p>For Business Partners </p></b>
+                            <b>
+                                <p>For Business Partners </p>
+                            </b>
                             <li> Landlord Support Center </li>
                             <li>Suppliers</li>
                             <li> Corporate Gift Card Sales</li>
                             <li> Office and Foodservice Coffee</li>
                         </div>
                         <div class="order">
-                            <b><p>Order and Pickup </p></b>
+                            <b>
+                                <p>Order and Pickup </p>
+                            </b>
                             <li> Order on the App </li>
                             <li> Order on the Web </li>
                             <li>Delivery</li>
@@ -276,7 +280,10 @@
                     </div>
                     <div class="underfooter" style="margin-bottom: 50px;">
                         <br>
-                        <b><p> Privacy Policy | Terms of Use | CA Supply Chain Act | Submit Your Idea | Cookie Preferences</p></b> <br>
+                        <b>
+                            <p> Privacy Policy | Terms of Use | CA Supply Chain Act | Submit Your Idea | Cookie
+                                Preferences</p>
+                        </b> <br>
                         <p>© 2021 Starbucks Coffee Company. All rights reserved.</p>
                     </div>
                 </div>
@@ -301,14 +308,25 @@
                             <ion-icon name="bag-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="column-1" style="width: 20%; height:100px; background-color: #1e3932; display: flex; justify-content: flex-end;"></div>
+                    <div class="column-1"
+                        style="width: 20%; height:100px; background-color: #1e3932; display: flex; justify-content: flex-end;">
+                    </div>
                 </div>
             </div>
         </div>
         <!-- script of icon -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+        <script>
+            function changeFood(){
+                document.getElementById("food").style.display="block";
+                document.getElementById("drink").style.display="none";
+            }
+            function changeDrink(){
+                document.getElementById("food").style.display="none";
+                document.getElementById("drink").style.display="block";
+            }
+        </script>
 </body>
 
 
