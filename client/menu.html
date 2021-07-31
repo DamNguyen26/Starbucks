@@ -74,9 +74,10 @@
                 <div class="column-1" style="border-bottom: 1px solid rgba(196, 196, 196, 0.466);">
                 </div>
                 <div class="col-main" style="border-bottom: 1px solid rgba(196, 196, 196, 0.466);">
+
                     <div class="menu-list">
                         <ul>Drinks
-                            <li><a href="#hot-coffees" onclick="changeCoffee()" style="color: rgb(126, 126, 126);">Hot Coffees</a></li>
+                            <li><a href="#hot-coffees" onclick="changeHotCoffees()" style="color: rgb(126, 126, 126);">Hot Coffees</a></li>
                             <li><a href="#hot-teas" onclick="changeTea()" style="color: rgb(126, 126, 126);">Hot Teas</a></li>
                             <li><a href="#hot-drinks" onclick="changeDrink()" style="color: rgb(126, 126, 126);"> Hot Drinks</a></li>
                             <li>Frappuccino® Blended Beverages</li>
@@ -102,8 +103,9 @@
                             <li> Other</li>
                         </ul>
                     </div>
+
                     <!-- CHANGE PART BLOCK / NONE -->
-                    <div class="menu-pic" style=" width: 60% ; height: 100vh; display: block;">
+                    <div class="menu-pic" id="menu" style=" width: 60% ; height: 100vh; display: block;">
                         <div class="title">Menu</div>
                         <div class="sub-title">Drinks</div>
                         <div class="pic-drinks">
@@ -310,9 +312,15 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
-        function changeFood() {
+        function changeToDefault(){
+            document.getElementById("menu").style.display="block";
+            document.getElementById("hot-coffees").style.display="none";
+            
+        }
+        function changeHotCoffees() {
+            document.getElementById("menu").style.display="none";
             document.getElementById("hot-coffees").style.display = "block";
-            document.getElementById("hot-teas").style.display = "none";
+            // document.getElementById("hot-teas").style.display = "none";
         }
 
         function changeDrink() {
