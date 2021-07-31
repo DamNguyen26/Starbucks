@@ -42,10 +42,14 @@
                         <p>Menu</p>
                     </a>
                     <a class="rewards" href="#">
-                        <b><p>rewards</p></b>
+                        <b>
+                            <p>rewards</p>
+                        </b>
                     </a>
                     <a class="gift-cards" href="#">
-                        <b><p>gift cards</p></b>
+                        <b>
+                            <p>gift cards</p>
+                        </b>
                     </a>
                 </div>
 
@@ -72,9 +76,9 @@
                 <div class="col-main" style="border-bottom: 1px solid rgba(196, 196, 196, 0.466);">
                     <div class="menu-list">
                         <ul>Drinks
-                            <li>Hot Coffees</li>
-                            <li> Hot Teas</li>
-                            <li>Hot Drinks</li>
+                            <li><a href="#hot-coffees" onclick="changeCoffee()" style="color: rgb(126, 126, 126);">Hot Coffees</a></li>
+                            <li><a href="#hot-teas" onclick="changeTea()" style="color: rgb(126, 126, 126);">Hot Teas</a></li>
+                            <li><a href="#hot-drinks" onclick="changeDrink()" style="color: rgb(126, 126, 126);"> Hot Drinks</a></li>
                             <li>Frappuccino® Blended Beverages</li>
                             <li> Cold Coffees</li>
                             <li> Iced Teas</li>
@@ -99,7 +103,7 @@
                         </ul>
                     </div>
                     <!-- CHANGE PART BLOCK / NONE -->
-                    <div class="menu-pic" style=" width: 60% ; height: 100vh;">
+                    <div class="menu-pic" style=" width: 60% ; height: 100vh; display: block;">
                         <div class="title">Menu</div>
                         <div class="sub-title">Drinks</div>
                         <div class="pic-drinks">
@@ -152,88 +156,130 @@
                     </div>
                     <!-- END CHANGE PART 1 ALL PRODUCTS -->
 
-                </div>
-                <!-- START CHANGE PART HOT COFFEES -->
 
-                <!-- END CHANGE PART HOT COFFEES -->
-
+                    <!-- START CHANGE PART HOT COFFEES -->
+                    <div class="menu-pic" id="hot-coffees" style=" width: 60% ; height: 100vh; display: none;">
+                        <div class="sub-title-1">Menu / Hot Coffees</div>
+                        <div class="title">Hot Coffees</div>
+                        <div class="sub-title">Americanos</div>
+                        <div class="pic-americanos">
+                            <div class="americano-pic"><img src="images/menu/Drinks/hot-cof.jpg"></div>
+                            <div class="americano-text">Caffè Americano</div>
+                        </div>
+                        <div class="sub-title">Brewed Coffees</div>
+                        <div class="pic-brewed">
+                            <div class="hot-bf-pic"><img src="images/menu/Food/hot-bf.jpg"></div>
+                            <div class="hot-bf-text">Hot Breakfast</div>
+                            <div class="bakery-pic"><img src="images/menu/Food/bakery.jpg"></div>
+                            <div class="bakery-text">Bakery</div>
+                            <div class="lunch-pic"><img src="images/menu/Food/lunch.jpg"></div>
+                            <div class="lunch-text">Lunch</div>
+                            <div class="snack-pic"><img src="images/menu/Food/snack.jpg"></div>
+                            <div class="snack-text">Snacks & Sweets</div>
+                            <div class="yogurt-pic"><img src="images/menu/Food/yogurt.jpg"></div>
+                            <div class="yogurt-text">Oatmeal & Yogurt</div>
+                        </div>
+                        <div class="sub-title">At Home Coffee</div>
+                        <div class="pic-ahc">
+                            <div class="bean-pic"><img src="images/menu/Coffee/bean.jpg"></div>
+                            <div class="bean-text">Whole Bean</div>
+                            <div class="instant-pic"><img src="images/menu/Coffee/instant.jpg"></div>
+                            <div class="instant-text">VIA® Instant</div>
+                        </div>
+                        <!-- END CHANGE PART HOT COFFEES -->
+                    </div>
+                </div>
+                <!-- start footer -->
+                <div class="footer">
+                    <div class="space-top"></div>
+                    <div class="column-1" style="height: 550px;"></div>
+                    <div class="footer-main">
+                        <div class="about-us">
+                            <b>
+                                <p>About Us</p>
+                            </b>
+                            <li>Our Heritage</li>
+                            <li>Our Coffee </li>
+                            <li>Stories and News</li>
+                            <li> Investor Relations</li>
+                            <li> Policies and Standards</li>
+                            <li> Customer Service</li>
+                        </div>
+                        <div class="careers">
+                            <b>
+                                <p>Careers </p>
+                            </b>
+                            <li>Culture and Values</li>
+                            <li> Inclusion, Diversity, and Equity</li>
+                            <li>College Achievement Plan</li>
+                            <li>U.S. Careers</li>
+                            <li>International Careers</li>
+                        </div>
+                        <div class="social">
+                            <b>
+                                <p>Social Impact </p>
+                            </b>
+                            <li> Ethical Sourcing </li>
+                            <li> Leading in Sustainability </li>
+                            <li> Strengthening Communities </li>
+                            <li> Creating Opportunities </li>
+                            <li> Global Social Impact Report</li>
+                        </div>
+                        <div class="business">
+                            <b>
+                                <p>For Business Partners </p>
+                            </b>
+                            <li> Landlord Support Center </li>
+                            <li>Suppliers</li>
+                            <li> Corporate Gift Card Sales</li>
+                            <li> Office and Foodservice Coffee</li>
+                        </div>
+                        <div class="order">
+                            <b>
+                                <p>Order and Pickup </p>
+                            </b>
+                            <li> Order on the App </li>
+                            <li> Order on the Web </li>
+                            <li>Delivery</li>
+                            <li> Order and Pickup Options </li>
+                            <li> Explore and Find Coffee for Home</li>
+                        </div>
+                    </div>
+                    <div class="icon-footer">
+                        <div class="icon">
+                            <div class="spotify">
+                                <i class="fab fa-spotify"></i>
+                            </div>
+                            <div class="facebook">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                            <div class="pinterest">
+                                <i class="fab fa-pinterest"></i>
+                            </div>
+                            <div class="insta">
+                                <i class="fab fa-instagram-square"></i>
+                            </div>
+                            <div class="youtube">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="twitter">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="underfooter" style="margin-bottom: 50px;">
+                        <br>
+                        <b>
+                            <p> Privacy Policy | Terms of Use | CA Supply Chain Act | Submit Your Idea | Cookie
+                                Preferences</p>
+                        </b> <br>
+                        <p>© 2021 Starbucks Coffee Company. All rights reserved.</p>
+                    </div>
+                </div>
             </div>
-            <!-- start footer -->
-            <div class="footer">
-                <div class="space-top"></div>
-                <div class="column-1" style="height: 550px;"></div>
-                <div class="footer-main">
-                    <div class="about-us">
-                        <b><p>About Us</p></b>
-                        <li>Our Heritage</li>
-                        <li>Our Coffee </li>
-                        <li>Stories and News</li>
-                        <li> Investor Relations</li>
-                        <li> Policies and Standards</li>
-                        <li> Customer Service</li>
-                    </div>
-                    <div class="careers">
-                        <b><p>Careers </p></b>
-                        <li>Culture and Values</li>
-                        <li> Inclusion, Diversity, and Equity</li>
-                        <li>College Achievement Plan</li>
-                        <li>U.S. Careers</li>
-                        <li>International Careers</li>
-                    </div>
-                    <div class="social">
-                        <b><p>Social Impact </p></b>
-                        <li> Ethical Sourcing </li>
-                        <li> Leading in Sustainability </li>
-                        <li> Strengthening Communities </li>
-                        <li> Creating Opportunities </li>
-                        <li> Global Social Impact Report</li>
-                    </div>
-                    <div class="business">
-                        <b><p>For Business Partners </p></b>
-                        <li> Landlord Support Center </li>
-                        <li>Suppliers</li>
-                        <li> Corporate Gift Card Sales</li>
-                        <li> Office and Foodservice Coffee</li>
-                    </div>
-                    <div class="order">
-                        <b><p>Order and Pickup </p></b>
-                        <li> Order on the App </li>
-                        <li> Order on the Web </li>
-                        <li>Delivery</li>
-                        <li> Order and Pickup Options </li>
-                        <li> Explore and Find Coffee for Home</li>
-                    </div>
-                </div>
-                <div class="icon-footer">
-                    <div class="icon">
-                        <div class="spotify">
-                            <i class="fab fa-spotify"></i>
-                        </div>
-                        <div class="facebook">
-                            <i class="fab fa-facebook"></i>
-                        </div>
-                        <div class="pinterest">
-                            <i class="fab fa-pinterest"></i>
-                        </div>
-                        <div class="insta">
-                            <i class="fab fa-instagram-square"></i>
-                        </div>
-                        <div class="youtube">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                        <div class="twitter">
-                            <i class="fab fa-twitter"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="underfooter" style="margin-bottom: 50px;">
-                    <br>
-                    <b><p> Privacy Policy | Terms of Use | CA Supply Chain Act | Submit Your Idea | Cookie Preferences</p></b> <br>
-                    <p>© 2021 Starbucks Coffee Company. All rights reserved.</p>
-                </div>
-            </div>
+            <!-- end footer -->
         </div>
-        <!-- end footer -->
+        <!-- start sticky footer -->
         <div class="sticky-footer">
             <div class="content-footer">
                 <div class="column-1" style="width: 20%; height:100px; background-color: #1e3932;"></div>
@@ -253,14 +299,27 @@
                         <ion-icon name="bag-outline"></ion-icon>
                     </div>
                 </div>
-                <div class="column-1" style="width: 20%; height:100px; background-color: #1e3932; display: flex; justify-content: flex-end;"></div>
+                <div class="column-1" style="width: 20%; height:100px; background-color: #1e3932; display: flex; justify-content: flex-end;">
+                </div>
             </div>
         </div>
+        <!-- end sticky footer -->
+
     </div>
     <!-- script of icon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function changeFood() {
+            document.getElementById("hot-coffees").style.display = "block";
+            document.getElementById("hot-teas").style.display = "none";
+        }
 
+        function changeDrink() {
+            document.getElementById("hot-coffees").style.display = "none";
+            document.getElementById("hot-teas").style.display = "block";
+        }
+    </script>
 </body>
 
 
