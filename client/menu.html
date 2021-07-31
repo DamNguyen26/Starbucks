@@ -74,9 +74,10 @@
                 <div class="column-1" style="border-bottom: 1px solid rgba(196, 196, 196, 0.466);">
                 </div>
                 <div class="col-main" style="border-bottom: 1px solid rgba(196, 196, 196, 0.466);">
+
                     <div class="menu-list">
                         <ul>Drinks
-                            <li><a href="#hot-coffees" onclick="changeCoffee()" style="color: rgb(126, 126, 126);">Hot Coffees</a></li>
+                            <li><a href="#hot-coffees" onclick="changeHotCoffees()" style="color: rgb(126, 126, 126);">Hot Coffees</a></li>
                             <li><a href="#hot-teas" onclick="changeTea()" style="color: rgb(126, 126, 126);">Hot Teas</a></li>
                             <!-- <li><a href="#hot-drinks" onclick="changeDrink()" style="color: rgb(126, 126, 126);"> Hot Drinks</a></li> -->
                             <li>Frappuccino® Blended Beverages</li>
@@ -102,8 +103,9 @@
                             <li> Other</li>
                         </ul>
                     </div>
+
                     <!-- CHANGE PART BLOCK / NONE -->
-                    <div class="menu-pic" style=" width: 60% ; height: 100vh; display: block;">
+                    <div class="menu-pic" id="menu" style=" width: 60% ; height: 100vh; display: block;">
                         <div class="title">Menu</div>
                         <div class="sub-title">Drinks</div>
                         <div class="pic-drinks">
@@ -179,16 +181,138 @@
                             <div class="Decaf-Pike-pic"><img src="images/menu/Hot Coffees/Decaf-Pike.jpg"></div>
                             <div class="Decaf-Pike-text">Decaf Pike Place® Roast</div>
                         </div>
-                        <div class="sub-title">At Home Coffee</div>
-                        <div class="pic-ahc">
-                            <div class="bean-pic"><img src="images/menu/Coffee/bean.jpg"></div>
-                            <div class="bean-text">Whole Bean</div>
-                            <div class="instant-pic"><img src="images/menu/Coffee/instant.jpg"></div>
-                            <div class="instant-text">VIA® Instant</div>
+                        <div class="sub-title">Cappuccino</div>
+                        <div class="pic-cappuccino">
+                            <div class="cappuccino-pic"><img src="images/menu/Hot Coffees/Cappuccino.jpg"></div>
+                            <div class="cappuccino-text">Cappuccino</div>
                         </div>
-                        <!-- END CHANGE PART HOT COFFEES -->
+                        <div class="sub-title">Espresso Shots</div>
+                        <div class="pic-espresso">
+                            <div class="espresso-pic"><img src="images/menu/Hot Coffees/Espresso.jpg"></div>
+                            <div class="espresso-text">Espresso</div>
+                            <div class="espresso-con-pic"><img src="images/menu/Hot Coffees/espresso-con.jpg"></div>
+                            <div class="espresso-con-text">Espresso Con Panna</div>
+                        </div>
+                        <div class="sub-title">Flat Whites</div>
+                        <div class="pic-flat">
+                            <div class="flat-pic"><img src="images/menu/Hot Coffees/Flat-white.jpg"></div>
+                            <div class="flat-text">Flat White</div>
+                            <div class="honey-flat-pic"><img src="images/menu/Hot Coffees/Honey-flat.jpg"></div>
+                            <div class="honey-flat-text">Honey Almondmilk Flat White</div>
+                        </div>
+                        <div class="sub-title">Lattes</div>
+                        <div class="pic-latte">
+                            <div class="latte-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="latte-text">Caffè Latte</div>
+                            <div class="cinnamon-latte-pic"><img src="images/menu/Hot Coffees/cinnamon-latte.jpg"></div>
+                            <div class="cinnamon-latte-text">Cinnamon Dolce Latte</div>
+                            <div class="reserve-latte-pic"><img src="images/menu/Hot Coffees/Reserve-latte.jpg"></div>
+                            <div class="reserve-latte-text">Starbucks Reserve® Latte</div>
+                            <div class="hazenut-latte-pic"><img src="images/menu/Hot Coffees/Hazelnut-latte.jpg"></div>
+                            <div class="hazenut-latte-text">Starbucks Reserve® Hazelnut Bianco Latte</div>
+                            <div class="Vanilla-latte-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="Vanilla-latte-text">Starbucks® Blonde Vanilla Latte</div>
+                        </div>
+                        <div class="sub-title">Macchiatos</div>
+                        <div class="pic-macchiato">
+                            <div class="caramel-pic"><img src="images/menu/Hot Coffees/caramel-macchiato.jpg"></div>
+                            <div class="caramel-text">Caramel pic-macchiato</div>
+                            <div class="espresso-macchiato-pic"><img src="images/menu/Hot Coffees/espresso-macchiato.jpg"></div>
+                            <div class="espresso-macchiato-text">Espresso Macchiato</div>
+                        </div>
+                        <div class="sub-title">Mochas</div>
+                        <div class="pic-mocha">
+                            <div class="mocha-pic"><img src="images/menu/Hot Coffees/mocha.jpg"></div>
+                            <div class="mocha-text">Caffè Mocha</div>
+                            <div class="choco-mocha-pic"><img src="images/menu/Hot Coffees/choco-mocha.jpg"></div>
+                            <div class="choco-mocha-text">Starbucks Reserve® Dark Chocolate Mocha </div>
+                            <div class="white-mocha-pic"><img src="images/menu/Hot Coffees/white-mocha.jpg"></div>
+                            <div class="white-mocha-text">White Chocolate Mocha</div>
+                        </div>
+                        <div class="sub-title">Clover® Brewed Coffees</div>
+                        <div class="pic-clover">
+                            <div class="rwanda-pic"><img src="images/menu/Hot Coffees/rwanda.jpg"></div>
+                            <div class="rwanda-text">Rwanda Hingakawa Clover® Starbucks Reserve® </div>
+                            <div class="colombia-pic"><img src="images/menu/Hot Coffees/cinnamon-latte.jpg"></div>
+                            <div class="colombia-text">Cinnamon Dolce Latte</div>
+                            <div class="bolivia-pic"><img src="images/menu/Hot Coffees/Reserve-latte.jpg"></div>
+                            <div class="bolivia-text">Starbucks Reserve® Latte</div>
+                            <div class="ecuador-pic"><img src="images/menu/Hot Coffees/Hazelnut-latte.jpg"></div>
+                            <div class="ecuador-text">Starbucks Reserve® Hazelnut Bianco Latte</div>
+                            <div class="papua-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="papua-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="brazil-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="brazil-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="place-roast-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="place-roast-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="yukon-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="yukon-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="gold-coast-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="gold-coast-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="breakfast-blend-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="breakfast-blend-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="kenya-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="kenya-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="veranda-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="veranda-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="guatemala-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="guatemala-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="willow-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="willow-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="decaf-sumatra-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="decaf-sumatra-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="verona-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="verona-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="decaf-pike-pic"><img src="images/menu/Hot Coffees/Decaf-Pike.jpg"></div>
+                            <div class="decaf-pike-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="espresso-roast-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="espresso-roast-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="decaf-espresso-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="decaf-espresso-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="ethiopia-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="ethiopia-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="french-roast-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="french-roast-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="italian-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="italian-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="komodo-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="komodo-text">Starbucks® Blonde Vanilla Latte</div>
+                            <div class="sumatra-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                            <div class="sumatra-text">Starbucks® Blonde Vanilla Latte</div>
+                        </div>
+                        <div class="sub-title">Coffee Travelers</div>
+                        <div class="pic-traveler">
+                            <div class="travel-pic1"><img src="images/menu/Hot Coffees/mocha.jpg"></div>
+                            <div class="travel-text1">Caffè Mocha</div>
+                            <div class="travel-pic2"><img src="images/menu/Hot Coffees/mocha.jpg"></div>
+                            <div class="travel-text2">Caffè Mocha</div>
+                            <div class="travel-pic3"><img src="images/menu/Hot Coffees/mocha.jpg"></div>
+                            <div class="travel-text3">Caffè Mocha</div>
+                            <div class="travel-pic4"><img src="images/menu/Hot Coffees/mocha.jpg"></div>
+                            <div class="travel-text4">Caffè Mocha</div>
+                        </div>
                     </div>
+                    <!-- END CHANGE PART HOT COFFEES -->
+
+
+                    <div class="menu-pic" id="" style=" width: 60% ; height: 100vh; display: none;">
+
+                    </div>
+
+                    <div class="menu-pic" id="" style=" width: 60% ; height: 100vh; display: none;">
+
+                    </div>
+
+                    <div class="menu-pic" id="" style=" width: 60% ; height: 100vh; display: none;">
+
+                    </div>
+
+                    <div class="menu-pic" id="" style=" width: 60% ; height: 100vh; display: none;">
+
+                    </div>
+
                 </div>
+
                 <!-- start footer -->
                 <div class="footer">
                     <div class="space-top"></div>
@@ -310,9 +434,9 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
-        function changeCoffee() {
+        function changeHotCoffees() {
+            document.getElementById("menu").style.display = "none";
             document.getElementById("hot-coffees").style.display = "block";
-            document.getElementById("hot-teas").style.display = "none";
         }
 
         function changeTea() {
