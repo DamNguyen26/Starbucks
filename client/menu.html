@@ -78,7 +78,7 @@
                         <ul>Drinks
                             <li><a href="#hot-coffees" onclick="changeCoffee()" style="color: rgb(126, 126, 126);">Hot Coffees</a></li>
                             <li><a href="#hot-teas" onclick="changeTea()" style="color: rgb(126, 126, 126);">Hot Teas</a></li>
-                            <li><a href="#hot-drinks" onclick="changeDrink()" style="color: rgb(126, 126, 126);"> Hot Drinks</a></li>
+                            <!-- <li><a href="#hot-drinks" onclick="changeDrink()" style="color: rgb(126, 126, 126);"> Hot Drinks</a></li> -->
                             <li>Frappuccino® Blended Beverages</li>
                             <li> Cold Coffees</li>
                             <li> Iced Teas</li>
@@ -173,11 +173,11 @@
                             <div class="mistro-pic"><img src="images/menu/Hot Coffees/Mistro.jpg"></div>
                             <div class="mistro-text">Caffè Mistro</div>
                             <div class="dark-roast-pic"><img src="images/menu/Hot Coffees/Dark-Roast.jpg"></div>
-                            <div class="lunch-text">Featured Starbucks® Dark Roast Coffee</div>
-                            <div class="snack-pic"><img src="images/menu/Food/snack.jpg"></div>
-                            <div class="snack-text">Snacks & Sweets</div>
-                            <div class="yogurt-pic"><img src="images/menu/Food/yogurt.jpg"></div>
-                            <div class="yogurt-text">Oatmeal & Yogurt</div>
+                            <div class="dark-roast-text">Featured Starbucks® Dark Roast Coffee</div>
+                            <div class="Pike-Roast-pic"><img src="images/menu/Hot Coffees/Pike-Place.jpg"></div>
+                            <div class="Pike-Roast-text">Pike Place® Roast</div>
+                            <div class="Decaf-Pike-pic"><img src="images/menu/Hot Coffees/Decaf-Pike.jpg"></div>
+                            <div class="Decaf-Pike-text">Decaf Pike Place® Roast</div>
                         </div>
                         <div class="sub-title">At Home Coffee</div>
                         <div class="pic-ahc">
@@ -310,12 +310,12 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
-        function changeFood() {
+        function changeCoffee() {
             document.getElementById("hot-coffees").style.display = "block";
             document.getElementById("hot-teas").style.display = "none";
         }
 
-        function changeDrink() {
+        function changeTea() {
             document.getElementById("hot-coffees").style.display = "none";
             document.getElementById("hot-teas").style.display = "block";
         }
