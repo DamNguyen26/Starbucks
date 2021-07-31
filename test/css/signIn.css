@@ -50,11 +50,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 92vh;
-    background-color: tomato;
+    background-color: white;
 }
 
 .box {
-    width: 200px;
-    height: 200px;
-    background-color: violet;
+    width: 500px;
+    height: 900px;
+    background-color: purple;
 }
