@@ -58,3 +58,47 @@ body {
     height: 900px;
     background-color: purple;
 }
+
+
+/* body main */
+
+.pre-main {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(5, 50px);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.email {
+    grid-row: 1/2;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#psw {
+    grid-row: 2/3;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    border: 1px solid black;
+}
