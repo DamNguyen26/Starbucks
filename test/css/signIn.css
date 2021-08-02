@@ -136,3 +136,67 @@ body {
 .tooltip:hover .tooltip-text {
     visibility: visible;
 }
+
+
+/* #psw {
+    grid-row: 2/3;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    border: 1px solid black;
+} */
+
+.login-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    padding: 25px;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+    height: 60px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -8px;
+    left: 25px;
+    color: green;
+    background-color: white;
+    font-size: 12px;
+    padding: 0px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 3px solid green;
+}
