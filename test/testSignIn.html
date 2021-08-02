@@ -37,32 +37,34 @@
     </div>
     <!-- end header -->
 
-    <div class="column" id="left" style="background-color: white; height: 1100px; width: 40%;"></div>
+    <div class="column" id="left" style="background-color: white; height: 1100px; width: 30%;"></div>
 
     <!-- sign in -->
-    <div class="column" id="left" style="background-color: black; height: 800px; width: 20%;">
+    <div class="column" id="left" style="background-color: black; height: 800px; width: 40%;">
         <div class="container">
             <div class="box">
                 <!-- text header -->
+                <div style="background-color: white; height: 20px; margin-top: 100px;">
+                </div>
                 <div class="pre-main" style=" height: 100px;">
                     <h1>Sign in or create an account</h1>
                 </div>
 
-                <div style="background-color: white; height: 50px;">
-                </div>
 
-                <div class="form" style="background-color: rgb(185, 163, 163); height: 375px; ">
+                <div class="form" style="background-color: rgb(185, 163, 163); height: 500px; ">
+                    <div class="input">
+                        <input type="text" placeholder="Username or email address" name="email" id="email" class="form-input">
 
-                    <input type="text" placeholder="Username or email address" name="email" required id="email">
-
-                    <input type="password" placeholder="Password" name="psw" required id="psw">
-
+                        <input type="password" placeholder="Password" name="psw" id="psw" class="form-input">
+                    </div>
                     <label>
-                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Keep me signed in. <a href="#">
+                        <input type="checkbox" checked="checked" name="remember" class="checkbox"> Keep me signed in. <a href="#" style="color: #008248;">
                            <b>Details</b> </a>
                     </label>
                     <div class="forgot">
-                        <div class="tooltip">Forgot your username?</div>
+                        <div class="tooltip">Forgot your username?
+                            <span class="tooltip-text">You can now use your email instead of a username.</span>
+                        </div>
                         <a href="#" id="forgotpsw">Forgot your password?</a>
                     </div>
 
@@ -84,7 +86,7 @@
         </div>
     </div>
 
-    <div class="column" id="right" style="background-color: white; height: 1100px; width: 40%;"></div>
+    <div class="column" id="right" style="background-color: white; height: 1100px; width: 30%;"></div>
     <hr>
 
     <div class="contain" style="display: flex; justify-content: center; align-items: center; background-color: white;">
