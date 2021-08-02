@@ -44,30 +44,14 @@
         <div class="container">
             <div class="box">
                 <!-- text header -->
-                <div style="background-color: white; height: 20px; margin-top: 100px;">
-                </div>
+
                 <div class="pre-main" style=" height: 100px;">
                     <h1>Sign in or create an account</h1>
                 </div>
+                <div style="background-color: white; height: 90px; ">
+                </div>
 
 
-                <!-- <div class="form" style="background-color: rgb(185, 163, 163); height: 500px; ">
-                    <div class="input">
-                        <input type="text" placeholder="Username or email address" name="email" id="email" class="form-input">
-
-                        <input type="password" placeholder="Password" name="psw" id="psw" class="form-input">
-                    </div>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember" class="checkbox"> Keep me signed in. <a href="#" style="color: #008248;">
-                           <b>Details</b> </a>
-                    </label>
-                    <div class="forgot">
-                        <div class="tooltip">Forgot your username?
-                            <span class="tooltip-text">You can now use your email instead of a username.</span>
-                        </div>
-                        <a href="#" id="forgotpsw">Forgot your password?</a>
-                <div style="background-color: white; height: 50px;">
-                </div> -->
 
                 <div class="body">
                     <div class="login-box">
@@ -86,7 +70,10 @@
                                     <b>Details</b> </a>
                             </label>
                             <div class="forgot">
-                                <div class="tooltip">Forgot your username?</div>
+                                <div class="tooltip">
+                                    <a id="tooltip-user"></a>Forgot your username?</a>
+                                    <span class="tooltip-text">You can now use your email instead of a username.</span>
+                                </div>
                                 <a href="#" id="forgotpsw">Forgot your password?</a>
                             </div>
                             <div class="clearfix">
@@ -128,6 +115,17 @@
             </div>
         </div>
     </div>
+
+
+    <!-- <script>
+        var button1 = document.querySelectorAll('#tooltip-user');
+        button1.onclick = buttonClicked;
+
+        function buttonClicked() {
+            var tooltip = document.querySelectorAll('.tooltip-text');
+            tooltip.style.visibility = 'visible';
+        }
+    </script> -->
 </body>
 
 </html>
