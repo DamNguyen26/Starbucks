@@ -55,17 +55,18 @@ body {
 }
 
 
-/* .box {
+.box {
     width: 600px;
     height: 900px;
-    background-color: rgb(212, 59, 212);
-    position: absolute;
-} */
+    background-color: white;
+    /* position: absolute; */
+}
 
 
 /* body main */
 
 .pre-main {
+    top: 10px;
     font-size: 13px;
     display: flex;
     justify-content: center;
@@ -159,7 +160,7 @@ body {
 
 .login-box {
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     width: 500px;
     padding: 0 25px;
@@ -167,7 +168,7 @@ body {
     background: white;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
     border-radius: 10px;
-    height: 400px;
+    height: 800px;
 }
 
 .login-box .user-box {

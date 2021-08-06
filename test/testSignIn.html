@@ -51,8 +51,6 @@
                 <div style="background-color: white; height: 90px; ">
                 </div>
 
-
-
                 <div class="body">
                     <div class="login-box">
                         <form>
@@ -65,18 +63,21 @@
                                 <label>Password</label>
                             </div>
                             <label>
-                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Keep me
-                                signed in. <a href="#">
-                                    <b>Details</b> </a>
+                                <label class="check"><span>Keep me signed in. </span><a href="#"
+                                        style="color: green;"><b>Details</b></a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
                             </label>
                             <div class="forgot">
                                 <div class="tooltip">
                                     <a id="tooltip-user"></a>Forgot your username?</a>
                                     <span class="tooltip-text">You can now use your email instead of a username.</span>
                                 </div>
-                                <a href="#" id="forgotpsw">Forgot your password?</a>
+                                <a href="https://www.starbucks.com/account/forgot-password" id="forgotpsw">Forgot your
+                                    password?</a>
                             </div>
-                            <div class="clearfix">
+                            <div class="endform">
                                 <button type="submit" class="signupbtn">Sign In</button>
                             </div>
                         </form>
@@ -90,7 +91,8 @@
                 </div>
                 <div class="under-main" style="background-color: rgb(189, 59, 59); height: 300px;">
                     <h4>JOIN STARBUCKS® REWARDS</h4>
-                    <p>Join Starbucks® Rewards to earn free food and <br> drinks, get free refills, pay and order with your <br> phone, and more.</p>
+                    <p>Join Starbucks® Rewards to earn free food and <br> drinks, get free refills, pay and order with
+                        your <br> phone, and more.</p>
                     <a href="#">Join now</a>
                 </div>
             </div>
@@ -117,15 +119,14 @@
     </div>
 
 
-    <!-- <script>
-        var button1 = document.querySelectorAll('#tooltip-user');
-        button1.onclick = buttonClicked;
-
-        function buttonClicked() {
-            var tooltip = document.querySelectorAll('.tooltip-text');
-            tooltip.style.visibility = 'visible';
+    <script>
+        // if(document.getElementsByClassName("user-box"==="")){
+        //     alert("rong");
+        // }
+        if (document.getElementsByClassName("user-box").value.length == 0) {
+            alert("empty")
         }
-    </script> -->
+    </script>
 </body>
 
 </html>

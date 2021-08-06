@@ -1,0 +1,187 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/signUp.css">
+    <style>
+        .column {
+            float: left;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="space-left"></div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/main/logo.png" width="60px">
+            </a>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <div class="column" id="left" style="background-color: white; height: 1100px; width: 30%;"></div>
+
+    <!-- sign in -->
+    <div class="column" id="middle" style="background-color: black; height: 800px; width: 40%;">
+        <div class="container">
+            <div class="box">
+                <!-- text header -->
+
+                <div class="pre-main" style="display: flex; flex-direction: column;">
+                    <div>
+                        <h1>Sign in or create an account</h1>
+                    </div>
+                    <div>
+                        <h1>STARBUCKS® REWARDS </h1>
+                    </div>
+                    <div>
+                        <h6>Join Starbucks Rewards to earn Stars for free food and drinks, any way you pay. Get access
+                            to mobile ordering, a birthday Reward, and moremore.</h6>
+                    </div>
+                </div>
+
+                <div class="body">
+                    <div class="login-box" id="formSignUp">
+                        <form>
+                            <h1>Personal Information</h1>
+                            <div class="user-box">
+                                <input type="text" name="" required>
+                                <label>Username or email address</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="password" name="" required>
+                                <label>Password</label>
+                            </div>
+
+                            <h1>Account Security</h1>
+                            <div class="user-box">
+                                <input type="text" name="" required>
+                                <label>Username or email address</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="password" name="" required>
+                                <label>Password</label>
+                            </div>
+
+                            <a href="#body" id="hide" onclick="giftCard()">Already have a Starbucks gift card?</a>
+
+                            <div id="giftCard" style="display: none;">
+                                <a href="#body" onclick="hide()">Already have a Starbucks gift card?</a>
+
+                                <h1>Account Security</h1>
+                                <div class="user-box">
+                                    <input type="text" name="" required>
+                                    <label>Username or email address</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="password" name="" required>
+                                    <label>Password</label>
+                                </div>
+                            </div>
+
+                            <div style="display: flex; flex-direction: column;">
+                                <div>
+                                    <h5>COLLECT MORE STARS & EARN REWARDS</h5>
+                                </div>
+                                <div>
+                                    <h5>Email is a great way to know about offers and what’s new from Starbucks.</h5>
+                                </div>
+                            </div>
+
+                            <label class="check">
+                                <p>Yes, I’d like email from Starbucks</p>
+                                <p>
+                                    Know about initiatives, announcements and product offers
+                                </p>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <div style="display: flex; flex-direction: column;">
+                                <h5>TERMS OF USE</h5>
+                            </div>
+
+                            <label class="check">
+                                <p> <span>I agree to the</span><a href="https://www.starbucks.com/rewards/terms"
+                                        target="_blank" style="text-decoration: none; color: green;">Starbucks® Rewards
+                                        Terms <i class="fas fa-external-link-alt"
+                                            style="text-decoration: none;"></i></a></p>
+                                <p> <span>and the </span><a href="https://www.starbucks.com/terms/manage-gift-cards"
+                                        target="_blank" style="text-decoration: none; color: green;">Starbucks Card
+                                        Terms <i class="fas fa-external-link-alt"
+                                            style="text-decoration: none;"></i>.</a></p>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="endform">
+                                <button type="submit" class="signupbtn">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div style="background-color: white; height: 50px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="column" id="right" style="background-color: white; height: 1100px; width: 30%;"></div>
+    <hr>
+
+    <div class="contain" style="display: flex; justify-content: center; align-items: center; background-color: white;">
+        <div class="box" style="background-color: rgb(175, 98, 219); height: 200px; width: 400px;">
+            <div class="content">
+                <a href="findAStore.html">Find a store </a>
+                <div class="contentFooter">
+                    <p> Responsibility </p>
+                    <p>Web Accessibility</p>
+                    <p> Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p> Cookie Preferences</p>
+                </div>
+                <p>© 2021 Starbucks</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function giftCard() {
+            document.getElementById("giftCard").style.display = "block";
+            document.getElementById("formSignUp").style.height = "1100px";
+            document.getElementById("formSignUp").style.top = "73%";
+            document.getElementById("left").style.height = "1500px";
+            document.getElementById("right").style.height = "1500px";
+            document.getElementById("hide").style.display = "none";
+        }
+
+        function hide() {
+            document.getElementById("giftCard").style.display = "none";
+            document.getElementById("formSignUp").style.height = "900px";
+            document.getElementById("formSignUp").style.top = "65%";
+            document.getElementById("left").style.height = "1200px";
+            document.getElementById("right").style.height = "1200px";
+            document.getElementById("hide").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
