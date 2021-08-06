@@ -121,6 +121,7 @@ body {
     position: relative;
     display: inline-block;
     width: 100%;
+    margin-top: 60px;
 }
 
 .tooltip .tooltip-text {
@@ -167,11 +168,12 @@ body {
     background: white;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
     border-radius: 10px;
-    height: 400px;
+    height: 450px;
 }
 
 .login-box .user-box {
     position: relative;
+    top: 50px;
 }
 
 .login-box .user-box input {
@@ -211,12 +213,15 @@ input[type=password]:focus {
     border: 3px solid green;
 }
 
+
 /* The container */
+
 .check {
     display: block;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
+    top: 40px;
     font-size: 18;
     cursor: pointer;
     -webkit-user-select: none;
@@ -225,7 +230,9 @@ input[type=password]:focus {
     user-select: none;
 }
 
+
 /* Hide the browser's default checkbox */
+
 .check input {
     position: absolute;
     opacity: 0;
@@ -234,7 +241,9 @@ input[type=password]:focus {
     width: 0;
 }
 
+
 /* Create a custom checkbox */
+
 .checkmark {
     border-radius: 5px;
     position: absolute;
@@ -245,29 +254,39 @@ input[type=password]:focus {
     background-color: #eee;
 }
 
+
 /* On mouse-over, add a grey background color */
+
 .check:hover input~.checkmark {
     background-color: #ccc;
 }
 
+
 /* When the checkbox is checked, add a blue background */
+
 .check input:checked~.checkmark {
     background-color: green;
 }
 
+
 /* Create the checkmark/indicator (hidden when not checked) */
+
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
+
 /* Show the checkmark when checked */
+
 .check input:checked~.checkmark:after {
     display: block;
 }
 
+
 /* Style the checkmark/indicator */
+
 .check .checkmark:after {
     left: 9px;
     top: 5px;
