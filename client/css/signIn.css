@@ -31,7 +31,7 @@ body {
     height: 100px;
     height: 90px;
     font-family: 'Montserrat', sans-serif;
-    border-bottom: 1px solid rgba(201, 201, 201, 0.418);
+    border-bottom: 2px solid rgba(201, 201, 201, 0.418);
 }
 
 .space-left {
@@ -55,34 +55,20 @@ body {
 }
 
 
-/* .box {
-    width: 600px;
-    height: 900px;
-    background-color: rgb(212, 59, 212);
-    position: absolute;
-} */
-
-
 /* body main */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 .pre-main {
     font-size: 13px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
-
-
-/* .form {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: repeat(5, 40px);
-    gap: 30px;
-    padding: 20px 20px;
-    width: 500px;
-    border-radius: 1rem;
-    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-} */
 
 .input {
     position: relative;
@@ -122,6 +108,9 @@ body {
     display: inline-block;
     width: 100%;
     margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .tooltip .tooltip-text {
@@ -143,6 +132,8 @@ body {
 #forgotpsw {
     color: #008248;
     font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .signupbtn {
@@ -297,4 +288,63 @@ input[type=password]:focus {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.under-main {
+    border-radius: 10px;
+    background-color: rgb(241, 248, 245);
+    height: 250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    align-items: center;
+    gap: 20px;
+}
+
+.undermain-title>h3 {
+    letter-spacing: 1px;
+    color: rgb(0, 117, 74);
+}
+
+.undermain-content>p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.undermain-link>a {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(0, 117, 74);
+    font-weight: bold;
+    font-size: 17px;
+    border-color: rgb(0, 117, 74);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 30px 20px;
+    justify-content: center;
+}
+
+.find-store>a {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(0, 117, 74);
+    font-weight: bold;
+    border-color: rgb(0, 117, 74);
+    margin: 0 10px;
+}
+
+.contentFooter {
+    line-height: 30px;
+}
+
+.copyright {
+    margin: 10px 10px;
 }
