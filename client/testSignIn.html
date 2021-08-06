@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/signIn.css">
+    <style>
+        .column {
+            float: left;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="space-left"></div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/main/logo.png" width="60px">
+            </a>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <div class="column" id="left" style="background-color: white; height: 1100px; width: 30%;"></div>
+
+    <!-- sign in -->
+    <div class="column" id="left" style="background-color: black; height: 800px; width: 40%;">
+        <div class="container">
+            <div class="box">
+                <!-- text header -->
+
+                <div class="pre-main" style=" height: 100px;">
+                    <h1>Sign in or create an account</h1>
+                </div>
+                <div style="background-color: white; height: 90px; ">
+                </div>
+
+                <div class="body">
+                    <div class="login-box">
+                        <form>
+                            <div class="user-box">
+                                <input type="text" name="" required>
+                                <label>Username or email address</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="password" name="" required>
+                                <label>Password</label>
+                            </div>
+                            <label>
+                                <label class="check"><span>Keep me signed in. </span><a href="#"
+                                        style="color: green;"><b>Details</b></a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </label>
+                            <div class="forgot">
+                                <div class="tooltip">
+                                    <a id="tooltip-user"></a>Forgot your username?</a>
+                                    <span class="tooltip-text">You can now use your email instead of a username.</span>
+                                </div>
+                                <a href="https://www.starbucks.com/account/forgot-password" id="forgotpsw">Forgot your
+                                    password?</a>
+                            </div>
+                            <div class="clearfix">
+                                <button type="submit" class="signupbtn">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="form" style="background-color: white; height: 375px; ">
+                </div>
+
+                <div style="background-color: white; height: 50px;">
+                </div>
+                <div class="under-main" style="background-color: rgb(189, 59, 59); height: 300px;">
+                    <h4>JOIN STARBUCKS® REWARDS</h4>
+                    <p>Join Starbucks® Rewards to earn free food and <br> drinks, get free refills, pay and order with
+                        your <br> phone, and more.</p>
+                    <a href="#">Join now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="column" id="right" style="background-color: white; height: 1100px; width: 30%;"></div>
+    <hr>
+
+    <div class="contain" style="display: flex; justify-content: center; align-items: center; background-color: white;">
+        <div class="box" style="background-color: rgb(175, 98, 219); height: 200px; width: 400px;">
+            <div class="content">
+                <a href="findAStore.html">Find a store </a>
+                <div class="contentFooter">
+                    <p> Responsibility </p>
+                    <p>Web Accessibility</p>
+                    <p> Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p> Cookie Preferences</p>
+                </div>
+                <p>© 2021 Starbucks</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // if(document.getElementsByClassName("user-box"==="")){
+        //     alert("rong");
+        // }
+        if (document.getElementsByClassName("user-box").value.length == 0) {
+            alert("empty")
+        }
+    </script>
+</body>
+
+</html>
