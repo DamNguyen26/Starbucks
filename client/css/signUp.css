@@ -54,7 +54,6 @@ body {
     position: relative;
 }
 
-
 .box {
     width: 600px;
     height: 900px;
@@ -212,7 +211,9 @@ input[type=password]:focus {
     border: 3px solid green;
 }
 
+
 /* The container */
+
 .check {
     display: block;
     position: relative;
@@ -226,7 +227,9 @@ input[type=password]:focus {
     user-select: none;
 }
 
+
 /* Hide the browser's default checkbox */
+
 .check input {
     position: absolute;
     opacity: 0;
@@ -235,7 +238,9 @@ input[type=password]:focus {
     width: 0;
 }
 
+
 /* Create a custom checkbox */
+
 .checkmark {
     border-radius: 5px;
     position: absolute;
@@ -246,29 +251,39 @@ input[type=password]:focus {
     background-color: #eee;
 }
 
+
 /* On mouse-over, add a grey background color */
+
 .check:hover input~.checkmark {
     background-color: #ccc;
 }
 
+
 /* When the checkbox is checked, add a blue background */
+
 .check input:checked~.checkmark {
     background-color: green;
 }
 
+
 /* Create the checkmark/indicator (hidden when not checked) */
+
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
+
 /* Show the checkmark when checked */
+
 .check input:checked~.checkmark:after {
     display: block;
 }
 
+
 /* Style the checkmark/indicator */
+
 .check .checkmark:after {
     left: 9px;
     top: 5px;
@@ -279,4 +294,63 @@ input[type=password]:focus {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.under-main {
+    border-radius: 10px;
+    background-color: rgb(241, 248, 245);
+    height: 250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    align-items: center;
+    gap: 20px;
+}
+
+.undermain-title>h3 {
+    letter-spacing: 1px;
+    color: rgb(0, 117, 74);
+}
+
+.undermain-content>p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.undermain-link>a {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(0, 117, 74);
+    font-weight: bold;
+    font-size: 17px;
+    border-color: rgb(0, 117, 74);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 30px 20px;
+    justify-content: center;
+}
+
+.find-store>a {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(0, 117, 74);
+    font-weight: bold;
+    border-color: rgb(0, 117, 74);
+    margin: 0 10px;
+}
+
+.contentFooter {
+    line-height: 30px;
+}
+
+.copyright {
+    margin: 10px 10px;
 }
