@@ -186,20 +186,27 @@
     /* menu */
     
     .column-1 {
-        float: left;
-        width: 120px;
         height: auto;
         display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: 2px solid rgba(201, 201, 201, 0.418);
     }
     
     .space-top {
         width: auto;
         height: 40px;
     }
+    /* test */
     
     .col-main {
-        display: flex;
+        /* display: flex; */
         height: auto;
+        display: grid;
+        grid-template-columns: 130px 160px 120px 1500px;
+        grid-template-rows: repeat(3, auto);
+        margin-top: 14vh;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.466);
         /* CHINH LA MAY */
         /* LOI TAI MAY */
         /* BECAUSE OF YOU */
@@ -207,26 +214,79 @@
     }
     
     .menu-list {
-        width: 240px;
         height: auto;
-        /* line-height: 2.5; */
+        grid-column: 2/3;
+        line-height: 20px;
     }
     
-    ul {
-        font-weight: 600;
-        font-size: 20px;
-        margin-bottom: 20px;
+    .menu-drinks>h3 {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     
-    li {
-        padding: 15px 0;
-        font-size: 16px;
+    .menu-food>h3 {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: black;
+    }
+    
+    .menu-coffee>h3 {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: black;
+    }
+    
+    .menu-merchandise>h3 {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: black;
+    }
+    
+    .menu-drinks>p {
+        padding: 10px 0;
+        font-size: 15px;
         color: rgb(126, 126, 126);
+        font-weight: 600;
+    }
+    
+    .menu-food>p {
+        padding: 10px 0;
+        font-size: 15px;
+        color: rgb(126, 126, 126);
+        font-weight: 600;
+    }
+    
+    .menu-coffee>p {
+        padding: 10px 0;
+        font-size: 15px;
+        color: rgb(126, 126, 126);
+        font-weight: 600;
+    }
+    
+    .menu-merchandise>p {
+        padding: 10px 0;
+        font-size: 15px;
+        color: rgb(126, 126, 126);
+        font-weight: 600;
+    }
+    
+    .menu-drinks,
+    .menu-food,
+    .menu-coffee,
+    .menu-merchandise {
+        margin-bottom: 30px;
     }
     /* menu pic main start */
     
     .menu-pic {
-        margin-left: 70px;
+        grid-column: 4/5;
+        grid-row: 1/2;
+        height: auto;
+        display: flex;
     }
     
     .title {
@@ -539,81 +599,111 @@
     /* end body main menu */
     /* start footer */
     
+    .footer {
+        grid-column: 2/5;
+        grid-row: 2/3;
+        border-top: 2px solid rgba(201, 201, 201, 0.418);
+        margin-bottom: 10vh;
+    }
+    
     .footer-main {
-        display: flex;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px 400px 100px;
+        grid-row: auto;
         gap: 30px;
         border-bottom: 1px solid rgba(201, 201, 201, 0.418);
+        bottom: 100px;
     }
     
     .about-us {
-        font-size: 13px;
-        color: grey;
-        font-weight: 600;
+        grid-column: 1/2;
         width: 200px;
         margin: 10px 0;
+    }
+    
+    .about-us>h3 {
+        font-size: 17px;
         margin-bottom: 30px;
+        color: black;
     }
     
     .about-us p {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 15px;
-        color: black;
+        color: grey;
+        font-weight: 600;
     }
     
     .careers {
-        font-size: 13px;
-        color: grey;
-        font-weight: 600;
-        width: 150px;
+        grid-column: 2/3;
         margin: 10px 0;
     }
     
-    .careers p {
-        font-size: 16px;
-        margin-bottom: 15px;
+    .careers>h3 {
+        font-size: 17px;
+        margin-bottom: 30px;
         color: black;
+    }
+    
+    .careers>p {
+        font-size: 14px;
+        margin-bottom: 15px;
+        color: grey;
+        font-weight: 600;
     }
     
     .social {
-        font-size: 13px;
-        color: grey;
-        font-weight: 600;
-        width: 180px;
+        grid-column: 3/4;
         margin: 10px 0;
     }
     
-    .social p {
-        font-size: 16px;
-        margin-bottom: 15px;
+    .social>h3 {
+        font-size: 17px;
+        margin-bottom: 30px;
         color: black;
+    }
+    
+    .social>p {
+        font-size: 14px;
+        margin-bottom: 15px;
+        color: grey;
+        font-weight: 600;
     }
     
     .business {
-        font-size: 13px;
-        color: grey;
-        font-weight: 600;
-        width: 180px;
+        grid-column: 4/5;
         margin: 10px 0;
     }
     
-    .business p {
-        font-size: 16px;
-        margin-bottom: 15px;
+    .business>h3 {
+        font-size: 17px;
+        margin-bottom: 30px;
         color: black;
+    }
+    
+    .business>p {
+        font-size: 14px;
+        margin-bottom: 15px;
+        color: grey;
+        font-weight: 600;
     }
     
     .order {
-        font-size: 13px;
-        color: grey;
-        font-weight: 600;
-        width: 180px;
+        grid-column: 5/6;
         margin: 10px 0;
     }
     
-    .order p {
-        font-size: 16px;
-        margin-bottom: 15px;
+    .order>h3 {
+        font-size: 17px;
+        margin-bottom: 30px;
         color: black;
+    }
+    
+    .order>p {
+        font-size: 14px;
+        margin-bottom: 15px;
+        color: grey;
+        font-weight: 600;
     }
     
     .icon-footer {
@@ -651,6 +741,8 @@
     /* start sticky footer */
     
     .sticky-footer {
+        grid-column: 1/5;
+        grid-row: 3/4;
         width: 100%;
         height: 100px;
         background-color: #1e3932;
@@ -710,8 +802,7 @@
     }
     /* end sticky footer */
     /* sticky effect */
-    
-    .container {
+    /* .container {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -721,6 +812,22 @@
         flex: 1;
         overflow: auto;
         background-color: white;
+    } */
+    
+    .sticky-header,
+    .sticky-footer {
+        width: 100%;
+        position: fixed;
+    }
+    
+    .sticky-header {
+        top: 0;
+        display: block;
+        background: white;
+    }
+    
+    .sticky-footer {
+        bottom: 0;
     }
     /* end sticky effect */
     /* start change hot coffee*/
@@ -1937,9 +2044,9 @@
     .pic-hot-choco {
         display: grid;
         grid-template-columns: repeat(12, 80px);
-        margin: 50px 0;
         grid-template-rows: 150px 30px;
         gap: 15px;
+        margin: 50px 0;
     }
     
     .pic-hot-choco img {
@@ -2093,3 +2200,916 @@
         font-size: 18px;
         margin-left: -90px;
     }
+    
+    .pic-coffee-frap {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        grid-template-rows: 150px 80px 30px 150px 60px 30px 150px 60px 30px;
+        gap: 15px;
+        margin: 50px 0;
+    }
+    
+    .pic-coffee-frap img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .straw-frappuccino-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .straw-frappuccino-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .mocha-cookie-pic {
+        grid-column: 5/7;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mocha-cookie-text {
+        grid-column: 5/7;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .caramel-ribbon-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caramel-ribbon-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .espresso-frap-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .espresso-frap-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .caffe-vanilla-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caffe-vanilla-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .caramel-frap-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caramel-frap-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .coffee-frap-pic {
+        grid-column: 8/10;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .coffee-frap-text {
+        grid-column: 8/10;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .mocha-frap-pic {
+        grid-column: 11/13;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mocha-frap-text {
+        grid-column: 11/13;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .java-chip-pic {
+        grid-column: 2/4;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .java-chip-text {
+        grid-column: 2/4;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .white-choco-mocha-pic {
+        grid-column: 5/7;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .white-choco-mocha-text {
+        grid-column: 5/7;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .pic-creme-frap {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        grid-template-rows: 150px 80px 30px 150px 60px 30px 150px 60px 30px;
+        gap: 15px;
+        margin: 50px 0;
+    }
+    
+    .pic-creme-frap img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .strawberry-funnel-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .strawberry-funnel-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .choco-crumble-pic {
+        grid-column: 5/7;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .choco-crumble-text {
+        grid-column: 5/7;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .caramel-crunch-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caramel-crunch-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .strawberry-creme-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .strawberry-creme-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .chai-creme-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .chai-creme-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .double-choco-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .double-choco-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .matcha-creme-pic {
+        grid-column: 8/10;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .matcha-creme-text {
+        grid-column: 8/10;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .vanilla-bean-pic {
+        grid-column: 11/13;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vanilla-bean-text {
+        grid-column: 11/13;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .white-creme-pic {
+        grid-column: 2/4;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .white-creme-text {
+        grid-column: 2/4;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    /* END FRAPPUCCINO */
+    /* START COLD COFFEES */
+    
+    .pic-cold-brew {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px;
+        gap: 15px;
+    }
+    
+    .pic-cold-brew img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .honey-cold-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .honey-cold-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -5px;
+    }
+    
+    .reserve-cold-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reserve-cold-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -7px;
+    }
+    
+    .cold-brew-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cold-brew-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .vanilla-sweet-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vanilla-sweet-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .cold-milk-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cold-milk-text {
+        grid-column: 2/5;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+        text-align: center;
+    }
+    
+    .pic-nitro-cold-brew {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px;
+        gap: 15px;
+    }
+    
+    .pic-nitro-cold-brew img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .almondmilk-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .almondmilk-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -5px;
+    }
+    
+    .nitro-cold-brew-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nitro-cold-brew-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -7px;
+    }
+    
+    .salted-nitro-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .salted-nitro-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .nitro-cold-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nitro-cold-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .sweet-nitro-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sweet-nitro-text {
+        grid-column: 2/5;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+        text-align: center;
+    }
+    
+    .pic-iced-americano {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-americano img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .iced-usa-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-usa-text {
+        grid-column: 2/5;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+    }
+    
+    .pic-iced-coffee {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-coffee img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .iced-coffee-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-coffee-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -5px;
+    }
+    
+    .iced-milk-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-milk-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -7px;
+    }
+    
+    .iced-espresso-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-espresso-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-iced-shaken {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-shaken img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .choco-almondmilk-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .choco-almondmilk-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -5px;
+    }
+    
+    .iced-shaken-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-shaken-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -7px;
+    }
+    
+    .pic-iced-flat {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-flat img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .iced-flat-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-flat-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -5px;
+    }
+    
+    .iced-almondmilk-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-almondmilk-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -7px;
+    }
+    
+    .pic-iced-latte {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-latte img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .reserve-latte-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reserve-latte-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -5px;
+    }
+    
+    .hazelnut-bianco-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hazelnut-bianco-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -7px;
+    }
+    
+    .caffe-latte-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caffe-latte-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .cinnamon-dolce-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cinnamon-dolce-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .blonde-latte-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blonde-latte-text {
+        grid-column: 2/5;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+        text-align: center;
+    }
+    
+    .pic-iced-macchiato {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-macchiato img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .iced-macchi-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-macchi-text {
+        grid-column: 2/5;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+    }
+    
+    .pic-iced-mocha {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-mocha img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .caffe-mocha-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caffe-mocha-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -5px;
+    }
+    
+    .iced-white-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-white-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -7px;
+    }
+    
+    .dark-choco-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dark-choco-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    /* END COLD COFFEES */

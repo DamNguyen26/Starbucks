@@ -26,524 +26,710 @@
 
 <body>
     <!-- header start -->
-    <div class="container">
-        <div class="sticky-header">
-            <div class="header">
-                <!-- menu left -->
-                <div class="menu-left">
-                    <div class="space-left"></div>
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/main/logo.png" width="60px">
-                        </a>
-                    </div>
-
-                    <a class="active" href="menu.html">
-                        <p>Menu</p>
+    <!-- <div class="container"> -->
+    <div class="sticky-header">
+        <div class="header">
+            <!-- menu left -->
+            <div class="menu-left">
+                <div class="space-left"></div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/main/logo.png" width="60px">
                     </a>
-                    <a class="rewards" href="#">
-                        <b>
+                </div>
+
+                <a class="active" href="menu.html">
+                    <p>Menu</p>
+                </a>
+                <a class="rewards" href="#">
+                    <b>
                             <p>rewards</p>
                         </b>
-                    </a>
-                    <a class="gift-cards" href="#">
-                        <b>
+                </a>
+                <a class="gift-cards" href="#">
+                    <b>
                             <p>gift cards</p>
                         </b>
-                    </a>
-                </div>
-
-                <!-- menu right -->
-                <div class="menu-right">
-                    <li class="store"><i class="fas fa-map-marker-alt"></i><a href="findAStore.html">Find a store</a></li>
-                    <li class="sign"><a href="signin.html">Sign in</a></li>
-                    <li class="join"><a href="#join">Join now</a></li>
-                </div>
+                </a>
             </div>
-            <div class="sub-header">
-                <div class="space-left-2"></div>
-                <a class="all-pro" href="menu.html">All products</a>
-                <a class="featured" href="#">Featured</a>
-                <a class="pre-ord" href="#">Previous Orders</a>
-                <a class="fav-pro" href="#">Favorite Products</a>
+
+            <!-- menu right -->
+            <div class="menu-right">
+                <li class="store"><i class="fas fa-map-marker-alt"></i><a href="findAStore.html">Find a store</a></li>
+                <li class="sign"><a href="signin.html">Sign in</a></li>
+                <li class="join"><a href="#join">Join now</a></li>
             </div>
         </div>
-        <div class="body-main">
-            <div class="main">
-                <div class="space-top"></div>
-                <div class="column-1" style="border-bottom: 1px solid rgba(255, 255, 255, 0.466);">
+        <div class="sub-header">
+            <div class="space-left-2"></div>
+            <a class="all-pro" href="menu.html">All products</a>
+            <a class="featured" href="#">Featured</a>
+            <a class="pre-ord" href="#">Previous Orders</a>
+            <a class="fav-pro" href="#">Favorite Products</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="space-top"></div>
+        <!-- <div class="column-1" style="border-bottom: 1px solid rgba(255, 255, 255, 0.466);">
+        </div> -->
+        <div class="col-main">
+            <div class="column-1"></div>
+            <div class="menu-list">
+                <div class="menu-drinks">
+                    <h3>Drinks</h3>
+                    <p><a href="#hot-coffees" onclick="changeHotCoffees()" style="color: rgb(126, 126, 126);">Hot Coffees</a></p>
+                    <p><a href="#hot-teas" onclick="changeTea()" style="color: rgb(126, 126, 126);">Hot Teas</a></p>
+                    <p><a href="#hot-drinks" onclick="changeDrink()" style="color: rgb(126, 126, 126);"> Hot Drinks</a></p>
+                    <p><a href="#frappuccino" onclick="changeFrap()" style="color:rgb(126, 126, 126) ;"> Frappuccino® Blended Beverages</a></p>
+                    <p><a href="#cold-coffees" onclick="changeColdCoffees()" style="color:rgb(126, 126, 126) ;"> Cold Coffees</a></p>
+                    <p><a href="#iced-teas" onclick="changeIcedTeas()" style="color:rgb(126, 126, 126) ;"> Iced Teas</a></p>
+                    <p>Cold Drinks</p>
                 </div>
-                <div class="col-main" style="border-bottom: 1px solid rgba(255, 255, 255, 0.466);">
+                <div class="menu-food">
+                    <h3>Food</h3>
+                    <p>Hot Breakfast </p>
+                    <p>Bakery</p>
+                    <p>Lunch</p>
+                    <p>Snacks & Sweets</p>
+                    <p>Oatmeal & Yogurt</p>
+                </div>
+                <div class="menu-coffee">
+                    <h3>At Home Coffee</h3>
+                    <p>Whole Bean</p>
+                    <p> VIA® Instant</p>
+                </div>
+                <div class="menu-merchandise">
+                    <h3>Merchandise</h3>
+                    <p>Cold Cups</p>
+                    <p>Tumblers</p>
+                    <p> Water Bottles</p>
+                    <p> Other</p>
+                </div>
+            </div>
+            <div class="column-3"></div>
+            <!-- CHANGE PART BLOCK / NONE -->
+            <div class="menu-pic" id="iced-teas" style=" width: 60% ; height: auto; display: block;">
+                <div class="title">Menu</div>
+                <div class="sub-title">Drinks</div>
+                <div class="pic-drinks">
+                    <div class="hot-cof-pic"><img src="images/menu/Drinks/hot-cof.jpg"></div>
+                    <div class="hot-cof-text">Hot Coffees</div>
+                    <div class="hot-tea-pic"><img src="images/menu/Drinks/hot-tea.jpg"></div>
+                    <div class="hot-tea-text">Hot Teas</div>
+                    <div class="hot-drink-pic"><img src="images/menu/Drinks/hot-drink.jpg"></div>
+                    <div class="hot-drink-text">Hot Drinks</div>
+                    <div class="frappuccino-pic"><img src="images/menu/Drinks/frappuccino.jpg"></div>
+                    <div class="frappuccino-text">Frappuccino® Blended Beverages</div>
+                    <div class="cold-cof-pic"><img src="images/menu/Drinks/cold-cof.jpg"></div>
+                    <div class="cold-cof-text">Cold Coffees</div>
+                    <div class="iced-tea-pic"><img src="images/menu/Drinks/ice-tea.jpg"></div>
+                    <div class="iced-tea-text">Iced Teas</div>
+                    <div class="cold-drink-pic"><img src="images/menu/Drinks/cold-drink.jpg"></div>
+                    <div class="cold-drink-text">Cold Drinks</div>
+                </div>
+                <div class="sub-title">Food </div>
+                <div class="pic-food">
+                    <div class="hot-bf-pic"><img src="images/menu/Food/hot-bf.jpg"></div>
+                    <div class="hot-bf-text">Hot Breakfast</div>
+                    <div class="bakery-pic"><img src="images/menu/Food/bakery.jpg"></div>
+                    <div class="bakery-text">Bakery</div>
+                    <div class="lunch-pic"><img src="images/menu/Food/lunch.jpg"></div>
+                    <div class="lunch-text">Lunch</div>
+                    <div class="snack-pic"><img src="images/menu/Food/snack.jpg"></div>
+                    <div class="snack-text">Snacks & Sweets</div>
+                    <div class="yogurt-pic"><img src="images/menu/Food/yogurt.jpg"></div>
+                    <div class="yogurt-text">Oatmeal & Yogurt</div>
+                </div>
+                <div class="sub-title">At Home Coffee</div>
+                <div class="pic-ahc">
+                    <div class="bean-pic"><img src="images/menu/Coffee/bean.jpg"></div>
+                    <div class="bean-text">Whole Bean</div>
+                    <div class="instant-pic"><img src="images/menu/Coffee/instant.jpg"></div>
+                    <div class="instant-text">VIA® Instant</div>
+                </div>
+                <div class="sub-title">Merchandise</div>
+                <div class="pic-mer">
+                    <div class="cold-cup-pic"><img src="images/menu/Merchandise/cold-cup.jpg"></div>
+                    <div class="cold-cup-text">Cold Cups</div>
+                    <div class="tumbler-pic"><img src="images/menu/Merchandise/tumbler.jpg"></div>
+                    <div class="tumbler-text">Tumblers</div>
+                    <div class="bottle-pic"><img src="images/menu/Merchandise/bottle.jpg"></div>
+                    <div class="bottle-text">Water Bottles</div>
+                    <div class="other-pic"><img src="images/menu/Merchandise/other.jpg"></div>
+                    <div class="other-text">Other</div>
+                </div>
+            </div>
+            <!-- END CHANGE PART 1 ALL PRODUCTS -->
 
-                    <div class="menu-list">
-                        <ul>Drinks
-                            <li><a href="#hot-coffees" onclick="changeHotCoffees()" style="color: rgb(126, 126, 126);">Hot Coffees</a></li>
-                            <li><a href="#hot-teas" onclick="changeTea()" style="color: rgb(126, 126, 126);">Hot Teas</a></li>
-                            <li><a href="#hot-drinks" onclick="changeDrink()" style="color: rgb(126, 126, 126);"> Hot Drinks</a></li>
-                            <li><a href="#frappuccino" onclick="changeFrap()" style="color:rgb(126, 126, 126) ;"> Frappuccino® Blended Beverages</a></li>
-                            <li> Cold Coffees</li>
-                            <li> Iced Teas</li>
-                            <li>Cold Drinks</li>
-                        </ul>
-                        <ul>Food
-                            <li>Hot Breakfast </li>
-                            <li> Bakery</li>
-                            <li>Lunch</li>
-                            <li>Snacks & Sweets</li>
-                            <li>Oatmeal & Yogurt</li>
-                        </ul>
-                        <ul>At Home Coffee
-                            <li>Whole Bean</li>
-                            <li> VIA® Instant</li>
-                        </ul>
-                        <ul>Merchandise
-                            <li>Cold Cups</li>
-                            <li>Tumblers</li>
-                            <li> Water Bottles</li>
-                            <li> Other</li>
-                        </ul>
+
+            <!-- START CHANGE PART HOT COFFEES -->
+            <div class="menu-pic" id="hot-coffees" style=" width: 70% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Coffees</span>
+                </div>
+                <div class="title">Hot Coffees</div>
+                <div class="sub-title">Americanos</div>
+                <div class="pic-americanos">
+                    <div class="americano-pic"><img src="images/menu/Drinks/hot-cof.jpg"></div>
+                    <div class="americano-text">Caffè Americano</div>
+                </div>
+                <div class="sub-title">Brewed Coffees</div>
+                <div class="pic-brewed">
+                    <div class="blonde-roast-pic"><img src="images/menu/Hot Coffees/Blonde-Roast.jpg"></div>
+                    <div class="blonde-roast-text">Blonde Roast</div>
+                    <div class="mistro-pic"><img src="images/menu/Hot Coffees/Mistro.jpg"></div>
+                    <div class="mistro-text">Caffè Mistro</div>
+                    <div class="dark-roast-pic"><img src="images/menu/Hot Coffees/Dark-Roast.jpg"></div>
+                    <div class="dark-roast-text">Featured Starbucks® Dark Roast Coffee</div>
+                    <div class="Pike-Roast-pic"><img src="images/menu/Hot Coffees/Pike-Place.jpg"></div>
+                    <div class="Pike-Roast-text">Pike Place® Roast</div>
+                    <div class="Decaf-Pike-pic"><img src="images/menu/Hot Coffees/Decaf-Pike.jpg"></div>
+                    <div class="Decaf-Pike-text">Decaf Pike Place® Roast</div>
+                </div>
+                <div class="sub-title">Cappuccino</div>
+                <div class="pic-cappuccino">
+                    <div class="cappuccino-pic"><img src="images/menu/Hot Coffees/Cappuccino.jpg"></div>
+                    <div class="cappuccino-text">Cappuccino</div>
+                </div>
+                <div class="sub-title">Espresso Shots</div>
+                <div class="pic-espresso">
+                    <div class="espresso-pic"><img src="images/menu/Hot Coffees/Espresso.jpg"></div>
+                    <div class="espresso-text">Espresso</div>
+                    <div class="espresso-con-pic"><img src="images/menu/Hot Coffees/espresso-con.jpg"></div>
+                    <div class="espresso-con-text">Espresso Con Panna</div>
+                </div>
+                <div class="sub-title">Flat Whites</div>
+                <div class="pic-flat">
+                    <div class="flat-pic"><img src="images/menu/Hot Coffees/Flat-white.jpg"></div>
+                    <div class="flat-text">Flat White</div>
+                    <div class="honey-flat-pic"><img src="images/menu/Hot Coffees/Honey-flat.jpg"></div>
+                    <div class="honey-flat-text">Honey Almondmilk Flat White</div>
+                </div>
+                <div class="sub-title">Lattes</div>
+                <div class="pic-latte">
+                    <div class="latte-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                    <div class="latte-text">Caffè Latte</div>
+                    <div class="cinnamon-latte-pic"><img src="images/menu/Hot Coffees/cinnamon-latte.jpg"></div>
+                    <div class="cinnamon-latte-text">Cinnamon Dolce Latte</div>
+                    <div class="reserve-latte-pic"><img src="images/menu/Hot Coffees/Reserve-latte.jpg"></div>
+                    <div class="reserve-latte-text">Starbucks Reserve® Latte</div>
+                    <div class="hazenut-latte-pic"><img src="images/menu/Hot Coffees/Hazelnut-latte.jpg"></div>
+                    <div class="hazenut-latte-text">Starbucks Reserve® Hazelnut Bianco Latte</div>
+                    <div class="Vanilla-latte-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
+                    <div class="Vanilla-latte-text">Starbucks® Blonde Vanilla Latte</div>
+                </div>
+                <div class="sub-title">Macchiatos</div>
+                <div class="pic-macchiato">
+                    <div class="caramel-pic"><img src="images/menu/Hot Coffees/caramel-macchiato.jpg"></div>
+                    <div class="caramel-text">Caramel Macchiato</div>
+                    <div class="espresso-macchiato-pic"><img src="images/menu/Hot Coffees/espresso-macchiato.jpg"></div>
+                    <div class="espresso-macchiato-text">Espresso Macchiato</div>
+                </div>
+                <div class="sub-title">Mochas</div>
+                <div class="pic-mocha">
+                    <div class="mocha-pic"><img src="images/menu/Hot Coffees/mocha.jpg"></div>
+                    <div class="mocha-text">Caffè Mocha</div>
+                    <div class="choco-mocha-pic"><img src="images/menu/Hot Coffees/choco-mocha.jpg"></div>
+                    <div class="choco-mocha-text">Starbucks Reserve® Dark Chocolate Mocha </div>
+                    <div class="white-mocha-pic"><img src="images/menu/Hot Coffees/white-mocha.jpg"></div>
+                    <div class="white-mocha-text">White Chocolate Mocha</div>
+                </div>
+                <div class="sub-title">Clover® Brewed Coffees</div>
+                <div class="pic-clover">
+                    <div class="rwanda-pic"><img src="images/menu/Hot Coffees/rwanda.jpg"></div>
+                    <div class="rwanda-text">Rwanda Hingakawa Clover® Starbucks Reserve® </div>
+                    <div class="colombia-pic"><img src="images/menu/Hot Coffees/colombia.jpg"></div>
+                    <div class="colombia-text">Colombia Finca La Reserva Clover® Starbucks Reserve®</div>
+                    <div class="bolivia-pic"><img src="images/menu/Hot Coffees/bolivia.jpg"></div>
+                    <div class="bolivia-text">Bolivia Sol de la Mañana Clover® Starbucks Reserve®</div>
+                    <div class="ecuador-pic"><img src="images/menu/Hot Coffees/ecuador.jpg"></div>
+                    <div class="ecuador-text">Ecuador Loja Clover® Starbucks Reserve®</div>
+                    <div class="papua-pic"><img src="images/menu/Hot Coffees/papua.jpg"></div>
+                    <div class="papua-text">Sun-Dried Papua New Guinea Ulya Clover® Starbucks Reserve®</div>
+                    <div class="brazil-pic"><img src="images/menu/Hot Coffees/brazil.jpg"></div>
+                    <div class="brazil-text">Brazil Isidro Pereira Estate Clover® Starbucks Reserve®</div>
+                    <div class="place-roast-pic"><img src="images/menu/Hot Coffees/place-roast.jpg"></div>
+                    <div class="place-roast-text">Clover Brewed® Pike Place® Roast</div>
+                    <div class="yukon-pic"><img src="images/menu/Hot Coffees/yukon-blend.jpg"></div>
+                    <div class="yukon-text">Organic Yukon Blend® Clover®</div>
+                    <div class="gold-coast-pic"><img src="images/menu/Hot Coffees/gold-coast.jpg"></div>
+                    <div class="gold-coast-text">Clover Brewed® Gold Coast Blend®</div>
+                    <div class="breakfast-blend-pic"><img src="images/menu/Hot Coffees/breakfast-blend.jpg"></div>
+                    <div class="breakfast-blend-text">Clover Brewed® Breakfast Blend</div>
+                    <div class="kenya-pic"><img src="images/menu/Hot Coffees/kenya.jpg"></div>
+                    <div class="kenya-text">Kenya Clover®</div>
+                    <div class="veranda-pic"><img src="images/menu/Hot Coffees/veranda.jpg"></div>
+                    <div class="veranda-text">Veranda Blend® Clover®</div>
+                    <div class="guatemala-pic"><img src="images/menu/Hot Coffees/guatemala.jpg"></div>
+                    <div class="guatemala-text">Clover Brewed® Guatemala Antigua</div>
+                    <div class="willow-pic"><img src="images/menu/Hot Coffees/willow-blend.jpg"></div>
+                    <div class="willow-text">Clover Brewed® Starbucks Willow Blend</div>
+                    <div class="decaf-sumatra-pic"><img src="images/menu/Hot Coffees/decaf-sumatra.jpg"></div>
+                    <div class="decaf-sumatra-text">Decaf Sumatra Clover®</div>
+                    <div class="verona-pic"><img src="images/menu/Hot Coffees/verona-clover.jpg"></div>
+                    <div class="verona-text">Caffé Verona® Clover®</div>
+                    <div class="decaf-pike-pic"><img src="images/menu/Hot Coffees/Decaf-Pike.jpg"></div>
+                    <div class="decaf-pike-text">Clover Brewed® Decaf Pike Place® Roast</div>
+                    <div class="espresso-roast-pic"><img src="images/menu/Hot Coffees/epresso-roast.jpg"></div>
+                    <div class="espresso-roast-text">Espresso Roast Clover®</div>
+                    <div class="decaf-espresso-pic"><img src="images/menu/Hot Coffees/decaf-spresso.jpg"></div>
+                    <div class="decaf-espresso-text">Decaf Espresso Roast Clover®</div>
+                    <div class="ethiopia-pic"><img src="images/menu/Hot Coffees/ethiopia.jpg"></div>
+                    <div class="ethiopia-text">Ethiopia Clover®</div>
+                    <div class="french-roast-pic"><img src="images/menu/Hot Coffees/french-roast.jpg"></div>
+                    <div class="french-roast-text">French Roast Clover®</div>
+                    <div class="italian-pic"><img src="images/menu/Hot Coffees/italian-roast.jpg"></div>
+                    <div class="italian-text">Italian Roast Clover®</div>
+                    <div class="komodo-pic"><img src="images/menu/Hot Coffees/komodo.jpg"></div>
+                    <div class="komodo-text">Komodo Dragon Clover® </div>
+                    <div class="sumatra-pic"><img src="images/menu/Hot Coffees/sumatra.jpg"></div>
+                    <div class="sumatra-text">Sumatra Clover®</div>
+                </div>
+                <div class="sub-title">Coffee Travelers</div>
+                <div class="pic-traveler">
+                    <div class="travel-pic1"><img src="images/menu/Hot Coffees/traveler.jpg"></div>
+                    <div class="travel-text1">Coffee Traveler – Starbucks® Blonde Roast</div>
+                    <div class="travel-pic2"><img src="images/menu/Hot Coffees/traveler.jpg"></div>
+                    <div class="travel-text2">Coffee Traveler – Dark Roast</div>
+                    <div class="travel-pic3"><img src="images/menu/Hot Coffees/traveler.jpg"></div>
+                    <div class="travel-text3">Coffee Traveler – Pike Place® Roast</div>
+                    <div class="travel-pic4"><img src="images/menu/Hot Coffees/traveler.jpg"></div>
+                    <div class="travel-text4">Coffee Traveler – Decaf Pike Place® Roast</div>
+                </div>
+            </div>
+            <!-- END CHANGE PART HOT COFFEES -->
+
+            <!-- START CHANGE PART HOT TEAS -->
+            <div class="menu-pic" id="hot-teas" style=" width: 70% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Teas</span>
+                </div>
+                <div class="title">Hot Teas</div>
+                <div class="sub-title">Chai Teas</div>
+                <div class="pic-chai">
+                    <div class="chai-latte-pic"><img src="images/menu/Drinks/hot-tea.jpg"></div>
+                    <div class="chai-latte-text">Chai Tea Latte</div>
+                    <div class="chai-tea-pic"><img src="images/menu/Hot Teas/chai tea.jpg"></div>
+                    <div class="chai-tea-text">Chai Tea </div>
+                </div>
+                <div class="sub-title">Black Teas</div>
+                <div class="pic-black">
+                    <div class="earl-grey-pic"><img src="images/menu/Hot Teas/Earl-Grey.jpg"></div>
+                    <div class="earl-grey-text">Earl Grey Tea </div>
+                    <div class="london-tea-latte-pic"><img src="images/menu/Hot Teas/london tea latte.jpg"></div>
+                    <div class="london-tea-latte-text">London Fog Tea Latte </div>
+                    <div class="english-breakfast-tea-pic"><img src="images/menu/Hot Teas/english breakfast tea.jpg"></div>
+                    <div class="english-breakfast-tea-text">Royal English Breakfast Tea </div>
+                    <div class="royal-english-latte-pic"><img src="images/menu/Hot Teas/royal english tea latte.jpg"></div>
+                    <div class="royal-english-latte-text">Royal English Breakfast Tea Latte </div>
+                </div>
+                <div class="sub-title">Green Teas</div>
+                <div class="pic-green">
+                    <div class="emperor-pic"><img src="images/menu/Hot Teas/emperor.jpg"></div>
+                    <div class="emperor-text">Emperor’s Clouds & Mist® </div>
+                    <div class="matcha-tea-latte-pic"><img src="images/menu/Hot Teas/matcha tea latte.jpg"></div>
+                    <div class="matcha-tea-latte-text">Matcha Tea Latte </div>
+                    <div class="honey-citrus-pic"><img src="images/menu/Hot Teas/honey citrus mint.jpg"></div>
+                    <div class="honey-citrus-text">Honey Citrus Mint Tea </div>
+                    <div class="mint-brewed-pic"><img src="images/menu/Hot Teas/Mint Brewed.jpg"></div>
+                    <div class="mint-brewed-text">Jade Citrus Mint® Brewed Tea</div>
+                </div>
+                <div class="sub-title">Herbal Teas</div>
+                <div class="pic-herbal">
+                    <div class="majesty-pic"><img src="images/menu/Hot Teas/mint majesty.jpg"></div>
+                    <div class="majesty-text">Mint Majesty®</div>
+                    <div class="peach-tranquility-pic"><img src="images/menu/Hot Teas/peach tranquility.jpg"></div>
+                    <div class="peach-tranquility-text">Peach Tranquility® </div>
+                </div>
+            </div>
+            <!-- END CHANGE PART HOT TEAS -->
+            <div class="menu-pic" id="hot-drinks" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Drinks</span>
+                </div>
+                <div class="title">Hot Drinks</div>
+                <div class="sub-title">Hot Chocolates</div>
+                <div class="pic-hot-choco">
+                    <div class="hot-choco-pic"><img src="images/menu/Drinks/hot-drink.jpg"></div>
+                    <div class="hot-choco-text">Hot Chocolate</div>
+                    <div class="white-choco-pic"><img src="images/menu/Hot Drinks/white hot choco.jpg"></div>
+                    <div class="white-choco-text">White Hot Chocolate </div>
+                </div>
+                <div class="sub-title">Juice</div>
+                <div class="pic-juice">
+                    <div class="caramel-apple-pic"><img src="images/menu/Hot Drinks/caramel apple.jpg"></div>
+                    <div class="caramel-apple-text">Caramel Apple Spice</div>
+                    <div class="steam-apple-pic"><img src="images/menu/Hot Drinks/steam apple.jpg"></div>
+                    <div class="steam-apple-text">Steamed Apple Juice</div>
+                </div>
+                <div class="sub-title">Steamers</div>
+                <div class="pic-steamer">
+                    <div class="cinnamon-creme-pic"><img src="images/menu/Hot Drinks/cinnamon creme.jpg"></div>
+                    <div class="cinnamon-creme-text">Cinnamon Dolce Crème</div>
+                    <div class="steam-milk-pic"><img src="images/menu/Hot Drinks/steamed milk.jpg"></div>
+                    <div class="steam-milk-text">Steamed Milk</div>
+                    <div class="vanilla-creme-pic"><img src="images/menu/Hot Drinks/vanilla creme.jpg"></div>
+                    <div class="vanilla-creme-text">Vanilla Crème</div>
+                </div>
+            </div>
+
+            <div class="menu-pic" id="frappuccino" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Frappuccino® Blended Beverages</span>
+                </div>
+                <div class="title">Frappuccino® Blended Beverages</div>
+                <div class="sub-title">Coffee Frappuccino®</div>
+                <div class="pic-coffee-frap">
+                    <div class="straw-frappuccino-pic"><img src="images/menu/Drinks/frappuccino.jpg"></div>
+                    <div class="straw-frappuccino-text">Strawberry Funnel Cake Frappuccino® Blended Beverage</div>
+                    <div class="mocha-cookie-pic"><img src="images/menu/Frappuccino/mocha cookie.jpg"></div>
+                    <div class="mocha-cookie-text">Mocha Cookie Crumble Frappuccino® Blended Beverage</div>
+                    <div class="caramel-ribbon-pic"><img src="images/menu/Frappuccino/caramel ribbon.jpg"></div>
+                    <div class="caramel-ribbon-text">Caramel Ribbon Crunch Frappuccino® Blended Beverage</div>
+                    <div class="espresso-frap-pic"><img src="images/menu/Frappuccino/espresso frappuccino.jpg"></div>
+                    <div class="espresso-frap-text">Espresso Frappuccino® Blended Beverage </div>
+                    <div class="caffe-vanilla-pic"><img src="images/menu/Frappuccino/caffe vanilla.jpg"></div>
+                    <div class="caffe-vanilla-text">Caffè Vanilla Frappuccino® Blended Beverage </div>
+                    <div class="caramel-frap-pic"><img src="images/menu/Frappuccino/caramel frappuccino.jpg"></div>
+                    <div class="caramel-frap-text">Caramel Frappuccino® Blended Beverage</div>
+                    <div class="coffee-frap-pic"><img src="images/menu/Frappuccino/coffee frappuccino.jpg"></div>
+                    <div class="coffee-frap-text">Coffee Frappuccino® Blended Beverage </div>
+                    <div class="mocha-frap-pic"><img src="images/menu/Frappuccino/mocha frappuccino.jpg"></div>
+                    <div class="mocha-frap-text">Mocha Frappuccino® Blended Beverage</div>
+                    <div class="java-chip-pic"><img src="images/menu/Frappuccino/java chip frappuccino.jpg"></div>
+                    <div class="java-chip-text">Java Chip Frappuccino® Blended Beverage</div>
+                    <div class="white-choco-mocha-pic"><img src="images/menu/Frappuccino/white choco mocha.jpg"></div>
+                    <div class="white-choco-mocha-text">White Chocolate Mocha Frappuccino® Blended Beverage</div>
+                </div>
+                <div class="sub-title">Creme Frappuccino®</div>
+                <div class="pic-creme-frap">
+                    <div class="strawberry-funnel-pic"><img src="images/menu/Frappuccino/strawberry funnel.jpg"></div>
+                    <div class="strawberry-funnel-text">Strawberry Funnel Cake Crème Frappuccino® Blended Beverage</div>
+                    <div class="choco-crumble-pic"><img src="images/menu/Frappuccino/choco cookie crumble.jpg"></div>
+                    <div class="choco-crumble-text">Chocolate Cookie Crumble Crème Frappuccino® </div>
+                    <div class="caramel-crunch-pic"><img src="images/menu/Frappuccino/caramel ribbon crunch.jpg"></div>
+                    <div class="caramel-crunch-text">Caramel Ribbon Crunch Crème Frappuccino® Blended Beverage</div>
+                    <div class="strawberry-creme-pic"><img src="images/menu/Frappuccino/strawberry creme.jpg"></div>
+                    <div class="strawberry-creme-text">Strawberry Crème Frappuccino® Blended Beverage</div>
+                    <div class="chai-creme-pic"><img src="images/menu/Frappuccino/chai creme.jpg"></div>
+                    <div class="chai-creme-text">Chai Crème Frappuccino® Blended Beverage </div>
+                    <div class="double-choco-pic"><img src="images/menu/Frappuccino/double choco.jpg"></div>
+                    <div class="double-choco-text">Double Chocolaty Chip Crème Frappuccino® Blended Beverage </div>
+                    <div class="matcha-creme-pic"><img src="images/menu/Frappuccino/matcha creme.jpg"></div>
+                    <div class="matcha-creme-text">Matcha Crème Frappuccino® Blended Beverage </div>
+                    <div class="vanilla-bean-pic"><img src="images/menu/Frappuccino/vanilla bean.jpg"></div>
+                    <div class="vanilla-bean-text">Vanilla Bean Crème Frappuccino® Blended Beverage </div>
+                    <div class="white-creme-pic"><img src="images/menu/Frappuccino/white choco creme.jpg"></div>
+                    <div class="white-creme-text">White Chocolate Crème Frappuccino® Blended Beverage
                     </div>
-
-                    <!-- CHANGE PART BLOCK / NONE -->
-                    <div class="menu-pic" id="menu" style=" width: 60% ; height: auto; display: block;">
-                        <div class="title">Menu</div>
-                        <div class="sub-title">Drinks</div>
-                        <div class="pic-drinks">
-                            <div class="hot-cof-pic"><img src="images/menu/Drinks/hot-cof.jpg"></div>
-                            <div class="hot-cof-text">Hot Coffees</div>
-                            <div class="hot-tea-pic"><img src="images/menu/Drinks/hot-tea.jpg"></div>
-                            <div class="hot-tea-text">Hot Teas</div>
-                            <div class="hot-drink-pic"><img src="images/menu/Drinks/hot-drink.jpg"></div>
-                            <div class="hot-drink-text">Hot Drinks</div>
-                            <div class="frappuccino-pic"><img src="images/menu/Drinks/frappuccino.jpg"></div>
-                            <div class="frappuccino-text">Frappuccino® Blended Beverages</div>
-                            <div class="cold-cof-pic"><img src="images/menu/Drinks/cold-cof.jpg"></div>
-                            <div class="cold-cof-text">Cold Coffees</div>
-                            <div class="iced-tea-pic"><img src="images/menu/Drinks/ice-tea.jpg"></div>
-                            <div class="iced-tea-text">Iced Teas</div>
-                            <div class="cold-drink-pic"><img src="images/menu/Drinks/cold-drink.jpg"></div>
-                            <div class="cold-drink-text">Cold Drinks</div>
-                        </div>
-                        <div class="sub-title">Food </div>
-                        <div class="pic-food">
-                            <div class="hot-bf-pic"><img src="images/menu/Food/hot-bf.jpg"></div>
-                            <div class="hot-bf-text">Hot Breakfast</div>
-                            <div class="bakery-pic"><img src="images/menu/Food/bakery.jpg"></div>
-                            <div class="bakery-text">Bakery</div>
-                            <div class="lunch-pic"><img src="images/menu/Food/lunch.jpg"></div>
-                            <div class="lunch-text">Lunch</div>
-                            <div class="snack-pic"><img src="images/menu/Food/snack.jpg"></div>
-                            <div class="snack-text">Snacks & Sweets</div>
-                            <div class="yogurt-pic"><img src="images/menu/Food/yogurt.jpg"></div>
-                            <div class="yogurt-text">Oatmeal & Yogurt</div>
-                        </div>
-                        <div class="sub-title">At Home Coffee</div>
-                        <div class="pic-ahc">
-                            <div class="bean-pic"><img src="images/menu/Coffee/bean.jpg"></div>
-                            <div class="bean-text">Whole Bean</div>
-                            <div class="instant-pic"><img src="images/menu/Coffee/instant.jpg"></div>
-                            <div class="instant-text">VIA® Instant</div>
-                        </div>
-                        <div class="sub-title">Merchandise</div>
-                        <div class="pic-mer">
-                            <div class="cold-cup-pic"><img src="images/menu/Merchandise/cold-cup.jpg"></div>
-                            <div class="cold-cup-text">Cold Cups</div>
-                            <div class="tumbler-pic"><img src="images/menu/Merchandise/tumbler.jpg"></div>
-                            <div class="tumbler-text">Tumblers</div>
-                            <div class="bottle-pic"><img src="images/menu/Merchandise/bottle.jpg"></div>
-                            <div class="bottle-text">Water Bottles</div>
-                            <div class="other-pic"><img src="images/menu/Merchandise/other.jpg"></div>
-                            <div class="other-text">Other</div>
-                        </div>
-                    </div>
-                    <!-- END CHANGE PART 1 ALL PRODUCTS -->
-
-
-                    <!-- START CHANGE PART HOT COFFEES -->
-                    <div class="menu-pic" id="hot-coffees" style=" width: 70% ; height: auto; display: none;">
-                        <div class="sub-title-1">Menu /
-                            <span>Hot Coffees</span>
-                        </div>
-                        <div class="title">Hot Coffees</div>
-                        <div class="sub-title">Americanos</div>
-                        <div class="pic-americanos">
-                            <div class="americano-pic"><img src="images/menu/Drinks/hot-cof.jpg"></div>
-                            <div class="americano-text">Caffè Americano</div>
-                        </div>
-                        <div class="sub-title">Brewed Coffees</div>
-                        <div class="pic-brewed">
-                            <div class="blonde-roast-pic"><img src="images/menu/Hot Coffees/Blonde-Roast.jpg"></div>
-                            <div class="blonde-roast-text">Blonde Roast</div>
-                            <div class="mistro-pic"><img src="images/menu/Hot Coffees/Mistro.jpg"></div>
-                            <div class="mistro-text">Caffè Mistro</div>
-                            <div class="dark-roast-pic"><img src="images/menu/Hot Coffees/Dark-Roast.jpg"></div>
-                            <div class="dark-roast-text">Featured Starbucks® Dark Roast Coffee</div>
-                            <div class="Pike-Roast-pic"><img src="images/menu/Hot Coffees/Pike-Place.jpg"></div>
-                            <div class="Pike-Roast-text">Pike Place® Roast</div>
-                            <div class="Decaf-Pike-pic"><img src="images/menu/Hot Coffees/Decaf-Pike.jpg"></div>
-                            <div class="Decaf-Pike-text">Decaf Pike Place® Roast</div>
-                        </div>
-                        <div class="sub-title">Cappuccino</div>
-                        <div class="pic-cappuccino">
-                            <div class="cappuccino-pic"><img src="images/menu/Hot Coffees/Cappuccino.jpg"></div>
-                            <div class="cappuccino-text">Cappuccino</div>
-                        </div>
-                        <div class="sub-title">Espresso Shots</div>
-                        <div class="pic-espresso">
-                            <div class="espresso-pic"><img src="images/menu/Hot Coffees/Espresso.jpg"></div>
-                            <div class="espresso-text">Espresso</div>
-                            <div class="espresso-con-pic"><img src="images/menu/Hot Coffees/espresso-con.jpg"></div>
-                            <div class="espresso-con-text">Espresso Con Panna</div>
-                        </div>
-                        <div class="sub-title">Flat Whites</div>
-                        <div class="pic-flat">
-                            <div class="flat-pic"><img src="images/menu/Hot Coffees/Flat-white.jpg"></div>
-                            <div class="flat-text">Flat White</div>
-                            <div class="honey-flat-pic"><img src="images/menu/Hot Coffees/Honey-flat.jpg"></div>
-                            <div class="honey-flat-text">Honey Almondmilk Flat White</div>
-                        </div>
-                        <div class="sub-title">Lattes</div>
-                        <div class="pic-latte">
-                            <div class="latte-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
-                            <div class="latte-text">Caffè Latte</div>
-                            <div class="cinnamon-latte-pic"><img src="images/menu/Hot Coffees/cinnamon-latte.jpg"></div>
-                            <div class="cinnamon-latte-text">Cinnamon Dolce Latte</div>
-                            <div class="reserve-latte-pic"><img src="images/menu/Hot Coffees/Reserve-latte.jpg"></div>
-                            <div class="reserve-latte-text">Starbucks Reserve® Latte</div>
-                            <div class="hazenut-latte-pic"><img src="images/menu/Hot Coffees/Hazelnut-latte.jpg"></div>
-                            <div class="hazenut-latte-text">Starbucks Reserve® Hazelnut Bianco Latte</div>
-                            <div class="Vanilla-latte-pic"><img src="images/menu/Hot Coffees/Latte.jpg"></div>
-                            <div class="Vanilla-latte-text">Starbucks® Blonde Vanilla Latte</div>
-                        </div>
-                        <div class="sub-title">Macchiatos</div>
-                        <div class="pic-macchiato">
-                            <div class="caramel-pic"><img src="images/menu/Hot Coffees/caramel-macchiato.jpg"></div>
-                            <div class="caramel-text">Caramel Macchiato</div>
-                            <div class="espresso-macchiato-pic"><img src="images/menu/Hot Coffees/espresso-macchiato.jpg"></div>
-                            <div class="espresso-macchiato-text">Espresso Macchiato</div>
-                        </div>
-                        <div class="sub-title">Mochas</div>
-                        <div class="pic-mocha">
-                            <div class="mocha-pic"><img src="images/menu/Hot Coffees/mocha.jpg"></div>
-                            <div class="mocha-text">Caffè Mocha</div>
-                            <div class="choco-mocha-pic"><img src="images/menu/Hot Coffees/choco-mocha.jpg"></div>
-                            <div class="choco-mocha-text">Starbucks Reserve® Dark Chocolate Mocha </div>
-                            <div class="white-mocha-pic"><img src="images/menu/Hot Coffees/white-mocha.jpg"></div>
-                            <div class="white-mocha-text">White Chocolate Mocha</div>
-                        </div>
-                        <div class="sub-title">Clover® Brewed Coffees</div>
-                        <div class="pic-clover">
-                            <div class="rwanda-pic"><img src="images/menu/Hot Coffees/rwanda.jpg"></div>
-                            <div class="rwanda-text">Rwanda Hingakawa Clover® Starbucks Reserve® </div>
-                            <div class="colombia-pic"><img src="images/menu/Hot Coffees/colombia.jpg"></div>
-                            <div class="colombia-text">Colombia Finca La Reserva Clover® Starbucks Reserve®</div>
-                            <div class="bolivia-pic"><img src="images/menu/Hot Coffees/bolivia.jpg"></div>
-                            <div class="bolivia-text">Bolivia Sol de la Mañana Clover® Starbucks Reserve®</div>
-                            <div class="ecuador-pic"><img src="images/menu/Hot Coffees/ecuador.jpg"></div>
-                            <div class="ecuador-text">Ecuador Loja Clover® Starbucks Reserve®</div>
-                            <div class="papua-pic"><img src="images/menu/Hot Coffees/papua.jpg"></div>
-                            <div class="papua-text">Sun-Dried Papua New Guinea Ulya Clover® Starbucks Reserve®</div>
-                            <div class="brazil-pic"><img src="images/menu/Hot Coffees/brazil.jpg"></div>
-                            <div class="brazil-text">Brazil Isidro Pereira Estate Clover® Starbucks Reserve®</div>
-                            <div class="place-roast-pic"><img src="images/menu/Hot Coffees/place-roast.jpg"></div>
-                            <div class="place-roast-text">Clover Brewed® Pike Place® Roast</div>
-                            <div class="yukon-pic"><img src="images/menu/Hot Coffees/yukon-blend.jpg"></div>
-                            <div class="yukon-text">Organic Yukon Blend® Clover®</div>
-                            <div class="gold-coast-pic"><img src="images/menu/Hot Coffees/gold-coast.jpg"></div>
-                            <div class="gold-coast-text">Clover Brewed® Gold Coast Blend®</div>
-                            <div class="breakfast-blend-pic"><img src="images/menu/Hot Coffees/breakfast-blend.jpg"></div>
-                            <div class="breakfast-blend-text">Clover Brewed® Breakfast Blend</div>
-                            <div class="kenya-pic"><img src="images/menu/Hot Coffees/kenya.jpg"></div>
-                            <div class="kenya-text">Kenya Clover®</div>
-                            <div class="veranda-pic"><img src="images/menu/Hot Coffees/veranda.jpg"></div>
-                            <div class="veranda-text">Veranda Blend® Clover®</div>
-                            <div class="guatemala-pic"><img src="images/menu/Hot Coffees/guatemala.jpg"></div>
-                            <div class="guatemala-text">Clover Brewed® Guatemala Antigua</div>
-                            <div class="willow-pic"><img src="images/menu/Hot Coffees/willow-blend.jpg"></div>
-                            <div class="willow-text">Clover Brewed® Starbucks Willow Blend</div>
-                            <div class="decaf-sumatra-pic"><img src="images/menu/Hot Coffees/decaf-sumatra.jpg"></div>
-                            <div class="decaf-sumatra-text">Decaf Sumatra Clover®</div>
-                            <div class="verona-pic"><img src="images/menu/Hot Coffees/verona-clover.jpg"></div>
-                            <div class="verona-text">Caffé Verona® Clover®</div>
-                            <div class="decaf-pike-pic"><img src="images/menu/Hot Coffees/Decaf-Pike.jpg"></div>
-                            <div class="decaf-pike-text">Clover Brewed® Decaf Pike Place® Roast</div>
-                            <div class="espresso-roast-pic"><img src="images/menu/Hot Coffees/epresso-roast.jpg"></div>
-                            <div class="espresso-roast-text">Espresso Roast Clover®</div>
-                            <div class="decaf-espresso-pic"><img src="images/menu/Hot Coffees/decaf-spresso.jpg"></div>
-                            <div class="decaf-espresso-text">Decaf Espresso Roast Clover®</div>
-                            <div class="ethiopia-pic"><img src="images/menu/Hot Coffees/ethiopia.jpg"></div>
-                            <div class="ethiopia-text">Ethiopia Clover®</div>
-                            <div class="french-roast-pic"><img src="images/menu/Hot Coffees/french-roast.jpg"></div>
-                            <div class="french-roast-text">French Roast Clover®</div>
-                            <div class="italian-pic"><img src="images/menu/Hot Coffees/italian-roast.jpg"></div>
-                            <div class="italian-text">Italian Roast Clover®</div>
-                            <div class="komodo-pic"><img src="images/menu/Hot Coffees/komodo.jpg"></div>
-                            <div class="komodo-text">Komodo Dragon Clover® </div>
-                            <div class="sumatra-pic"><img src="images/menu/Hot Coffees/sumatra.jpg"></div>
-                            <div class="sumatra-text">Sumatra Clover®</div>
-                        </div>
-                        <div class="sub-title">Coffee Travelers</div>
-                        <div class="pic-traveler">
-                            <div class="travel-pic1"><img src="images/menu/Hot Coffees/traveler.jpg"></div>
-                            <div class="travel-text1">Coffee Traveler – Starbucks® Blonde Roast</div>
-                            <div class="travel-pic2"><img src="images/menu/Hot Coffees/traveler.jpg"></div>
-                            <div class="travel-text2">Coffee Traveler – Dark Roast</div>
-                            <div class="travel-pic3"><img src="images/menu/Hot Coffees/traveler.jpg"></div>
-                            <div class="travel-text3">Coffee Traveler – Pike Place® Roast</div>
-                            <div class="travel-pic4"><img src="images/menu/Hot Coffees/traveler.jpg"></div>
-                            <div class="travel-text4">Coffee Traveler – Decaf Pike Place® Roast</div>
-                        </div>
-                    </div>
-                    <!-- END CHANGE PART HOT COFFEES -->
-
-                    <!-- START CHANGE PART HOT TEAS -->
-                    <div class="menu-pic" id="hot-teas" style=" width: 70% ; height: auto; display: none;">
-                        <div class="sub-title-1">Menu /
-                            <span>Hot Teas</span>
-                        </div>
-                        <div class="title">Hot Teas</div>
-                        <div class="sub-title">Chai Teas</div>
-                        <div class="pic-chai">
-                            <div class="chai-latte-pic"><img src="images/menu/Drinks/hot-tea.jpg"></div>
-                            <div class="chai-latte-text">Chai Tea Latte</div>
-                            <div class="chai-tea-pic"><img src="images/menu/Hot Teas/chai tea.jpg"></div>
-                            <div class="chai-tea-text">Chai Tea </div>
-                        </div>
-                        <div class="sub-title">Black Teas</div>
-                        <div class="pic-black">
-                            <div class="earl-grey-pic"><img src="images/menu/Hot Teas/Earl-Grey.jpg"></div>
-                            <div class="earl-grey-text">Earl Grey Tea </div>
-                            <div class="london-tea-latte-pic"><img src="images/menu/Hot Teas/london tea latte.jpg"></div>
-                            <div class="london-tea-latte-text">London Fog Tea Latte </div>
-                            <div class="english-breakfast-tea-pic"><img src="images/menu/Hot Teas/english breakfast tea.jpg"></div>
-                            <div class="english-breakfast-tea-text">Royal English Breakfast Tea </div>
-                            <div class="royal-english-latte-pic"><img src="images/menu/Hot Teas/royal english tea latte.jpg"></div>
-                            <div class="royal-english-latte-text">Royal English Breakfast Tea Latte </div>
-                        </div>
-                        <div class="sub-title">Green Teas</div>
-                        <div class="pic-green">
-                            <div class="emperor-pic"><img src="images/menu/Hot Teas/emperor.jpg"></div>
-                            <div class="emperor-text">Emperor’s Clouds & Mist® </div>
-                            <div class="matcha-tea-latte-pic"><img src="images/menu/Hot Teas/matcha tea latte.jpg"></div>
-                            <div class="matcha-tea-latte-text">Matcha Tea Latte </div>
-                            <div class="honey-citrus-pic"><img src="images/menu/Hot Teas/honey citrus mint.jpg"></div>
-                            <div class="honey-citrus-text">Honey Citrus Mint Tea </div>
-                            <div class="mint-brewed-pic"><img src="images/menu/Hot Teas/Mint Brewed.jpg"></div>
-                            <div class="mint-brewed-text">Jade Citrus Mint® Brewed Tea</div>
-                        </div>
-                        <div class="sub-title">Herbal Teas</div>
-                        <div class="pic-herbal">
-                            <div class="majesty-pic"><img src="images/menu/Hot Teas/mint majesty.jpg"></div>
-                            <div class="majesty-text">Mint Majesty®</div>
-                            <div class="peach-tranquility-pic"><img src="images/menu/Hot Teas/peach tranquility.jpg"></div>
-                            <div class="peach-tranquility-text">Peach Tranquility® </div>
-                        </div>
-                    </div>
-                    <!-- END CHANGE PART HOT TEAS -->
-                    <div class="menu-pic" id="hot-drinks" style=" width: 60% ; height: auto; display: none;">
-                        <div class="sub-title-1">Menu /
-                            <span>Hot Drinks</span>
-                        </div>
-                        <div class="title">Hot Drinks</div>
-                        <div class="sub-title">Hot Chocolates</div>
-                        <div class="pic-hot-choco">
-                            <div class="hot-choco-pic"><img src="images/menu/Drinks/hot-drink.jpg"></div>
-                            <div class="hot-choco-text">Hot Chocolate</div>
-                            <div class="white-choco-pic"><img src="images/menu/Hot Drinks/white hot choco.jpg"></div>
-                            <div class="white-choco-text">White Hot Chocolate </div>
-                        </div>
-                        <div class="sub-title">Juice</div>
-                        <div class="pic-juice">
-                            <div class="caramel-apple-pic"><img src="images/menu/Hot Drinks/caramel apple.jpg"></div>
-                            <div class="caramel-apple-text">Caramel Apple Spice</div>
-                            <div class="steam-apple-pic"><img src="images/menu/Hot Drinks/steam apple.jpg"></div>
-                            <div class="steam-apple-text">Steamed Apple Juice</div>
-                        </div>
-                        <div class="sub-title">Steamers</div>
-                        <div class="pic-steamer">
-                            <div class="cinnamon-creme-pic"><img src="images/menu/Hot Drinks/cinnamon creme.jpg"></div>
-                            <div class="cinnamon-creme-text">Cinnamon Dolce Crème</div>
-                            <div class="steam-milk-pic"><img src="images/menu/Hot Drinks/steamed milk.jpg"></div>
-                            <div class="steam-milk-text">Steamed Milk</div>
-                            <div class="vanilla-creme-pic"><img src="images/menu/Hot Drinks/vanilla creme.jpg"></div>
-                            <div class="vanilla-creme-text">Vanilla Crème</div>
-                        </div>
-                    </div>
-
-                    <div class="menu-pic" id="frappuccino" style=" width: 60% ; height: auto; display: none;">
-                        <div class="sub-title-1">Menu /
-                            <span>Frappuccino® Blended Beverages</span>
-                        </div>
-                        <div class="title">Frappuccino® Blended Beverages</div>
-                        <div class="sub-title">Coffee Frappuccino®</div>
-                        <div class="pic-coffee-frap">
-                            <div class="straw-frappuccino-pic"><img src="images/menu/Drinks/frappuccino.jpg"></div>
-                            <div class="straw-frappuccino-text">Strawberry Funnel Cake Frappuccino® Blended Beverage</div>
-                            <div class="mocha-cookie-pic"><img src="images/menu/Frappuccino/mocha cookie.jpg"></div>
-                            <div class="mocha-cookie-text">Mocha Cookie Crumble Frappuccino® Blended Beverage</div>
-                            <div class="caramel-ribbon-pic"><img src="images/menu/Frappuccino/caramel ribbon.jpg"></div>
-                            <div class="caramel-ribbon-text">Caramel Ribbon Crunch Frappuccino® Blended Beverage</div>
-                            <div class="espresso-frap-pic"><img src="images/menu/Frappuccino/espresso frappuccino.jpg"></div>
-                            <div class="espresso-frap-text">Espresso Frappuccino® Blended Beverage </div>
-                            <div class="caffe-vanilla-pic"><img src="images/menu/Frappuccino/caffe vanilla.jpg"></div>
-                            <div class="caffe-vanilla-text">Caffè Vanilla Frappuccino® Blended Beverage </div>
-                            <div class="caramel-frap-pic"><img src="images/menu/Frappuccino/caramel frappuccino.jpg"></div>
-                            <div class="caramel-frap-text">Caramel Frappuccino® Blended Beverage</div>
-                            <div class="coffee-frap-pic"><img src="images/menu/Frappuccino/coffee frappuccino.jpg"></div>
-                            <div class="coffee-frap-text">Coffee Frappuccino® Blended Beverage </div>
-                            <div class="mocha-frap-pic"><img src="images/menu/Frappuccino/mocha frappuccino.jpg"></div>
-                            <div class="mocha-frap-text">Mocha Frappuccino® Blended Beverage</div>
-                            <div class="-pic"><img src="images/menu/Frappuccino/java chip frappuccino.jpg"></div>
-                            <div class="-text">Java Chip Frappuccino® Blended Beverage</div>
-                            <div class="white-choco-mocha-pic"><img src="images/menu/Frappuccino/white choco mocha.jpg"></div>
-                            <div class="white-choco-mocha-text">White Chocolate Mocha Frappuccino® Blended Beverage</div>
-                        </div>
-                        <div class="sub-title">Creme Frappuccino®</div>
-                        <div class="pic-creme-frap">
-                            <div class="strawberry-funnel-pic"><img src="images/menu/Frappuccino/strawberry funnel.jpg"></div>
-                            <div class="strawberry-funnel-text">Strawberry Funnel Cake Crème Frappuccino® Blended Beverage</div>
-                            <div class="choco-crumble-pic"><img src="images/menu/Frappuccino/choco cookie crumble.jpg"></div>
-                            <div class="choco-crumble-text">Chocolate Cookie Crumble Crème Frappuccino® </div>
-                            <div class="caramel-crunch-pic"><img src="images/menu/Frappuccino/caramel ribbon crunch.jpg"></div>
-                            <div class="caramel-crunch-text">Caramel Ribbon Crunch Crème Frappuccino® Blended Beverage</div>
-                            <div class="strawberry-creme-pic"><img src="images/menu/Frappuccino/strawberry creme.jpg"></div>
-                            <div class="strawberry-creme-text">Strawberry Crème Frappuccino® Blended Beverage</div>
-                            <div class="chai-creme-pic"><img src="images/menu/Frappuccino/chai creme.jpg"></div>
-                            <div class="chai-creme-text">Chai Crème Frappuccino® Blended Beverage </div>
-                            <div class="double-choco-pic"><img src="images/menu/Frappuccino/double choco.jpg"></div>
-                            <div class="double-choco-text">Double Chocolaty Chip Crème Frappuccino® Blended Beverage </div>
-                            <div class="matcha-creme-pic"><img src="images/menu/Frappuccino/matcha creme.jpg"></div>
-                            <div class="matcha-creme-text">Matcha Crème Frappuccino® Blended Beverage </div>
-                            <div class="vanilla-bean-pic"><img src="images/menu/Frappuccino/vanilla bean.jpg"></div>
-                            <div class="vanilla-bean-text">Vanilla Bean Crème Frappuccino® Blended Beverage </div>
-                            <div class="white-creme-pic"><img src="images/menu/Frappuccino/white choco creme.jpg"></div>
-                            <div class="white-creme-text">White Chocolate Crème Frappuccino® Blended Beverage
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="menu-pic" id="" style=" width: 60% ; height: 100vh; display: none;">
-
-                    </div>
-
+                </div>
+            </div>
+            <!-- END FRAPPUCCINO PART -->
+            <div class="menu-pic" id="cold-coffees" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Cold Coffees</span>
+                </div>
+                <div class="title">Cold Coffees</div>
+                <div class="sub-title">Cold Brews</div>
+                <div class="pic-cold-brew">
+                    <div class="honey-cold-pic"><img src="images/menu/Drinks/cold-cof.jpg"></div>
+                    <div class="honey-cold-text">Honey Almondmilk Cold Brew </div>
+                    <!-- <div class="salted-caramel-pic"><img src="images/menu/Cold Coffees/salted caramel.jpg"></div>
+                    <div class="salted-caramel-text"> Salted Caramel Cream Cold Brew </div> -->
+                    <div class="reserve-cold-pic"><img src="images/menu/Cold Coffees/reserve cold brew.jpg"></div>
+                    <div class="reserve-cold-text"> Starbucks Reserve® Cold Brew</div>
+                    <div class="cold-brew-pic"><img src="images/menu/Cold Coffees/cold brew.jpg"></div>
+                    <div class="cold-brew-text">Starbucks® Cold Brew Coffee </div>
+                    <div class="vanilla-sweet-pic"><img src="images/menu/Cold Coffees/vanilla sweet cream.jpg"></div>
+                    <div class="vanilla-sweet-text">Vanilla Sweet Cream Cold Brew </div>
+                    <div class="cold-milk-pic"><img src="images/menu/Cold Coffees/cold brew milk.jpg"></div>
+                    <div class="cold-milk-text">Starbucks® Cold Brew Coffee with Milk </div>
+                </div>
+                <div class="sub-title">Nitro Cold Brews</div>
+                <div class="pic-nitro-cold-brew">
+                    <div class="almondmilk-pic"><img src="images/menu/Cold Coffees/honey almondmilk.jpg"></div>
+                    <div class="almondmilk-text">Honey Almondmilk Nitro Cold Brew </div>
+                    <div class="nitro-cold-brew-pic"><img src="images/menu/Cold Coffees/reserve nitro cold brew.jpg"></div>
+                    <div class="nitro-cold-brew-text">Starbucks Reserve® Nitro Cold Brew </div>
+                    <div class="salted-nitro-pic"><img src="images/menu/Cold Coffees/salted cream nitro.jpg"></div>
+                    <div class="salted-nitro-text">Salted Caramel Cream Nitro Cold Brew </div>
+                    <div class="nitro-cold-pic"><img src="images/menu/Cold Coffees/nitro cold brew.jpg"></div>
+                    <div class="nitro-cold-text"> Nitro Cold Brew </div>
+                    <div class="sweet-nitro-pic"><img src="images/menu/Cold Coffees/sweet cream nitro.jpg"></div>
+                    <div class="sweet-nitro-text">Vanilla Sweet Cream Nitro Cold Brew </div>
+                </div>
+                <div class="sub-title">Iced Americano</div>
+                <div class="pic-iced-americano">
+                    <div class="iced-usa-pic"><img src="images/menu/Cold Coffees/iced caffe americano.jpg"></div>
+                    <div class="iced-usa-text"> Iced Caffè Americano </div>
+                </div>
+                <div class="sub-title">Iced Coffees</div>
+                <div class="pic-iced-coffee">
+                    <div class="iced-coffee-pic"><img src="images/menu/Cold Coffees/iced coffee.jpg"></div>
+                    <div class="iced-coffee-text">Iced Coffee </div>
+                    <div class="iced-milk-pic"><img src="images/menu/Cold Coffees/iced coffee milk.jpg"></div>
+                    <div class="iced-milk-text"> Iced Coffee with Milk </div>
+                    <div class="iced-espresso-pic"><img src="images/menu/Cold Coffees/iced espresso.jpg"></div>
+                    <div class="iced-espresso-text"> Iced Espresso </div>
+                </div>
+                <div class="sub-title">Iced Shaken Espresso</div>
+                <div class="pic-iced-shaken">
+                    <div class="choco-almondmilk-pic"><img src="images/menu/Cold Coffees/iced choco almondmilk.jpg"></div>
+                    <div class="choco-almondmilk-text">Iced Chocolate Almondmilk Shaken Espresso </div>
+                    <div class="iced-shaken-pic"><img src="images/menu/Cold Coffees/iced shaken.jpg"></div>
+                    <div class="iced-shaken-text">Iced Shaken Espresso </div>
+                </div>
+                <div class="sub-title">Iced Flat Whites</div>
+                <div class="pic-iced-flat">
+                    <div class="iced-flat-pic"><img src="images/menu/Cold Coffees/iced flat white.jpg"></div>
+                    <div class="iced-flat-text"> Iced Flat White</div>
+                    <div class="iced-almondmilk-pic"><img src="images/menu/Cold Coffees/iced honey almondmilk.jpg"></div>
+                    <div class="iced-almondmilk-text"> Iced Honey Almondmilk Flat White </div>
+                </div>
+                <div class="sub-title">Iced Lattes</div>
+                <div class="pic-iced-latte">
+                    <div class="reserve-latte-pic"><img src="images/menu/Cold Coffees/reserve iced latte.jpg"></div>
+                    <div class="reserve-latte-text">Starbucks Reserve® Iced Latte </div>
+                    <div class="hazelnut-bianco-pic"><img src="images/menu/Cold Coffees/iced hazelnut bianco.jpg"></div>
+                    <div class="hazelnut-bianco-text"> Starbucks Reserve® Iced Hazelnut Bianco Latte </div>
+                    <div class="caffe-latte-pic"><img src="images/menu/Cold Coffees/iced caffe latte.jpg"></div>
+                    <div class="caffe-latte-text">Iced Caffè Latte </div>
+                    <div class="cinnamon-dolce-pic"><img src="images/menu/Cold Coffees/cinnamon dolce.jpg"></div>
+                    <div class="cinnamon-dolce-text">Iced Cinnamon Dolce Latte </div>
+                    <div class="blonde-latte-pic"><img src="images/menu/Cold Coffees/blonde vanilla latte.jpg"></div>
+                    <div class="blonde-latte-text">Iced Starbucks® Blonde Vanilla Latte </div>
+                </div>
+                <div class="sub-title">Iced Macchiatos</div>
+                <div class="pic-iced-macchiato">
+                    <div class="iced-macchi-pic"><img src="images/menu/Cold Coffees/iced caramel macchiato.jpg"></div>
+                    <div class="iced-macchi-text">Iced Caramel Macchiato </div>
+                </div>
+                <div class="sub-title">Iced Mochas</div>
+                <div class="pic-iced-mocha">
+                    <div class="caffe-mocha-pic"><img src="images/menu/Cold Coffees/iced caffe mocha.jpg"></div>
+                    <div class="caffe-mocha-text">Iced Caffè Mocha </div>
+                    <div class="iced-white-pic"><img src="images/menu/Cold Coffees/iced white mocha.jpg"></div>
+                    <div class="iced-white-text"> Iced White Chocolate Mocha </div>
+                    <div class="dark-choco-pic"><img src="images/menu/Cold Coffees/reserce iced dark choco.jpg"></div>
+                    <div class="dark-choco-text"> Starbucks Reserve® Iced Dark Chocolate Mocha </div>
+                </div>
+                <div class="sub-title">Iced Clover® Brewed Coffees</div>
+                <div class="pic-clover">
+                    <div class="rwanda-pic"><img src="images/menu/Hot Coffees/rwanda.jpg"></div>
+                    <div class="rwanda-text">Rwanda Hingakawa Iced Clover® Starbucks Reserve® </div>
+                    <div class="colombia-pic"><img src="images/menu/Hot Coffees/colombia.jpg"></div>
+                    <div class="colombia-text">Colombia Finca La Reserva Iced Clover® Starbucks Reserve®</div>
+                    <div class="bolivia-pic"><img src="images/menu/Hot Coffees/bolivia.jpg"></div>
+                    <div class="bolivia-text">Bolivia Sol de la Mañana Iced Clover® Starbucks Reserve®</div>
+                    <div class="ecuador-pic"><img src="images/menu/Hot Coffees/ecuador.jpg"></div>
+                    <div class="ecuador-text">Ecuador Loja Iced Clover® Starbucks Reserve®</div>
+                    <div class="papua-pic"><img src="images/menu/Hot Coffees/papua.jpg"></div>
+                    <div class="papua-text">Sun-Dried Papua New Guinea Ulya Iced Clover® Starbucks Reserve®</div>
+                    <div class="brazil-pic"><img src="images/menu/Hot Coffees/brazil.jpg"></div>
+                    <div class="brazil-text">Brazil Isidro Pereira Estate Iced Clover® Starbucks Reserve®</div>
+                    <div class="place-roast-pic"><img src="images/menu/Hot Coffees/place-roast.jpg"></div>
+                    <div class="place-roast-text">Iced Clover Brewed® Pike Place® Roast</div>
+                    <div class="yukon-pic"><img src="images/menu/Hot Coffees/yukon-blend.jpg"></div>
+                    <div class="yukon-text">Organic Yukon Blend® Iced Clover®</div>
+                    <div class="gold-coast-pic"><img src="images/menu/Hot Coffees/gold-coast.jpg"></div>
+                    <div class="gold-coast-text">Iced Clover Brewed® Gold Coast Blend®</div>
+                    <div class="breakfast-blend-pic"><img src="images/menu/Hot Coffees/breakfast-blend.jpg"></div>
+                    <div class="breakfast-blend-text">Iced Clover Brewed® Breakfast Blend</div>
+                    <div class="kenya-pic"><img src="images/menu/Hot Coffees/kenya.jpg"></div>
+                    <div class="kenya-text">Kenya Iced Clover®</div>
+                    <div class="veranda-pic"><img src="images/menu/Hot Coffees/veranda.jpg"></div>
+                    <div class="veranda-text">Veranda Blend® Iced Clover®</div>
+                    <div class="guatemala-pic"><img src="images/menu/Hot Coffees/guatemala.jpg"></div>
+                    <div class="guatemala-text">Iced Clover Brewed® Guatemala Antigua</div>
+                    <div class="willow-pic"><img src="images/menu/Hot Coffees/willow-blend.jpg"></div>
+                    <div class="willow-text">Iced Clover Brewed® Starbucks Willow Blend</div>
+                    <div class="decaf-sumatra-pic"><img src="images/menu/Hot Coffees/decaf-sumatra.jpg"></div>
+                    <div class="decaf-sumatra-text">Decaf Sumatra Iced Clover®</div>
+                    <div class="verona-pic"><img src="images/menu/Hot Coffees/verona-clover.jpg"></div>
+                    <div class="verona-text">Caffé Verona® Iced Clover®</div>
+                    <div class="decaf-pike-pic"><img src="images/menu/Hot Coffees/Decaf-Pike.jpg"></div>
+                    <div class="decaf-pike-text">Iced Clover Brewed® Decaf Pike Place® Roast</div>
+                    <div class="espresso-roast-pic"><img src="images/menu/Hot Coffees/epresso-roast.jpg"></div>
+                    <div class="espresso-roast-text">Iced Espresso Roast Clover®</div>
+                    <div class="decaf-espresso-pic"><img src="images/menu/Hot Coffees/decaf-spresso.jpg"></div>
+                    <div class="decaf-espresso-text">Iced Clover Brewed® Decaf Espresso Roast </div>
+                    <div class="ethiopia-pic"><img src="images/menu/Hot Coffees/ethiopia.jpg"></div>
+                    <div class="ethiopia-text">Iced Ethiopia Clover®</div>
+                    <div class="french-roast-pic"><img src="images/menu/Hot Coffees/french-roast.jpg"></div>
+                    <div class="french-roast-text">Iced French Roast Clover®</div>
+                    <div class="italian-pic"><img src="images/menu/Hot Coffees/italian-roast.jpg"></div>
+                    <div class="italian-text">Iced Clover Brewed® Italian Roast </div>
+                    <div class="komodo-pic"><img src="images/menu/Hot Coffees/komodo.jpg"></div>
+                    <div class="komodo-text">Iced Komodo Dragon Clover® </div>
+                    <div class="sumatra-pic"><img src="images/menu/Hot Coffees/sumatra.jpg"></div>
+                    <div class="sumatra-text">Iced Sumatra Clover®</div>
+                </div>
+            </div>
+            <div class="menu-pic" id="iced-teas" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Iced Teas</span>
+                </div>
+                <div class="title">Iced Teas</div>
+                <div class="sub-title">Bottled Teas</div>
+                <div class="pic-bottle-tea">
+                    <div class="teavana-green-pic"><img src="images/menu/Drinks/ice-tea.jpg"></div>
+                    <div class="teavana-green-text">Teavana® Sparkling Unsweetened Peach Nectarine Green Tea</div>
+                    <div class="teavana-black-pic"><img src="images/menu/Iced Teas/mango blacktea.jpg"></div>
+                    <div class="teavana-black-text">Teavana® Mango Black Tea </div>
+                </div>
+                <div class="sub-title">Iced Black Teas</div>
+                <div class="pic-iced-black">
+                    <div class="guava-black-pic"><img src="images/menu/Iced Teas/guava blacktea.jpg"></div>
+                    <div class="guava-black-text">Iced Guava Black Tea </div>
+                    <div class="guava-lemon-pic"><img src="images/menu/Iced Teas/guava blacktea lemon.jpg"></div>
+                    <div class="guava-lemon-text">Iced Guava Black Tea Lemonade </div>
+                    <div class="iced-black-pic"><img src="images/menu/Iced Teas/iced blacktea.jpg"></div>
+                    <div class="iced-black-text">Iced Black Tea </div>
+                    <div class="black-lemon-pic"><img src="images/menu/Iced Teas/blacktea lemon.jpg"></div>
+                    <div class="black-lemon-text">Iced Black Tea Lemonade</div>
+                    <div class="royal-latte-pic"><img src="images/menu/Iced Teas/roayl eng tea latte.jpg"></div>
+                    <div class="royal-latte-text">Iced Royal English Breakfast Tea Latte </div>
+                    <div class="fogtea-pic"><img src="images/menu/Iced Teas/london fog tea.jpg"></div>
+                    <div class="fogtea-text">Iced London Fog Tea Latte </div>
+                </div>
+                <div class="sub-title">Iced Chai Teas</div>
+                <div class="pic-iced-chai">
+                    <div class="iced-chai-latte-pic"><img src="images/menu/Iced Teas/iced chaitea latte.jpg"></div>
+                    <div class="iced-chai-latte-text">Iced Chai Tea Latte</div>
+                </div>
+                <div class="sub-title">Iced Green Teas</div>
+                <div class="pic-iced-green">
+                    <div class="peach-green-pic"><img src="images/menu/Iced Teas/peach green.jpg"></div>
+                    <div class="peach-green-text">Iced Peach Green Tea </div>
+                    <div class="peach-lemon-pic"><img src="images/menu/Iced Teas/peach green lemon.jpg"></div>
+                    <div class="peach-lemon-text">Iced Peach Green Tea Lemonade </div>
+                    <div class="matchatea-latte-pic"><img src="images/menu/Iced Teas/iced matchatea latte.jpg"></div>
+                    <div class="matchatea-latte-text">Iced Matcha Tea Latte </div>
+                    <div class="iced-green-pic"><img src="images/menu/Iced Teas/iced green.jpg"></div>
+                    <div class="iced-green-text">Iced Green Tea </div>
+                    <div class="green-lemon-pic"><img src="images/menu/Iced Teas/iced green lemon.jpg"></div>
+                    <div class="green-lemon-text">Iced Green Tea Lemonade </div>
+                    <div class="matcha-lemon-pic"><img src="images/menu/Iced Teas/iced matcha lemon.jpg"></div>
+                    <div class="matcha-lemon-text">Iced Matcha Lemonade</div>
+                </div>
+                <div class="sub-title">Iced Herbal Teas</div>
+                <div class="pic-iced-herbal">
+                    <div class="passiontea-pic"><img src="images/menu/Iced Teas/passion tango tea.jpg"></div>
+                    <div class="passiontea-text">Iced Passion Tango™ Tea </div>
+                    <div class="passion-lemon-pic"><img src="images/menu/Iced Teas/passion tango lemon.jpg"></div>
+                    <div class="passion-lemon-text">Iced Passion Tango® Tea Lemonade </div>
                 </div>
 
-                <!-- start footer -->
+            </div>
+
+
+
+            <!-- start footer -->
+            <div class="footer" style="background-color: #ffffff;">
                 <div class="space-top"></div>
-                <div class="footer">
-                    <div class="space-top" style="border-top: 2px solid rgba(196, 196, 196, 0.466);"></div>
-                    <div class="column-1" style="height: 550px; "></div>
-                    <div class="footer-main">
-                        <div class="about-us">
-                            <b>
-                                <p>About Us</p>
-                            </b>
-                            <li>Our Heritage</li>
-                            <li>Our Coffee </li>
-                            <li>Stories and News</li>
-                            <li> Investor Relations</li>
-                            <li> Policies and Standards</li>
-                            <li> Customer Service</li>
+                <div class="footer-main">
+                    <div class="about-us">
+                        <h3>About Us</h3>
+                        <p>Our Heritage</p>
+                        <p>Our Coffee </p>
+                        <p>Stories and News</p>
+                        <p> Investor Relations</p>
+                        <p> Policies and Standards</p>
+                        <p> Customer Service</p>
+                    </div>
+                    <div class="careers">
+                        <h3>Careers </h3>
+                        <p>Culture and Values</p>
+                        <p> Inclusion, Diversity, and Equity</p>
+                        <p>College Achievement Plan</p>
+                        <p>U.S. Careers</p>
+                        <p>International Careers</p>
+                    </div>
+                    <div class="social">
+                        <h3>Social Impact </h3>
+                        <p> Ethical Sourcing </p>
+                        <p> Leading in Sustainability </p>
+                        <p> Strengthening Communities </p>
+                        <p> Creating Opportunities </p>
+                        <p> Global Social Impact Report</p>
+                    </div>
+                    <div class="business">
+                        <h3>For Business Partners </h3>
+                        <p> Landlord Support Center </p>
+                        <p>Suppliers</p>
+                        <p> Corporate Gift Card Sales</p>
+                        <p> Office and Foodservice Coffee</p>
+                    </div>
+                    <div class="order">
+                        <h3>Order and Pickup </h3>
+                        <p> Order on the App </p>
+                        <p> Order on the Web </p>
+                        <p>Delivery</p>
+                        <p> Order and Pickup Options </p>
+                        <p> Explore and Find Coffee for Home</p>
+                    </div>
+                </div>
+                <div class="icon-footer">
+                    <div class="icon">
+                        <div class="spotify">
+                            <i class="fab fa-spotify"></i>
                         </div>
-                        <div class="careers">
-                            <b>
-                                <p>Careers </p>
-                            </b>
-                            <li>Culture and Values</li>
-                            <li> Inclusion, Diversity, and Equity</li>
-                            <li>College Achievement Plan</li>
-                            <li>U.S. Careers</li>
-                            <li>International Careers</li>
+                        <div class="facebook">
+                            <i class="fab fa-facebook"></i>
                         </div>
-                        <div class="social">
-                            <b>
-                                <p>Social Impact </p>
-                            </b>
-                            <li> Ethical Sourcing </li>
-                            <li> Leading in Sustainability </li>
-                            <li> Strengthening Communities </li>
-                            <li> Creating Opportunities </li>
-                            <li> Global Social Impact Report</li>
+                        <div class="pinterest">
+                            <i class="fab fa-pinterest"></i>
                         </div>
-                        <div class="business">
-                            <b>
-                                <p>For Business Partners </p>
-                            </b>
-                            <li> Landlord Support Center </li>
-                            <li>Suppliers</li>
-                            <li> Corporate Gift Card Sales</li>
-                            <li> Office and Foodservice Coffee</li>
+                        <div class="insta">
+                            <i class="fab fa-instagram-square"></i>
                         </div>
-                        <div class="order">
-                            <b>
-                                <p>Order and Pickup </p>
-                            </b>
-                            <li> Order on the App </li>
-                            <li> Order on the Web </li>
-                            <li>Delivery</li>
-                            <li> Order and Pickup Options </li>
-                            <li> Explore and Find Coffee for Home</li>
+                        <div class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="twitter">
+                            <i class="fab fa-twitter"></i>
                         </div>
                     </div>
-                    <div class="icon-footer">
-                        <div class="icon">
-                            <div class="spotify">
-                                <i class="fab fa-spotify"></i>
-                            </div>
-                            <div class="facebook">
-                                <i class="fab fa-facebook"></i>
-                            </div>
-                            <div class="pinterest">
-                                <i class="fab fa-pinterest"></i>
-                            </div>
-                            <div class="insta">
-                                <i class="fab fa-instagram-square"></i>
-                            </div>
-                            <div class="youtube">
-                                <i class="fab fa-youtube"></i>
-                            </div>
-                            <div class="twitter">
-                                <i class="fab fa-twitter"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="underfooter" style="margin-bottom: 50px;">
-                        <br>
-                        <b>
+                </div>
+                <div class="underfooter" style="margin-bottom: 50px;">
+                    <br>
+                    <b>
                             <p> Privacy Policy | Terms of Use | CA Supply Chain Act | Submit Your Idea | Cookie
                                 Preferences</p>
-                        </b> <br>
-                        <p>© 2021 Starbucks Coffee Company. All rights reserved.</p>
-                    </div>
+                                </b>
+                    <br>
+                    <p>© 2021 Starbucks Coffee Company. All rights reserved.</p>
                 </div>
             </div>
-            <!-- end footer -->
         </div>
-        <!-- start sticky footer -->
-        <div class="sticky-footer">
-            <div class="content-footer">
-                <div class="column-1" style="width: 20%; height:100px; background-color: #1e3932;"></div>
-                <div class="main-footer">
-                    <a href="findAStore.html">
-                        <div class="pick-store">
-                            <div class="content-1">
-                                For item availability
-                            </div>
-                            <div class="content-2">Choose a store</div>
-                            <div class="arrow">
-                                <ion-icon name="chevron-down-outline"></ion-icon>
-                            </div>
+        <!-- end footer -->
+    </div>
+    <!-- start sticky footer -->
+    <div class="sticky-footer">
+        <div class="content-footer">
+            <div class="column-1" style="width: 20%; height:100px; background-color: #1e3932;"></div>
+            <div class="main-footer">
+                <a href="findAStore.html">
+                    <div class="pick-store">
+                        <div class="content-1">
+                            For item availability
                         </div>
-                    </a>
-                    <div class="shopping">
-                        <ion-icon name="bag-outline"></ion-icon>
+                        <div class="content-2">Choose a store</div>
+                        <div class="arrow">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
                     </div>
-                </div>
-                <div class="column-1" style="width: 20%; height:100px; background-color: #1e3932; display: flex; justify-content: flex-end;">
+                </a>
+                <div class="shopping">
+                    <ion-icon name="bag-outline"></ion-icon>
                 </div>
             </div>
+            <div class="column-1" style="width: 20%; height:100px; background-color: #1e3932; display: flex; justify-content: flex-end;">
+            </div>
         </div>
-        <!-- end sticky footer -->
+    </div>
+    <!-- end sticky footer -->
+
 
     </div>
     <!-- script of icon -->
@@ -556,6 +742,8 @@
             document.getElementById("hot-teas").style.display = "none";
             document.getElementById("hot-drinks").style.display = "none";
             document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
         }
 
         function changeTea() {
@@ -564,7 +752,8 @@
             document.getElementById("hot-teas").style.display = "block";
             document.getElementById("hot-drinks").style.display = "none";
             document.getElementById("frappuccino").style.display = "none";
-
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
         }
 
         function changeDrink() {
@@ -573,6 +762,8 @@
             document.getElementById("hot-teas").style.display = "none";
             document.getElementById("hot-drinks").style.display = "block";
             document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
         }
 
         function changeFrap() {
@@ -581,6 +772,28 @@
             document.getElementById("hot-teas").style.display = "none";
             document.getElementById("hot-drinks").style.display = "none";
             document.getElementById("frappuccino").style.display = "block";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
+        }
+
+        function changeColdCoffees() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("hot-coffees").style.display = "none";
+            document.getElementById("hot-teas").style.display = "none";
+            document.getElementById("hot-drinks").style.display = "none";
+            document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "block";
+            document.getElementById("iced-teas").style.display = "none";
+        }
+
+        function changeIcedTeas() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("hot-coffees").style.display = "none";
+            document.getElementById("hot-teas").style.display = "none";
+            document.getElementById("hot-drinks").style.display = "none";
+            document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "block";
         }
     </script>
 </body>
