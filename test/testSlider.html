@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            margin: 0;
+            border: 0;
+        }
+
+        #container {
+            height: 250px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: pink;
+            /* display: grid; */
+            place-items: center
+        }
+
+        #slider-container {
+            width: 100%;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* custom button */
+        #slider-container .btn {
+            position: absolute;
+            top: calc(50% - 30px);
+            height: 30px;
+            width: 30px;
+            border-left: 8px solid red;
+            border-top: 8px solid red;
+        }
+
+        #slider-container .btn:hover {
+            transform: scale(1.2);
+        }
+
+        #slider-container .btn.inactive {
+            border-color: rgb(153, 121, 126)
+        }
+
+        /* button left */
+        #slider-container .btn:first-of-type {
+            transform: rotate(-45deg);
+            left: 55px;
+        }
+
+        /* button right */
+        #slider-container .btn:last-of-type {
+            transform: rotate(135deg);
+            right: 55px;
+        }
+
+        #slider-container #slider {
+            display: flex;
+            width: 1000%;
+            height: 100%;
+            transition: all .5s;
+        }
+
+        /* slide */
+        #slider-container #slider .slide {
+            margin: auto 10px;
+            background-color: black;
+            display: grid;
+            place-items: center;
+        }
+
+        /* number in span  */
+        #slider-container #slider .slide span {
+            color: white;
+            font-size: 150px;
+        }
+
+        #slider-container #slider .slide {
+            width: calc(2%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h4 style="margin: 0; margin-bottom: 30px;">FEATURED</h4>
+        <div id="slider-container">
+            <span onclick="slideRight()" class="btn"></span>
+            <div id="slider">
+                <div class="slide" style="margin-left: 200px;"><span>1</span></div>
+                <div class="slide"><span>2</span></div>
+                <div class="slide"><span>3<span></div>
+                <div class="slide"><span>4</span></div>
+                <div class="slide"><span>5</span></div>
+                <div class="slide"><span>6</span></div>
+                <div class="slide"><span>7</span></div>
+                <div class="slide"><span>8</span></div>
+                <div class="slide"><span>9</span></div>
+                <div class="slide"><span>10</span></div>
+            </div>
+            <span onclick="slideLeft()" class="btn"></span>
+        </div>
+    </div>
+
+    <script>
+        var container = document.getElementById('container')
+        var slider = document.getElementById('slider');
+        var slides = document.getElementsByClassName('slide').length;
+        var buttons = document.getElementsByClassName('btn');
+
+
+        var currentPosition = 0;
+        var currentMargin = 0;
+        var slidesPerPage = 3;
+        var slidesCount = slides - slidesPerPage;
+        var containerWidth = container.offsetWidth;
+        var prevKeyActive = false;
+        var nextKeyActive = true;
+
+        window.addEventListener("resize", checkWidth);
+
+        function checkWidth() {
+            containerWidth = container.offsetWidth;
+            setParams(containerWidth);
+        }
+
+        function setParams(w) {
+            slidesCount = slides - slidesPerPage;
+            if (currentPosition > slidesCount) {
+                currentPosition -= slidesPerPage;
+            };
+            currentMargin = -currentPosition * (100 / slidesPerPage);
+            slider.style.marginLeft = currentMargin + '%';
+            if (currentPosition > 0) {
+                buttons[0].classList.remove('inactive');
+            }
+            if (currentPosition < slidesCount) {
+                buttons[1].classList.remove('inactive');
+            }
+            if (currentPosition >= slidesCount) {
+                buttons[1].classList.add('inactive');
+            }
+        }
+
+        setParams();
+
+        function slideRight() {
+            if (currentPosition != 0) {
+                slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
+                currentMargin += (100 / slidesPerPage);
+                currentPosition--;
+            };
+            if (currentPosition === 0) {
+                buttons[0].classList.add('inactive');
+            }
+            if (currentPosition < slidesCount) {
+                buttons[1].classList.remove('inactive');
+            }
+        };
+
+        function slideLeft() {
+            if (currentPosition != slidesCount) {
+                slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
+                currentMargin -= (100 / slidesPerPage);
+                currentPosition++;
+            };
+            if (currentPosition == slidesCount) {
+                buttons[1].classList.add('inactive');
+            }
+            if (currentPosition > 0) {
+                buttons[0].classList.remove('inactive');
+            }
+        };
+    </script>
+</body>
+
+</html>
