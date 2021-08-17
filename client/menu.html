@@ -83,15 +83,16 @@
                     <p><a href="#frappuccino" onclick="changeFrap()" style="color:rgb(126, 126, 126) ;"> Frappuccino® Blended Beverages</a></p>
                     <p><a href="#cold-coffees" onclick="changeColdCoffees()" style="color:rgb(126, 126, 126) ;"> Cold Coffees</a></p>
                     <p><a href="#iced-teas" onclick="changeIcedTeas()" style="color:rgb(126, 126, 126) ;"> Iced Teas</a></p>
-                    <p>Cold Drinks</p>
+                    <p><a href="#cold-drinks" onclick="changeColdDrinks()" style="color:rgb(126, 126, 126) ;">Cold Drinks</a></p>
                 </div>
                 <div class="menu-food">
                     <h3>Food</h3>
-                    <p>Hot Breakfast </p>
-                    <p>Bakery</p>
-                    <p>Lunch</p>
-                    <p>Snacks & Sweets</p>
-                    <p>Oatmeal & Yogurt</p>
+                    <p> <a href="#hot-breakfast" onclick="changeHotBreakfast()" style="color:rgb(126, 126, 126) ;">Hot Breakfast </a>
+                    </p>
+                    <p><a href="#bakery" onclick="changeBakery()" style="color:rgb(126, 126, 126) ;">Bakery</a></p>
+                    <p><a href="#lunch" onclick="changeLunch()" style="color:rgb(126, 126, 126) ;">Lunch</a></p>
+                    <p> <a href="#snacks-sweets" onclick="changeSnackNSweet()" style="color:rgb(126, 126, 126) ;">Snacks & Sweets</a></p>
+                    <p><a href="#oatmeal-yogurt" onclick="changeOatmealNYogurt()" style="color:rgb(126, 126, 126) ;">Oatmeal & Yogurt</a></p>
                 </div>
                 <div class="menu-coffee">
                     <h3>At Home Coffee</h3>
@@ -108,7 +109,7 @@
             </div>
             <div class="column-3"></div>
             <!-- CHANGE PART BLOCK / NONE -->
-            <div class="menu-pic" id="iced-teas" style=" width: 60% ; height: auto; display: block;">
+            <div class="menu-pic" id="menu" style=" width: 60% ; height: auto; display: block;">
                 <div class="title">Menu</div>
                 <div class="sub-title">Drinks</div>
                 <div class="pic-drinks">
@@ -634,6 +635,525 @@
             <!-- END CHANGE PART ICED TEAS -->
 
 
+            <!-- START CHANGE PART COLD DRINKS -->
+            <div class="menu-pic" id="cold-drinks" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Cold Drinks</span>
+                </div>
+                <div class="title">Cold Drinks</div>
+                <div class="sub-title">Iced Coconutmilk Drinks </div>
+                <div class="pic-iced-coconut">
+                    <div class="guava-passion-pic"><img src="images/menu/Drinks/cold-drink.jpg"></div>
+                    <div class="guava-passion-text">Iced Guava Passionfruit Drink </div>
+                    <div class="pineapple-matcha-pic"><img src="images/menu/Cold Drinks/pineapple matcha drink.jpg"></div>
+                    <div class="pineapple-matcha-text">Iced Pineapple Matcha Drink </div>
+                </div>
+                <div class="sub-title">Starbucks Refreshers™ </div>
+                <div class="pic-refresher">
+                    <div class="star-pic"><img src="images/menu/Cold Drinks/start drink.jpg"></div>
+                    <div class="star-text">Star Drink </div>
+                    <div class="kiwi-star-pic"><img src="images/menu/Cold Drinks/kiwi start.jpg"></div>
+                    <div class="kiwi-star-text">Kiwi Starfruit Starbucks Refreshers® Beverage </div>
+                    <div class="kiwi-starlemon-pic"><img src="images/menu/Cold Drinks/kiwi star lemon.jpg"></div>
+                    <div class="kiwi-starlemon-text">Kiwi Starfruit Lemonade Starbucks Refreshers® Beverage</div>
+                    <div class="dragon-pic"><img src="images/menu/Cold Drinks/dragon.jpg"></div>
+                    <div class="dragon-text">Dragon Drink</div>
+                    <div class="mango-dragon-pic"><img src="images/menu/Cold Drinks/mango dragon.jpg"></div>
+                    <div class="mango-dragon-text">Mango Dragonfruit Starbucks Refreshers® Beverage</div>
+                    <div class="dragon-lemon-pic"><img src="images/menu/Cold Drinks/mango dragon lemon.jpg"></div>
+                    <div class="dragon-lemon-text">Mango Dragonfruit Lemonade Starbucks Refreshers® Beverage</div>
+                    <div class="acai-lemon-pic"><img src="images/menu/Cold Drinks/strawberry acai lemon.jpg"></div>
+                    <div class="acai-lemon-text">Strawberry Açaí Lemonade Starbucks Refreshers® Beverage</div>
+                    <div class="verybery-lemon-pic"><img src="images/menu/Cold Drinks/very bery lemon.jpg"></div>
+                    <div class="verybery-lemon-text">Very Berry Hibiscus Lemonade Starbucks Refreshers® Beverage</div>
+                    <div class="pink-pic"><img src="images/menu/Cold Drinks/pink drink.jpg"></div>
+                    <div class="pink-text">Pink Drink</div>
+                    <div class="acai-pic"><img src="images/menu/Cold Drinks/strawberry acai.jpg"></div>
+                    <div class="acai-text">Strawberry Açaí Starbucks Refreshers® Beverage</div>
+                    <div class="verybery-pic"><img src="images/menu/Cold Drinks/very bery.jpg"></div>
+                    <div class="verybery-text">Very Berry Hibiscus Starbucks Refreshers® Beverage</div>
+                    <div class="blueberry-acai-pic"><img src="images/menu/Cold Drinks/blueberry acai.jpg"></div>
+                    <div class="blueberry-acai-text">Starbucks Refreshers™ Blueberry Acai</div>
+                    <div class="violet-pic"><img src="images/menu/Cold Drinks/violet drink.jpg"></div>
+                    <div class="violet-text">Violet Drink</div>
+
+                </div>
+                <div class="sub-title">Juice </div>
+                <div class="pic-juice">
+                    <div class="organic-defense-pic"><img src="images/menu/Cold Drinks/organic defense up.jpg"></div>
+                    <div class="organic-defense-text">Evolution Fresh® Organic Defense Up®</div>
+                    <div class="orange-pic"><img src="images/menu/Cold Drinks/orange.jpg"></div>
+                    <div class="orange-text">Evolution Fresh® Orange</div>
+                    <div class="organic-fruit-pic"><img src="images/menu/Cold Drinks/organic fruit.jpg"></div>
+                    <div class="organic-fruit-text">Evolution Fresh® Organic Super Fruit Greens</div>
+                    <div class="apple-juice-pic"><img src="images/menu/Cold Drinks/apple juice box.jpg"></div>
+                    <div class="apple-juice-text">Tree Top Apple Juice Box</div>
+                    <div class="lemonade-pic"><img src="images/menu/Cold Drinks/lemonade.jpg"></div>
+                    <div class="lemonade-text">Lemonade</div>
+                    <div class="blended-strawberry-pic"><img src="images/menu/Cold Drinks/blended strawberry.jpg"></div>
+                    <div class="blended-strawberry-text">Blended Strawberry Lemonade</div>
+                </div>
+                <div class="sub-title">Milk </div>
+                <div class="pic-milk">
+                    <div class="choco-milk-pic"><img src="images/menu/Cold Drinks/choco milk.jpg"></div>
+                    <div class="choco-milk-text">Horizon® Chocolate Organic Milk</div>
+                    <div class="lowfat-milk-pic"><img src="images/menu/Cold Drinks/lowfat milk.jpg"></div>
+                    <div class="lowfat-milk-text">Horizon® Organic Lowfat Milk Box</div>
+                    <div class="milk-pic"><img src="images/menu/Cold Drinks/milk.jpg"></div>
+                    <div class="milk-text">Milk</div>
+                    <div class="vanilla-milk-pic"><img src="images/menu/Cold Drinks/vanilla milk.jpg"></div>
+                    <div class="vanilla-milk-text">Horizon® Organic Vanilla Milk Box</div>
+                </div>
+                <div class="sub-title">Sparkling Water </div>
+                <div class="pic-sparkwater">
+                    <div class="spark-water-pic"><img src="images/menu/Cold Drinks/sparkling water.jpg"></div>
+                    <div class="spark-water-text">Galvanina Sparkling Water</div>
+                    <div class="grapefruit-pic"><img src="images/menu/Cold Drinks/grapefruit.jpg"></div>
+                    <div class="grapefruit-text">Spindrift® Grapefruit Sparkling Water</div>
+                    <div class="raspberry-pic"><img src="images/menu/Cold Drinks/raspberry lime.jpg"></div>
+                    <div class="raspberry-text">Spindrift® Raspberry Lime Sparkling Water</div>
+                    <div class="waterlime-pic"><img src="images/menu/Cold Drinks/water lime.jpg"></div>
+                    <div class="waterlime-text">Galvanina Sparkling Water - Lime</div>
+                </div>
+                <div class="sub-title">Water </div>
+                <div class="pic-water">
+                    <div class="ethos-water-pic"><img src="images/menu/Cold Drinks/ehtos water.jpg"></div>
+                    <div class="ethos-water-text">Ethos® Bottled Water</div>
+                    <div class="hawai-water-pic"><img src="images/menu/Cold Drinks/volcanic water.jpg"></div>
+                    <div class="hawai-water-text">Hawai‘i Volcanic Water</div>
+                    <div class="water-pic"><img src="images/menu/Cold Drinks/water.jpg"></div>
+                    <div class="water-text">Water</div>
+                </div>
+            </div>
+            <!-- END CHANGE PART COLD DRINKS -->
+
+            <!-- START CHANGE PART HOT BREAKFAST -->
+            <div class="menu-pic" id="hot-breakfast" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Breakfast</span>
+                </div>
+                <div class="title">Hot Breakfast</div>
+                <div class="sub-title">Breakfast Sandwiches & Wraps </div>
+                <div class="pic-sandwich">
+                    <div class="imp-sandwich-pic"><img src="images/menu/Food/hot-bf.jpg"></div>
+                    <div class="imp-sandwich-text">Impossible™ Breakfast Sandwich </div>
+                    <div class="bacon-gouda-pic"><img src="images/menu/Hot Breakfast/bacon gouda egg.jpg"></div>
+                    <div class="bacon-gouda-text">Bacon, Gouda & Egg Sandwich</div>
+                    <div class="double-bacon-pic"><img src="images/menu/Hot Breakfast/double smoke bacon.jpg"></div>
+                    <div class="double-bacon-text">Double-Smoked Bacon, Cheddar & Egg Sandwich</div>
+                    <div class="turkey-pic"><img src="images/menu/Hot Breakfast/turkey bacon.jpg"></div>
+                    <div class="turkey-text">Turkey Bacon, Cheddar & Egg White Sandwich</div>
+                    <div class="sausage-cheddar-pic"><img src="images/menu/Hot Breakfast/sausage cheddar egg.jpg"></div>
+                    <div class="sausage-cheddar-text">Sausage, Cheddar & Egg Sandwich </div>
+                    <div class="ham-pic"><img src="images/menu/Hot Breakfast/ham swiss egg.jpg"></div>
+                    <div class="ham-text">Roasted Ham, Swiss & Egg Sandwich</div>
+                    <div class="spinach-pic"><img src="images/menu/Hot Breakfast/spinach feta egg.jpg"></div>
+                    <div class="spinach-text">Spinach, Feta & Egg White Wrap</div>
+                    <div class="spread-pic"><img src="images/menu/Hot Breakfast/avocado spread.jpg"></div>
+                    <div class="spread-text">Avocado Spread</div>
+
+                </div>
+                <div class="sub-title">Egg Bites </div>
+                <div class="pic-eggbite">
+                    <div class="kale-pic"><img src="images/menu/Hot Breakfast/kale mushroom.jpg"></div>
+                    <div class="kale-text">Kale & Portabella Mushroom Sous Vide Egg Bites</div>
+                    <div class="bacon-bite-pic"><img src="images/menu/Hot Breakfast/bacon egg bite.jpg"></div>
+                    <div class="bacon-bite-text">Bacon & Gruyère Sous Vide Egg Bites</div>
+                    <div class="egg-pepper-pic"><img src="images/menu/Hot Breakfast/egg pepper.jpg"></div>
+                    <div class="egg-pepper-text">Egg White & Roasted Red Pepper Sous Vide Egg Bites</div>
+                </div>
+            </div>
+            <!-- END CHANGE PART HOT BREAKFAST -->
+
+            <!-- START CHANGE PART BAKERY -->
+            <div class="menu-pic" id="bakery" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Bakery</span>
+                </div>
+                <div class="title">Bakery</div>
+                <div class="sub-title">Bagels </div>
+                <div class="pic-bagel">
+                    <div class="baker-bagel-pic"><img src="images/menu/Food/bakery.jpg"></div>
+                    <div class="baker-bagel-text">Cheese, Onion & Garlic Bagel</div>
+                    <div class="plain-bagel-pic"><img src="images/menu/Bakery/plain bagel.jpg"></div>
+                    <div class="plain-bagel-text">Plain Bagel</div>
+                    <div class="cinnamon-bagel-pic"><img src="images/menu/Bakery/cinnamon bagel.jpg"></div>
+                    <div class="cinnamon-bagel-text">Cinnamon Raisin Bagel</div>
+                    <div class="every-bagel-pic"><img src="images/menu/Bakery/everything bagel.jpg"></div>
+                    <div class="every-bagel-text">Everything Bagel</div>
+                    <div class="grain-bagel-pic"><img src="images/menu/Bakery/grain bagel.jpg"></div>
+                    <div class="grain-bagel-text">Sprouted Grain Bagel</div>
+                    <div class="baker-avocado-pic"><img src="images/menu/Hot Breakfast/avocado spread.jpg"></div>
+                    <div class="baker-avocado-text">Avocado Spread </div>
+                </div>
+                <div class="sub-title">Cake Pops </div>
+                <div class="pic-cakepop">
+                    <div class="unicornCp-pic"><img src="images/menu/Bakery/unicorn cakepop.jpg"></div>
+                    <div class="unicornCp-text">Unicorn Cake Pop </div>
+                    <div class="birthdayCp-pic"><img src="images/menu/Bakery/birthday cakepop.jpg"></div>
+                    <div class="birthdayCp-text">Birthday Cake Pop</div>
+                    <div class="chocoCp-pic"><img src="images/menu/Bakery/choco cakepop.jpg"></div>
+                    <div class="chocoCp-text">Chocolate Cake Pop</div>
+                </div>
+                <div class="sub-title">Cookies, Brownies & Bars </div>
+                <div class="pic-brownies">
+                    <div class="chocobr-pic"><img src="images/menu/Bakery/choco brownie.jpg"></div>
+                    <div class="chocobr-text">Double Chocolate Brownie</div>
+                    <div class="chocochip-pic"><img src="images/menu/Bakery/choco chip.jpg"></div>
+                    <div class="chocochip-text">Chocolate Chip Cookie</div>
+                    <div class="marsh-pic"><img src="images/menu/Bakery/marshmallow bar.jpg"></div>
+                    <div class="marsh-text">Marshmallow Dream Bar</div>
+                </div>
+                <div class="sub-title">Croissants </div>
+                <div class="pic-croissant">
+                    <div class="almondCrs-pic"><img src="images/menu/Bakery/almond croissant.jpg"></div>
+                    <div class="almondCrs-text">Almond Croissant</div>
+                    <div class="butterCrs-pic"><img src="images/menu/Bakery/butter croissant.jpg"></div>
+                    <div class="butterCrs-text">Butter Croissant</div>
+                    <div class="chocoCrs-pic"><img src="images/menu/Bakery/choco croissant.jpg"></div>
+                    <div class="chocoCrs-text">Chocolate Croissant</div>
+                    <div class="hamCrs-pic"><img src="images/menu/Bakery/ham swiss crossaint.jpg"></div>
+                    <div class="hamCrs-text">Ham & Swiss Croissant</div>
+                </div>
+                <div class="sub-title">Loaves & Cakes </div>
+                <div class="pic-cakes">
+                    <div class="cinnamon-cake-pic"><img src="images/menu/Bakery/cinnamon cake.jpg"></div>
+                    <div class="cinnamon-cake-text">Cinnamon Coffee Cake</div>
+                    <div class="lemon-loaf-pic"><img src="images/menu/Bakery/lemon loaf.jpg"></div>
+                    <div class="lemon-loaf-text">Iced Lemon Loaf</div>
+                    <div class="pumpkin-loaf-pic"><img src="images/menu/Bakery/pumpkin loaf.jpg"></div>
+                    <div class="pumpkin-loaf-text">Pumpkin Loaf</div>
+                    <div class="banana-loaf-pic"><img src="images/menu/Bakery/banan loaf.jpg"></div>
+                    <div class="banana-loaf-text">Banana Nut Loaf</div>
+                </div>
+                <div class="sub-title">Danishes & Doughnuts </div>
+                <div class="pic-donuts">
+                    <div class="cheese-danish-pic"><img src="images/menu/Bakery/cheese danish.jpg"></div>
+                    <div class="cheese-danish-text">Cheese Danish</div>
+                    <div class="glaze-donut-pic"><img src="images/menu/Bakery/glaze donut.jpg"></div>
+                    <div class="glaze-donut-text">Glazed Doughnut</div>
+                </div>
+                <div class="sub-title">Muffins & Scones </div>
+                <div class="pic-muffin">
+                    <div class="blue-scone-pic"><img src="images/menu/Bakery/blueberry scone.jpg"></div>
+                    <div class="blue-scone-text">Blueberry Scone</div>
+                    <div class="vanilla-scone-pic"><img src="images/menu/Bakery/vanilla scone.jpg"></div>
+                    <div class="vanilla-scone-text">Petite Vanilla Bean Scone</div>
+                    <div class="blue-muffin-pic"><img src="images/menu/Bakery/muffin.jpg"></div>
+                    <div class="blue-muffin-text">Blueberry Muffin</div>
+                </div>
+
+
+            </div>
+            <!-- END CHANGE PART BAKERY -->
+
+            <!-- START CHANGE PART LUNCH -->
+            <div class="menu-pic" id="lunch" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Lunch</span>
+                </div>
+                <div class="title">Lunch</div>
+                <div class="sub-title">Warm Sandwiches </div>
+                <div class="pic-lunch-sandwich">
+                    <div class="crispySw-pic"><img src="images/menu/Food/lunch.jpg"></div>
+                    <div class="crispySw-text">Crispy Grilled Cheese Sandwich</div>
+                    <div class="ham-panini-pic"><img src="images/menu/Lunch/ham panini.jpg"></div>
+                    <div class="ham-panini-text">Ham & Swiss Panini</div>
+                    <div class="turkey-panini-pic"><img src="images/menu/Lunch/turkey panini.jpg"></div>
+                    <div class="turkey-panini-text">Turkey & Pesto Panini</div>
+                    <div class="caprese-panini-pic"><img src="images/menu/Lunch/caprese panini.jpg"></div>
+                    <div class="caprese-panini-text">Chicken Caprese Panini</div>
+                    <div class="chicken-panini-pic"><img src="images/menu/Lunch/chicken panini.jpg"></div>
+                    <div class="chicken-panini-text">Chicken & Bacon Panini</div>
+                    <div class="tomato-panini-pic"><img src="images/menu/Lunch/tomato panini.jpg"></div>
+                    <div class="tomato-panini-text">Tomato & Mozzarella Panini</div>
+                    <div class="lunch-avocado-pic"><img src="images/menu/Hot Breakfast/avocado spread.jpg"></div>
+                    <div class="lunch-avocado-text">Avocado Spread</div>
+                </div>
+                <div class="sub-title">Protein Boxes </div>
+                <div class="pic-box">
+                    <div class="eggBx-pic"><img src="images/menu/Lunch/egg box.jpg"></div>
+                    <div class="eggBx-text">Eggs & Gouda Protein Box</div>
+                    <div class="cheeseBx-pic"><img src="images/menu/Lunch/cheese box.jpg"></div>
+                    <div class="cheeseBx-text">Cheese Trio Protein Box</div>
+                    <div class="cheddarBx-pic"><img src="images/menu/Lunch/cheddar box.jpg"></div>
+                    <div class="cheddarBx-text">Cheddar & Uncured Salami Protein Box</div>
+                    <div class="chickpeaBx-pic"><img src="images/menu/Lunch/chickpea box.jpg"></div>
+                    <div class="chickpeaBx-text">Chickpea Bites & Avocado Protein Box</div>
+                    <div class="grillBx-pic"><img src="images/menu/Lunch/grill box.jpg"></div>
+                    <div class="grillBx-text">Grilled Chicken and Hummus Protein Box</div>
+                    <div class="egg-cheddarBx-pic"><img src="images/menu/Lunch/egg cheddar box.jpg"></div>
+                    <div class="egg-cheddarBx-text">Eggs & Cheddar Protein Box</div>
+                    <div class="PBBx-pic"><img src="images/menu/Lunch/PB box.jpg"></div>
+                    <div class="PBBx-text">PB&J Protein Box</div>
+                    <div class="fruitBx-pic"><img src="images/menu/Lunch/fruit box.jpg"></div>
+                    <div class="fruitBx-text">Cheese & Fruit Protein Box</div>
+                    <div class="apple-egg-pic"><img src="images/menu/Lunch/apple egg box.jpg"></div>
+                    <div class="apple-egg-text">Prosnax Gala Apples, Egg, White Cheddar Cheese, and Almonds Snack Box</div>
+                    <div class="green-apple-pic"><img src="images/menu/Lunch/green apple box.jpg"></div>
+                    <div class="green-apple-text">Prosnax Green Apples, Egg, Mild Cheddar Cheese, and Cashews Snack Box</div>
+                    <div class="gala-apple-pic"><img src="images/menu/Lunch/gala apple box.jpg"></div>
+                    <div class="gala-apple-text">Prosnax Gala Apples, Cheddar Cheese, and Pretzels Snack Tray</div>
+                    <div class="carrotBx-pic"><img src="images/menu/Lunch/carrot box.jpg"></div>
+                    <div class="carrotBx-text">Prosnax Carrots, White Cheddar Cheese, and Almonds Snack Tray</div>
+                    <div class="snack-tray-pic"><img src="images/menu/Lunch/snack tray.jpg"></div>
+                    <div class="snack-tray-text">Creminelli Snack Tray – Prosciutto</div>
+                </div>
+                <div class="sub-title">Protein Bowls </div>
+                <div class="pic-bowls">
+                    <div class="chick-bowl-pic"><img src="images/menu/Lunch/chicken bowl.jpg"></div>
+                    <div class="chick-bowl-text">Chicken & Quinoa Protein Bowl with Black Beans and Greens</div>
+                </div>
+            </div>
+            <!-- END CHANGE PART LUNCH -->
+
+            <!-- START CHANGE PART SNACKS N SWEETS -->
+            <div class="menu-pic" id="snacks-sweets" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Snacks & Sweets</span>
+                </div>
+                <div class="title">Snacks & Sweets</div>
+                <div class="sub-title">Biscotti & Cookies </div>
+                <div class="pic-biscotti">
+                    <div class="dipped-madel-pic"><img src="images/menu/Food/snack.jpg"></div>
+                    <div class="dipped-madel-text">Dipped Madeleines</div>
+                    <div class="madel-pic"><img src="images/menu/Snacks/madeleines.jpg"></div>
+                    <div class="madel-text">Madeleines</div>
+                    <div class="vani-biscotti-pic"><img src="images/menu/Snacks/biscotti.jpg"></div>
+                    <div class="vani-biscotti-text">Vanilla Biscotti with Almonds</div>
+                    <div class="short-cookies-pic"><img src="images/menu/Snacks/shortbread cookies.jpg"></div>
+                    <div class="short-cookies-text">Shortbread Cookies</div>
+                    <div class="choco-graham-pic"><img src="images/menu/Snacks/choco graham.jpg"></div>
+                    <div class="choco-graham-text">Dark Chocolate Grahams (2-Pack)</div>
+                    <div class="wafel-pic"><img src="images/menu/Snacks/ripvan wafel.jpg"></div>
+                    <div class="wafel-text">Rip van Wafels – Honey & Oats</div>
+                </div>
+                <div class="sub-title">Chocolates & Candy </div>
+                <div class="pic-candy">
+                    <div class="choco-bite-pic"><img src="images/menu/Snacks/choco bite.jpg"></div>
+                    <div class="choco-bite-text">Salted Almond Chocolate Bites</div>
+                    <div class="choco-espress-pic"><img src="images/menu/Snacks/choco espresso bean.jpg"></div>
+                    <div class="choco-espress-text">Chocolate Covered Espresso Beans</div>
+                    <div class="peanut-cup-pic"><img src="images/menu/Snacks/choco peanut cup.jpg"></div>
+                    <div class="peanut-cup-text">Justin’s® Dark Chocolate Peanut Butter Cups</div>
+                </div>
+                <div class="sub-title">Fruit & Nuts </div>
+                <div class="pic-nut">
+                    <div class="banana-pic"><img src="images/menu/Snacks/banana.jpg"></div>
+                    <div class="banana-text">Banana</div>
+                    <div class="frOrange-pic"><img src="images/menu/Snacks/orange.jpg"></div>
+                    <div class="frOrange-text">Orange</div>
+                    <div class="frBlend-pic"><img src="images/menu/Snacks/fruit blend.jpg"></div>
+                    <div class="frBlend-text">Seasonal Fruit Blend</div>
+                    <div class="frNut-pic"><img src="images/menu/Snacks/fruit nut.jpg"></div>
+                    <div class="frNut-text">Squirrel Brand® Fruit & Nut</div>
+                    <div class="classic-almond-pic"><img src="images/menu/Snacks/classic almond.jpg"></div>
+                    <div class="classic-almond-text">Squirrel Brand® – Classic Almonds</div>
+                    <div class="apple-grape-pic"><img src="images/menu/Snacks/apple grape.jpg"></div>
+                    <div class="apple-grape-text">Peter Rabbit™ Organics Apple & Grape</div>
+                    <div class="strawberry-banana-pic"><img src="images/menu/Snacks/strawberry banana.jpg"></div>
+                    <div class="strawberry-banana-text">Peter Rabbit™ Organics Strawberry Banana</div>
+                </div>
+                <div class="sub-title">Gum & Mints </div>
+                <div class="pic-gum">
+                    <div class="gum-pic"><img src="images/menu/Snacks/gum.jpg"></div>
+                    <div class="gum-text">Peppermint Gum</div>
+                </div>
+                <div class="sub-title">Popcorn & Chips </div>
+                <div class="pic-popcorn">
+                    <div class="bbqChips-pic"><img src="images/menu/Snacks/bbq chips.jpg"></div>
+                    <div class="bbqChips-text">Starbucks® BBQ Potato Chips</div>
+                    <div class="popcorn-pic"><img src="images/menu/Snacks/popcorn.jpg"></div>
+                    <div class="popcorn-text">Butter Gourmet Popcorn</div>
+                    <div class="white-cheddar-pic"><img src="images/menu/Snacks/white cheddar.jpg"></div>
+                    <div class="white-cheddar-text">Hippeas® – White Cheddar</div>
+                    <div class="kettle-pic"><img src="images/menu/Snacks/kettle corn.jpg"></div>
+                    <div class="kettle-text">Kettle Corn</div>
+                    <div class="sunflower-pic"><img src="images/menu/Snacks/oil sea salt.jpg"></div>
+                    <div class="sunflower-text">POP! - Sunflower Oil & Sea Salt</div>
+                    <div class="salt-vinegar-pic"><img src="images/menu/Snacks/salt vinegar chips.jpg"></div>
+                    <div class="salt-vinegar-text">Salt & Vinegar Kettle Potato Chips</div>
+                    <div class="kale-chips-pic"><img src="images/menu/Snacks/kale chips.jpg"></div>
+                    <div class="kale-chips-text">Rhythm Super Foods Kale Chips - Sea Salt</div>
+                    <div class="salted-pic"><img src="images/menu/Snacks/salted chips.jpg"></div>
+                    <div class="salted-text">Simply Salted Kettle Potato Chips</div>
+                    <div class="sweet-pic"><img src="images/menu/Snacks/sweet chips.jpg"></div>
+                    <div class="sweet-text">Sweet Potato Kettle Potato Chips</div>
+                </div>
+                <div class="sub-title">Meat & Cheese</div>
+                <div class="pic-meat">
+                    <div class="creminelli-pic"><img src="images/menu/Lunch/snack tray.jpg"></div>
+                    <div class="creminelli-text">Creminelli Snack Tray – Sopressata Salami & Monterey Jack</div>
+                    <div class="smoke-turkey-pic"><img src="images/menu/Snacks/smoked turkey.jpg"></div>
+                    <div class="smoke-turkey-text">Country Archer – Hickory Smoked Turkey Jerkey</div>
+                    <div class="beef-jerky-pic"><img src="images/menu/Snacks/beef jerky.jpg"></div>
+                    <div class="beef-jerky-text">Country Archer Original Beef Jerky</div>
+                    <div class="moon-cheese-pic"><img src="images/menu/Snacks/moon cheese.jpg"></div>
+                    <div class="moon-cheese-text">Moon Cheese™ – Cheddar</div>
+                    <div class="cheese-snack-pic"><img src="images/menu/Snacks/cheese snack.jpg"></div>
+                    <div class="cheese-snack-text">Babybel® Mini Cheese Snack</div>
+                    <div class="string-cheese-pic"><img src="images/menu/Snacks/string cheese.jpg"></div>
+                    <div class="string-cheese-text">String Cheese</div>
+                </div>
+                <div class="sub-title">Snack Bars </div>
+                <div class="pic-snackbar">
+                    <div class="choco-bar-pic"><img src="images/menu/Snacks/choco bar.jpg"></div>
+                    <div class="choco-bar-text">Perfect Bar® – Dark Chocolate Chip Peanut Butter</div>
+                    <div class="peanut-bar-pic"><img src="images/menu/Snacks/peanut bar.jpg"></div>
+                    <div class="peanut-bar-text">Perfect Bar® Peanut Butter</div>
+                    <div class="good-square-pic"><img src="images/menu/Snacks/good squared.jpg"></div>
+                    <div class="good-square-text">Good Squared - Urban Trail</div>
+                    <div class="coconut-cashew-pic"><img src="images/menu/Snacks/coconut cashew.jpg"></div>
+                    <div class="coconut-cashew-text">KIND - Almond Coconut Cashew Chai</div>
+                    <div class="kind-vanilla-pic"><img src="images/menu/Snacks/kind vanilla bar.jpg"></div>
+                    <div class="kind-vanilla-text">KIND® Blueberry Vanilla & Cashew Bar</div>
+                    <div class="kind-peanut-pic"><img src="images/menu/Snacks/kind peanut bar.jpg"></div>
+                    <div class="kind-peanut-text">KIND® Peanut Butter Dark Chocolate Bar</div>
+                    <div class="kind-salted-pic"><img src="images/menu/Snacks/kind salted bar.jpg"></div>
+                    <div class="kind-salted-text">KIND® Salted Caramel & Dark Chocolate Nut Bar</div>
+                    <div class="blueberry-bar-pic"><img src="images/menu/Snacks/blueberry bar.jpg"></div>
+                    <div class="blueberry-bar-text">That's It® – Apple + Blueberry Bar</div>
+                    <div class="mango-bar-pic"><img src="images/menu/Snacks/mango bar.jpg"></div>
+                    <div class="mango-bar-text">That's It® – Apple + Mango Bar</div>
+                    <div class="this-choco-pic"><img src="images/menu/Snacks/this bar dark choco.jpg"></div>
+                    <div class="this-choco-text">This Bar Saves Lives™ – Dark Chocolate Cherry & Sea Salt Bar</div>
+                    <div class="this-peanut-pic"><img src="images/menu/Snacks/this bar peanut butter.jpg"></div>
+                    <div class="this-peanut-text">This Bar Saves Lives™ – Dark Chocolate Peanut Butter & Sea Salt Bar</div>
+                    <div class="this-vanilla-pic"><img src="images/menu/Snacks/this bar vanilla bar.jpg"></div>
+                    <div class="this-vanilla-text">This Bar Saves Lives™ Madagascar Vanilla Almond & Honey Bar</div>
+                    <div class="jammy-pic"><img src="images/menu/Snacks/jammy sammy.jpg"></div>
+                    <div class="jammy-text">Blueberry & Oatmeal Jammy Sammy</div>
+                    <div class="this-blueberry-pic"><img src="images/menu/Snacks/this bar blueberry.jpg"></div>
+                    <div class="this-blueberry-text">This Bar Saves Lives™ – Wild Blueberry Pistachio Bar</div>
+                    <div class="choco-kid-pic"><img src="images/menu/Snacks/choco kids.jpg"></div>
+                    <div class="choco-kid-text">Chocolate Chip Kids Clif ZBar®</div>
+                </div>
+                <div class="sub-title">Spreads </div>
+                <div class="pic-spread">
+                    <div class="snack-avocado-pic"><img src="images/menu/Hot Breakfast/avocado spread.jpg"></div>
+                    <div class="snack-avocado-text">Avocado Spread</div>
+                </div>
+            </div>
+            <!-- END CHANGE PART SNACKS N SWEETS -->
+
+            <!-- START CHANGE PART YOUGURT -->
+            <div class="menu-pic" id="oatmeal-yogurt" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Oatmeal & Yogurt</span>
+                </div>
+                <div class="title">Oatmeal & Yogurt</div>
+                <div class="pic-oatmeal">
+                    <div class="blueberry-oatmeal-pic"><img src="images/menu/Food/yogurt.jpg"></div>
+                    <div class="blueberry-oatmeal-text">Hearty Blueberry Oatmeal</div>
+                    <div class="classic-oatmeal-pic"><img src="images/menu/Yogurt/classic oatmeal.jpg"></div>
+                    <div class="classic-oatmeal-text">Classic Oatmeal </div>
+                    <div class="berry-parfait-pic"><img src="images/menu/Yogurt/berry trio parfait.jpg"></div>
+                    <div class="berry-parfait-text">Berry Trio Parfait </div>
+                    <div class="strawberry-grain-pic"><img src="images/menu/Yogurt/strawberry grains.jpg"></div>
+                    <div class="strawberry-grain-text">Strawberry Overnight Grains</div>
+                    <div class="yogurt-cup-pic"><img src="images/menu/Yogurt/yogurt vanilla.jpg"></div>
+                    <div class="yogurt-cup-text">Siggi's® Yogurt Cup 0% Vanilla</div>
+                </div>
+            </div>
+            <!-- END CHANGE PART YOUGURT -->
+
+            <!-- START CHANGE PART WHOLE BEAN -->
+            <div class="menu-pic" id="whole-bean" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Breakfast</span>
+                </div>
+                <div class="title">Hot Breakfast</div>
+                <div class="sub-title">Breakfast Sandwiches & Wraps </div>
+                <div class="pic-sandwich">
+                    <div class="-pic"><img src="images/menu/Coffee/bean.jpg"></div>
+                    <div class="-text"></div>
+                    <div class="-pic"><img src="images/menu/"></div>
+                    <div class="-text"></div>
+                </div>
+            </div>
+            <!-- END CHANGE PART WHOLE BEAN -->
+
+            <!-- START CHANGE PART INSTANT -->
+            <div class="menu-pic" id="instant" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Breakfast</span>
+                </div>
+                <div class="title">Hot Breakfast</div>
+                <div class="sub-title">Breakfast Sandwiches & Wraps </div>
+                <div class="pic-sandwich">
+                    <div class="-pic"><img src="images/menu/Coffee/instant.jpg"></div>
+                    <div class="-text"></div>
+                    <div class="-pic"><img src="images/menu/"></div>
+                    <div class="-text"></div>
+                </div>
+            </div>
+            <!-- END CHANGE PART INSTANT -->
+
+            <!-- START CHANGE PART COLD CUPS -->
+            <div class="menu-pic" id="cold-cups" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Breakfast</span>
+                </div>
+                <div class="title">Hot Breakfast</div>
+                <div class="sub-title">Breakfast Sandwiches & Wraps </div>
+                <div class="pic-sandwich">
+                    <div class="-pic"><img src="images/menu/Merchandise/cold-cup.jpg"></div>
+                    <div class="-text"></div>
+                    <div class="-pic"><img src="images/menu/"></div>
+                    <div class="-text"></div>
+                </div>
+            </div>
+            <!-- END CHANGE PART COLD CUPS -->
+
+            <!-- START CHANGE PART TUMBLER -->
+            <div class="menu-pic" id="tumblers" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Breakfast</span>
+                </div>
+                <div class="title">Hot Breakfast</div>
+                <div class="sub-title">Breakfast Sandwiches & Wraps </div>
+                <div class="pic-sandwich">
+                    <div class="-pic"><img src="images/menu/Merchandise/tumbler.jpg"></div>
+                    <div class="-text"></div>
+                    <div class="-pic"><img src="images/menu/"></div>
+                    <div class="-text"></div>
+                </div>
+            </div>
+            <!-- END CHANGE PART TUMBLER -->
+
+            <!-- START CHANGE PART WATER BOTTLES -->
+            <div class="menu-pic" id="water-bottles" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Breakfast</span>
+                </div>
+                <div class="title">Hot Breakfast</div>
+                <div class="sub-title">Breakfast Sandwiches & Wraps </div>
+                <div class="pic-sandwich">
+                    <div class="-pic"><img src="images/menu/Merchandise/tumbler.jpg"></div>
+                    <div class="-text"></div>
+                    <div class="-pic"><img src="images/menu/"></div>
+                    <div class="-text"></div>
+                </div>
+            </div>
+            <!-- END CHANGE PART WATER BOTTLES -->
+
+            <!-- START CHANGE PART OTHER -->
+            <div class="menu-pic" id="other" style=" width: 60% ; height: auto; display: none;">
+                <div class="sub-title-1">Menu /
+                    <span>Hot Breakfast</span>
+                </div>
+                <div class="title">Hot Breakfast</div>
+                <div class="sub-title">Breakfast Sandwiches & Wraps </div>
+                <div class="pic-sandwich">
+                    <div class="-pic"><img src="images/menu/Merchandise/other.jpg"></div>
+                    <div class="-text"></div>
+                    <div class="-pic"><img src="images/menu/"></div>
+                    <div class="-text"></div>
+                </div>
+            </div>
+            <!-- END CHANGE PART OTHER -->
+
+
 
             <!-- start footer -->
             <div class="footer" style="background-color: #ffffff;">
@@ -755,6 +1275,12 @@
             document.getElementById("frappuccino").style.display = "none";
             document.getElementById("cold-coffees").style.display = "none";
             document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
         }
 
         function changeTea() {
@@ -765,6 +1291,12 @@
             document.getElementById("frappuccino").style.display = "none";
             document.getElementById("cold-coffees").style.display = "none";
             document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
         }
 
         function changeDrink() {
@@ -775,6 +1307,12 @@
             document.getElementById("frappuccino").style.display = "none";
             document.getElementById("cold-coffees").style.display = "none";
             document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
         }
 
         function changeFrap() {
@@ -785,6 +1323,12 @@
             document.getElementById("frappuccino").style.display = "block";
             document.getElementById("cold-coffees").style.display = "none";
             document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
         }
 
         function changeColdCoffees() {
@@ -795,6 +1339,12 @@
             document.getElementById("frappuccino").style.display = "none";
             document.getElementById("cold-coffees").style.display = "block";
             document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
         }
 
         function changeIcedTeas() {
@@ -805,6 +1355,108 @@
             document.getElementById("frappuccino").style.display = "none";
             document.getElementById("cold-coffees").style.display = "none";
             document.getElementById("iced-teas").style.display = "block";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
+        }
+
+        function changeColdDrinks() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("hot-coffees").style.display = "none";
+            document.getElementById("hot-teas").style.display = "none";
+            document.getElementById("hot-drinks").style.display = "none";
+            document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "block";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
+        }
+
+        function changeHotBreakfast() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("hot-coffees").style.display = "none";
+            document.getElementById("hot-teas").style.display = "none";
+            document.getElementById("hot-drinks").style.display = "none";
+            document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "block";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
+        }
+
+        function changeBakery() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("hot-coffees").style.display = "none";
+            document.getElementById("hot-teas").style.display = "none";
+            document.getElementById("hot-drinks").style.display = "none";
+            document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "block";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
+        }
+
+        function changeLunch() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("hot-coffees").style.display = "none";
+            document.getElementById("hot-teas").style.display = "none";
+            document.getElementById("hot-drinks").style.display = "none";
+            document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "block";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
+        }
+
+        function changeSnackNSweet() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("hot-coffees").style.display = "none";
+            document.getElementById("hot-teas").style.display = "none";
+            document.getElementById("hot-drinks").style.display = "none";
+            document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "block";
+            document.getElementById("oatmeal-yogurt").style.display = "none";
+        }
+
+        function changeOatmealNYogurt() {
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("hot-coffees").style.display = "none";
+            document.getElementById("hot-teas").style.display = "none";
+            document.getElementById("hot-drinks").style.display = "none";
+            document.getElementById("frappuccino").style.display = "none";
+            document.getElementById("cold-coffees").style.display = "none";
+            document.getElementById("iced-teas").style.display = "none";
+            document.getElementById("cold-drinks").style.display = "none";
+            document.getElementById("hot-breakfast").style.display = "none";
+            document.getElementById("bakery").style.display = "none";
+            document.getElementById("lunch").style.display = "none";
+            document.getElementById("snacks-sweets").style.display = "none";
+            document.getElementById("oatmeal-yogurt").style.display = "block";
         }
     </script>
 </body>

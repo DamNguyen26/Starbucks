@@ -3113,3 +3113,2985 @@
         font-size: 18px;
     }
     /* END COLD COFFEES */
+    /* START ICED TEAS */
+    
+    .pic-bottle-tea {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-bottle-tea img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .teavana-green-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .teavana-green-text {
+        grid-column: 2/5;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -5px;
+    }
+    
+    .teavana-black-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .teavana-black-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -7px;
+    }
+    
+    .pic-iced-black {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-black img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .guava-black-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .guava-black-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -5px;
+    }
+    
+    .guava-lemon-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .guava-lemon-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -7px;
+    }
+    
+    .iced-black-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-black-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .black-lemon-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .black-lemon-text {
+        grid-column: 11/13;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .royal-latte-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .royal-latte-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .fogtea-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fogtea-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-iced-chai {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-chai img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .iced-chai-latte-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-chai-latte-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-iced-green {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-green img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .peach-green-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .peach-green-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .peach-lemon-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .peach-lemon-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .matchatea-latte-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .matchatea-latte-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .iced-green-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iced-green-text {
+        grid-column: 11/13;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .green-lemon-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .green-lemon-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .matcha-lemon-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .matcha-lemon-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-iced-herbal {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-herbal img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .passiontea-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .passiontea-text {
+        grid-column: 2/5;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+    }
+    
+    .passion-lemon-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .passion-lemon-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    /* END ICED TEAS */
+    
+    .pic-iced-coconut {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-iced-coconut img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .guava-passion-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .guava-passion-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pineapple-matcha-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pineapple-matcha-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-refresher {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px 150px 30px 30px 150px 60px;
+        gap: 15px;
+    }
+    
+    .pic-refresher img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .star-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .star-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .kiwi-star-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kiwi-star-text {
+        grid-column: 5/8;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -10px;
+    }
+    
+    .kiwi-starlemon-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kiwi-starlemon-text {
+        grid-column: 8/11;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -20px;
+    }
+    
+    .dragon-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dragon-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .mango-dragon-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mango-dragon-text {
+        grid-column: 2/5;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+        margin-left: -80px;
+    }
+    
+    .dragon-lemon-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dragon-lemon-text {
+        grid-column: 5/8;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -40px;
+    }
+    
+    .acai-lemon-pic {
+        grid-column: 8/10;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .acai-lemon-text {
+        grid-column: 8/11;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .verybery-lemon-pic {
+        grid-column: 11/13;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .verybery-lemon-text {
+        grid-column: 11/13;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -10px;
+    }
+    
+    .pink-pic {
+        grid-column: 2/4;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pink-text {
+        grid-column: 2/4;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .acai-pic {
+        grid-column: 5/7;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .acai-text {
+        grid-column: 5/8;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -20px;
+    }
+    
+    .verybery-pic {
+        grid-column: 8/10;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .verybery-text {
+        grid-column: 8/11;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -40px;
+    }
+    
+    .blueberry-acai-pic {
+        grid-column: 11/13;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blueberry-acai-text {
+        grid-column: 11/13;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .violet-pic {
+        grid-column: 2/4;
+        grid-row: 10/11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .violet-text {
+        grid-column: 2/4;
+        grid-row: 11/12;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pic-juice {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-juice img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .organic-defense-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .organic-defense-text {
+        grid-column: 2/5;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .orange-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .orange-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .organic-fruit-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .organic-fruit-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .apple-juice-pic {
+        grid-column: 11/13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apple-juice-text {
+        grid-column: 11/13;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .lemonade-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lemonade-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .blended-strawberry-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blended-strawberry-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-milk {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-milk img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .choco-milk-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .choco-milk-text {
+        grid-column: 2/5;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+    }
+    
+    .lowfat-milk-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lowfat-milk-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .milk-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .milk-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .vanilla-milk-pic {
+        grid-column: 11/13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vanilla-milk-text {
+        grid-column: 11/13;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-sparkwater {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-sparkwater img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .spark-water-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .spark-water-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .grapefruit-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grapefruit-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .raspberry-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .raspberry-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .waterlime-pic {
+        grid-column: 11/13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .waterlime-text {
+        grid-column: 11/13;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-water {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-water img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .ethos-water-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ethos-water-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .hawai-water-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hawai-water-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .water-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .water-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    /* END COLD DRINKS */
+    /* START HOT BREAKFAST  */
+    
+    .pic-sandwich {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-sandwich img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .imp-sandwich-pic {
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imp-sandwich-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .bacon-gouda-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bacon-gouda-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .double-bacon-pic {
+        grid-column: 8/10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .double-bacon-text {
+        grid-column: 8/10;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .turkey-pic {
+        grid-column: 11/13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .turkey-text {
+        grid-column: 11/13;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .sausage-cheddar-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sausage-cheddar-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .ham-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ham-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .spinach-pic {
+        grid-column: 8/10;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .spinach-text {
+        grid-column: 8/10;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .spread-pic {
+        grid-column: 11/13;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .spread-text {
+        grid-column: 11/13;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-eggbite {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-eggbite img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .kale-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kale-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .bacon-bite-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bacon-bite-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .egg-pepper-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .egg-pepper-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    /* END HOT BREAKFAST */
+    /* START BAKERY */
+    
+    .pic-bagel {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-bagel img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .baker-bagel-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .baker-bagel-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .plain-bagel-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .plain-bagel-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .cinnamon-bagel-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cinnamon-bagel-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .every-bagel-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .every-bagel-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .grain-bagel-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grain-bagel-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .baker-avocado-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .baker-avocado-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-cakepop {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-cakepop img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .unicornCp-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .unicornCp-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .birthdayCp-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .birthdayCp-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .chocoCp-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .chocoCp-text {
+        grid-column: 8/11;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+    }
+    
+    .pic-brownies {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-brownies img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .chocobr-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .chocobr-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .chocochip-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .chocochip-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .marsh-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .marsh-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-croissant {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-croissant img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .almondCrs-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .almondCrs-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .butterCrs-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .butterCrs-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .chocoCrs-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .chocoCrs-text {
+        grid-column: 8/11;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+    }
+    
+    .hamCrs-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hamCrs-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-cakes {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-cakes img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .cinnamon-cake-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cinnamon-cake-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .lemon-loaf-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lemon-loaf-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pumpkin-loaf-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pumpkin-loaf-text {
+        grid-column: 8/11;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -80px;
+    }
+    
+    .banana-loaf-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banana-loaf-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-donuts {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-donuts img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .cheese-danish-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cheese-danish-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .glaze-donut-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .glaze-donut-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-muffin {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-muffin img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .blue-scone-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blue-scone-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .vanilla-scone-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vanilla-scone-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .blue-muffin-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blue-muffin-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    /* END BAKERY */
+    /* START LUNCH */
+    
+    .pic-lunch-sandwich {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-lunch-sandwich img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .crispySw-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .crispySw-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .ham-panini-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ham-panini-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .turkey-panini-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .turkey-panini-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .caprese-panini-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caprese-panini-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .chicken-panini-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .chicken-panini-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .tomato-panini-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tomato-panini-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .lunch-avocado-pic {
+        grid-column: 8/10;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lunch-avocado-text {
+        grid-column: 8/10;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-box {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px 150px 30px 30px 150px 60px;
+        gap: 15px;
+    }
+    
+    .pic-box img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .eggBx-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .eggBx-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .cheeseBx-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cheeseBx-text {
+        grid-column: 5/8;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -10px;
+    }
+    
+    .cheddarBx-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cheddarBx-text {
+        grid-column: 8/11;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -20px;
+    }
+    
+    .chickpeaBx-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .chickpeaBx-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .grillBx-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grillBx-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .egg-cheddarBx-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .egg-cheddarBx-text {
+        grid-column: 5/8;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -40px;
+    }
+    
+    .PBBx-pic {
+        grid-column: 8/10;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .PBBx-text {
+        grid-column: 8/10;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .fruitBx-pic {
+        grid-column: 11/13;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fruitBx-text {
+        grid-column: 11/13;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .apple-egg-pic {
+        grid-column: 2/4;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apple-egg-text {
+        grid-column: 2/4;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .green-apple-pic {
+        grid-column: 5/7;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .green-apple-text {
+        grid-column: 5/7;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .gala-apple-pic {
+        grid-column: 8/10;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .gala-apple-text {
+        grid-column: 8/10;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .carrotBx-pic {
+        grid-column: 11/13;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carrotBx-text {
+        grid-column: 11/13;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .snack-tray-pic {
+        grid-column: 2/4;
+        grid-row: 10/11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .snack-tray-text {
+        grid-column: 2/4;
+        grid-row: 11/12;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pic-bowls {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-bowls img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .chick-bowl-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .chick-bowl-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    /* END LUNCH */
+    /* START SNACKS */
+    
+    .pic-biscotti {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-biscotti img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .dipped-madel-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dipped-madel-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .madel-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .madel-text {
+        grid-column: 5/8;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -10px;
+    }
+    
+    .vani-biscotti-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vani-biscotti-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .short-cookies-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .short-cookies-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .choco-graham-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .choco-graham-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .wafel-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wafel-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-candy {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-candy img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .choco-bite-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .choco-bite-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .choco-espress-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .choco-espress-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .peanut-cup-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .peanut-cup-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-nut {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-nut img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .banana-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banana-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .frOrange-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .frOrange-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .frBlend-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .frBlend-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .frNut-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .frNut-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .classic-almond-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .classic-almond-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .apple-grape-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apple-grape-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .strawberry-banana-pic {
+        grid-column: 8/10;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .strawberry-banana-text {
+        grid-column: 8/10;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-gum {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-gum img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .gum-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .gum-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-popcorn {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-popcorn img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .bbqChips-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bbqChips-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .popcorn-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .popcorn-text {
+        grid-column: 5/8;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: -10px;
+    }
+    
+    .white-cheddar-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .white-cheddar-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .kettle-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kettle-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .sunflower-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sunflower-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .salt-vinegar-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .salt-vinegar-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .kale-chips-pic {
+        grid-column: 8/10;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kale-chips-text {
+        grid-column: 8/10;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .salted-pic {
+        grid-column: 11/13;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .salted-text {
+        grid-column: 11/13;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .sweet-pic {
+        grid-column: 2/4;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sweet-text {
+        grid-column: 2/4;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-meat {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-meat img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .creminelli-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .creminelli-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .smoke-turkey-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .smoke-turkey-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .beef-jerky-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .beef-jerky-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .moon-cheese-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .moon-cheese-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .cheese-snack-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cheese-snack-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .string-cheese-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .string-cheese-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .pic-snackbar {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-snackbar img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .choco-bar-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .choco-bar-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .peanut-bar-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .peanut-bar-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .good-square-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .good-square-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .coconut-cashew-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .coconut-cashew-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .kind-vanilla-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kind-vanilla-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .kind-peanut-pic {
+        grid-column: 5/7;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kind-peanut-text {
+        grid-column: 5/7;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .kind-salted-pic {
+        grid-column: 8/10;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kind-salted-text {
+        grid-column: 8/10;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .blueberry-bar-pic {
+        grid-column: 11/13;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blueberry-bar-text {
+        grid-column: 11/13;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .mango-bar-pic {
+        grid-column: 2/4;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mango-bar-text {
+        grid-column: 2/4;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .this-choco-pic {
+        grid-column: 5/7;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .this-choco-text {
+        grid-column: 5/7;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .this-peanut-pic {
+        grid-column: 8/10;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .this-peanut-text {
+        grid-column: 8/10;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .this-vanilla-pic {
+        grid-column: 11/13;
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .this-vanilla-text {
+        grid-column: 11/13;
+        grid-row: 8/9;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .jammy-pic {
+        grid-column: 2/4;
+        grid-row: 10/11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .jammy-text {
+        grid-column: 2/4;
+        grid-row: 11/12;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .this-blueberry-pic {
+        grid-column: 5/7;
+        grid-row: 10/11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .this-blueberry-text {
+        grid-column: 5/7;
+        grid-row: 11/12;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .choco-kid-pic {
+        grid-column: 8/10;
+        grid-row: 10/11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .choco-kid-text {
+        grid-column: 8/10;
+        grid-row: 11/12;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pic-spread {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-spread img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .snack-avocado-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .snack-avocado-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    /* END SNACKS */
+    /* START OATMEAL N YOGURT */
+    
+    .pic-oatmeal {
+        display: grid;
+        grid-template-columns: repeat(12, 80px);
+        margin: 50px 0;
+        grid-template-rows: 150px 30px 30px 150px 30px 30px;
+        gap: 15px;
+    }
+    
+    .pic-oatmeal img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    
+    .blueberry-oatmeal-pic {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blueberry-oatmeal-text {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .classic-oatmeal-pic {
+        grid-column: 5/7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .classic-oatmeal-text {
+        grid-column: 5/7;
+        grid-row: 2/4;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .berry-parfait-pic {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .berry-parfait-text {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .strawberry-grain-pic {
+        grid-column: 11/13;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .strawberry-grain-text {
+        grid-column: 11/13;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .yogurt-cup-pic {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .yogurt-cup-text {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    /* END OATMEAL N YOGURT */
